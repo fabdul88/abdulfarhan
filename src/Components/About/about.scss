@@ -1,0 +1,115 @@
+@import "../../styles/partials/global";
+.about-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    @include tablet {
+      margin: 0 0 60px 0;
+      padding: 60px 0 0 0;
+    }
+  }
+  &__title {
+    font-family: "SoulmazeItalic";
+    margin: 0;
+    color: #444649;
+    &-letter {
+      font-family: "SoulmazeItalic";
+      color: #4cf3c6;
+      // font-size: 50px;
+    }
+    &-hr {
+      width: 60px;
+      border: 2px solid #0aa2e7;
+      margin: 5px 0 0 0;
+    }
+  }
+  &__column-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 690px;
+    @include tablet {
+      flex-direction: row;
+      height: 530px;
+      width: 90%;
+    }
+  }
+  &__profile-container {
+    position: relative;
+    height: 250px;
+    @include tablet {
+      margin: 0 40px;
+    }
+  }
+  &__profile {
+    margin: 0 15px 0 0;
+    height: 238px;
+    &-background {
+      position: absolute;
+      height: 299px;
+      z-index: -1;
+      top: -16px;
+      left: 15px;
+      bottom: -320px;
+      transform: rotate(1.1deg);
+    }
+  }
+  &__profile-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @include tablet {
+      align-self: center;
+      width: 290px;
+      // margin: 0 10px;
+      margin: 110px 10px;
+    }
+  }
+  &__profile-text {
+    font-family: "Soulmaze";
+    color: #444649;
+    letter-spacing: 2px;
+    line-height: 18px;
+    width: 290px;
+    margin: 25px 18px 18px;
+    &-career {
+      color: #e31b6d;
+    }
+  }
+  &__hexagon-top {
+    display: none;
+    @include tablet {
+      display: flex;
+      position: absolute;
+      height: 370px;
+      top: -91px;
+      right: -50px;
+      transform: rotate(90deg);
+      overflow: hidden;
+    }
+  }
+  &__hexagon-bottom {
+    display: none;
+    @include tablet {
+      display: flex;
+      position: absolute;
+      height: 370px;
+      bottom: -151px;
+      left: -30px;
+      transform: rotate(270deg);
+      overflow: hidden;
+    }
+  }
+}

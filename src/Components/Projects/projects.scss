@@ -1,0 +1,238 @@
+@import "../../styles/partials/global";
+
+.work-container {
+  background-color: #ffffff;
+  &__work-labels-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 50px 0 20px 0;
+    &-sub {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      max-width: 589px;
+      @include tablet {
+        max-width: 776px;
+      }
+      @include desktop {
+        margin: 0;
+        max-width: 1253px;
+      }
+    }
+  }
+  &__work-labels {
+    // font-family: "Soulmaze";
+    font-family: "Avenir";
+    font-weight: 800;
+    color: #444649;
+    font-size: 10px;
+    text-decoration: none;
+    border: 1px solid #444649;
+    border-radius: 3px;
+    padding: 5px;
+    &:hover {
+      // background: #0aa2e7;
+      color: #0aa2e7;
+      border: 1px solid #0aa2e7;
+      border-radius: 3px;
+      transition: all 0.2s ease-in-out;
+    }
+    &:focus {
+      // background-color: #0aa2e7;
+      color: #0aa2e7;
+      border-top: 2px solid #0aa2e7;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-radius: 0;
+      transition: all 0.2s ease-in-out;
+    }
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-family: "SoulmazeItalic";
+    color: #444649;
+    padding: 60px 0 0 0;
+    margin: 0;
+    &-letter {
+      font-family: "SoulmazeItalic";
+      color: #e31b6d;
+    }
+    &-hr {
+      width: 60px;
+      border: 2px solid #4cf3c6;
+    }
+  }
+
+  &__cards-container {
+    // background-color: $cloud;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 430px;
+    padding: 0 0 70px 0;
+    &-sub {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      max-width: 1000px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__con {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    margin: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    perspective: 800;
+    // backface-visibility: hidden;
+  }
+  &__card {
+    background-color: transparent;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 1.5s ease;
+    border-radius: 3px;
+    // backface-visibility: hidden;
+    &:hover {
+      transform: rotateY(180deg);
+      // backface-visibility: hidden;
+    }
+  }
+  &__back {
+    background-color: transparent;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 203px;
+    top: -396px;
+    border-radius: 3px;
+    transform: rotateY(180deg);
+    // backface-visibility: hidden;
+  }
+  &__front {
+    height: 380px;
+    // padding: 10px;
+    padding: 0;
+  }
+  &__front,
+  &__back {
+    backface-visibility: hidden;
+    // -webkit-backface-visibility: hidden;
+  }
+  &__name {
+    font-family: "Soulmaze";
+    color: #444649;
+    display: flex;
+    font-size: 30px;
+    margin: 25px 0 0;
+    padding: 0 0 0 20px;
+  }
+
+  &__card-hr-fitrack {
+    width: 90px;
+    border: 2px solid #e31b6d;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-instock {
+    width: 90px;
+    border: 2px solid #0aa2e7;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-brainflix {
+    width: 90px;
+    border: 2px solid #4cf3c6;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-bandsite {
+    width: 90px;
+    border: 2px solid #4cf3c6;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-travelsite {
+    width: 90px;
+    border: 2px solid #0aa2e7;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-coffeeshop {
+    width: 90px;
+    border: 2px solid #e31b6d;
+    margin: 0 93px 0 100px;
+  }
+
+  &__image-front {
+    // width: 280px;
+    // height: 280px;
+    width: 300px;
+    height: 290px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &__image-back {
+    width: 200px;
+    height: 300px;
+  }
+  &__description {
+    // font-family: "SoulmazeItalic";
+    font-family: "Avenir";
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #444649;
+    text-align: left;
+    letter-spacing: 1px;
+    height: 350px;
+    padding: 25px;
+  }
+  &__demo {
+    position: absolute;
+    border: 1px solid #4cf3c6;
+    text-decoration: none;
+    color: #4cf3c6;
+    padding: 15px;
+    top: 270px;
+    left: 22px;
+    border-radius: 3px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #4cf3c6;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  &__code {
+    position: absolute;
+    border: 1px solid #0aa2e7;
+    text-decoration: none;
+    color: #0aa2e7;
+    padding: 15px;
+    top: 270px;
+    left: 159px;
+    border-radius: 3px;
+    font-weight: 600;
+    &:hover {
+      background-color: #0aa2e7;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

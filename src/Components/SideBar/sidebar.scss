@@ -1,0 +1,224 @@
+@import "../../styles/partials/global";
+
+.sidebar-container {
+  margin: 104px 0 0 0;
+
+  width: 0;
+  height: 100vh;
+  // background-color: rgb(52, 73, 94);
+  background: linear-gradient(
+      217deg,
+      rgba(10, 162, 231, 0),
+      rgba(10, 162, 231, 0) 70.71%
+    ),
+    linear-gradient(336deg, rgba(10, 162, 231, 0), rgba(76, 243, 198, 0) 90.71%);
+  position: fixed;
+  top: 0;
+  transition: 0.3s;
+  // content-visibility: hidden;
+  display: none;
+  box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  @include tablet {
+    // margin: 42px 0 0 10px;
+    margin: 104px 0 0 10px;
+
+    height: 90vh;
+  }
+  @include desktop {
+    width: 100%;
+    height: 65px;
+    top: 0;
+    transition: 0.3s;
+    background-color: transparent;
+    margin: 0;
+    // content-visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: none;
+  }
+
+  &--active {
+    @include mobile {
+      margin: 104px 0 0 0;
+
+      position: fixed;
+      top: 0;
+      z-index: 3;
+      width: 100%;
+      background: linear-gradient(
+          217deg,
+          rgba(10, 162, 231, 1),
+          rgba(10, 162, 231, 0) 70.71%
+        ),
+        linear-gradient(
+          336deg,
+          rgba(76, 243, 198, 1),
+          rgba(76, 243, 198, 0.4) 90.71%
+        );
+      transition: 0.3s;
+      opacity: 0.97;
+    }
+    @include tablet {
+      position: fixed;
+      top: 0;
+      z-index: 3;
+      width: 385px;
+      background: linear-gradient(
+          217deg,
+          rgba(76, 243, 198, 0.8),
+          rgba(10, 162, 231, 0) 70.71%
+        ),
+        linear-gradient(
+          336deg,
+          rgba(10, 162, 231, 1),
+          rgba(76, 243, 198, 0.4) 90.71%
+        );
+      transition: 0.3s;
+      margin: 104px 0 0 10px;
+
+      border-radius: 4px;
+    }
+    @include desktop {
+      transition: 0.3s;
+      width: 100%;
+      background: linear-gradient(
+          217deg,
+          rgba(10, 162, 231, 1),
+          rgba(10, 162, 231, 0) 70.71%
+        ),
+        linear-gradient(
+          336deg,
+          rgba(10, 162, 231, 1),
+          rgba(76, 243, 198, 0.4) 90.71%
+        );
+      margin: 0;
+    }
+  }
+
+  &__sidebar-width {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1300px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.8);
+    &-link {
+      cursor: pointer;
+    }
+    @include tablet {
+      // height: 90vh;
+      height: 87.5vh;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: flex-end;
+
+      height: 95px;
+      box-shadow: none;
+    }
+    &-item {
+      position: relative;
+      margin: 0 0 50px 0;
+      @include desktop {
+        margin: 0 20px 0 0;
+      }
+    }
+    &-home,
+    &-about,
+    &-skills,
+    &-work,
+    &-contact {
+      // width: 20px;
+      // height: 20px;
+      width: 40px;
+      height: 40px;
+      @include desktop {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 0;
+        display: none;
+      }
+    }
+  }
+  &__list-link {
+    @include desktop {
+      display: flex;
+      text-decoration: none;
+    }
+  }
+  &__hover-home,
+  &__hover-about,
+  &__hover-skills,
+  &__hover-projects,
+  &__hover-contact {
+    display: none;
+    @include desktop {
+      // font-family: "SoulmazeOutlineItalic";
+      font-family: "Avenir";
+      color: #444649;
+      display: flex;
+      margin: 0;
+      align-self: flex-end;
+      // color: $white;
+      font-size: 20px;
+      text-shadow: none;
+      font-weight: bold;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  // &__backdrop {
+  //   width: 100vw;
+  //   height: 100vh;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 2;
+  //   background-color: rgba(0, 0, 0, 0.6);
+  // }
+  &__social-container {
+    width: 100px;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__linkedin-image {
+    width: 40px;
+    height: 40px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__github-image {
+    width: 35px;
+    height: 35px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__top-hr {
+    border-radius: 11px;
+    border: 1px solid #444649;
+  }
+  &__linkedin-image {
+    margin: 0 10px 0 0;
+  }
+  &__github-image {
+    margin: 0 0 0 10px;
+  }
+}

@@ -1,0 +1,118 @@
+@import "../../styles/partials/global";
+
+.contact-container {
+  padding: 0 18px;
+  // background: #252934;
+  // background-color: #d24d57;
+  // background-color: #0aa2e7;
+  background: linear-gradient(
+      217deg,
+      rgba(10, 162, 231, 1),
+      rgba(227, 27, 109, 0) 70.71%
+    ),
+    linear-gradient(336deg, rgba(76, 243, 198, 1), rgba(227, 27, 109, 1) 90.71%),
+    linear-gradient(
+      336deg,
+      rgba(227, 27, 109, 1),
+      rgba(227, 27, 109, 0.5) 90.71%
+    );
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    @include tablet {
+      margin: 0 0 60px 0;
+      padding: 60px 0 0 0;
+    }
+  }
+  &__title {
+    font-family: "SoulmazeItalic";
+    margin: 0;
+    // color: #0aa2e7;
+    color: #ffffff;
+    &-letter {
+      font-family: "SoulmazeItalic";
+      // color: #4cf3c6;
+      color: #ffffff;
+      // font-size: 50px;
+    }
+    &-hr {
+      width: 60px;
+      // border: 2px solid #e31b6d;
+      border: 2px solid #ffffff;
+      margin: 5px 0 0 0;
+    }
+  }
+  &__text {
+    font-family: "Soulmaze";
+    // color: #ffffff;
+    color: #444649;
+    letter-spacing: 1px;
+    &-highlight {
+      // color: #e31b6d;
+      color: #ffffff;
+    }
+  }
+  &__form-container {
+    margin: 0 15px 0px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    &-name,
+    &-email,
+    &-subject,
+    &-message {
+      font-family: "Avenir";
+      letter-spacing: 1px;
+      width: 100%;
+      max-width: 500px;
+      // color: #444649;
+      color: #ffffff;
+      // background-color: #1e242c;
+      // background-color: #ffffff;
+      background-color: #444649;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      margin: 1.5px 0;
+      &:hover,
+      &:focus {
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 3pt 2pt rgba(93, 173, 226, 0.9);
+      }
+    }
+  }
+  &__form-button {
+    font-family: "Avenir";
+    font-weight: 600;
+    display: flex;
+    justify-self: center;
+    letter-spacing: 2px;
+    width: 90px;
+    padding: 15px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+    // border: 1px solid #e31b6d;
+    border: 1px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+    // color: #0aa2e7;
+    color: #ffffff;
+    &:hover {
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      // border: 1px solid #0aa2e7;
+      border: 1px solid transparent;
+      background-color: #ffffff;
+      color: #0aa2e7;
+      box-shadow: 0 0 3pt 2pt rgba(93, 173, 226, 0.9);
+    }
+  }
+}
