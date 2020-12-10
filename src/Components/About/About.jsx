@@ -67,9 +67,9 @@ export default function About() {
               {" "}
               full stack Web Developer{" "}
             </span>
-            in Vancouver, CA. I have a serious passion for creating interactive
+            in Vancouver, BC. I have a serious passion for creating interactive
             web based applications that makes a difference to the lives of those
-            around me !!
+            around me.
           </p>
           <p className="about-container__profile-text">
             When I'm not coding, you'll find me gaming, playing sports or
