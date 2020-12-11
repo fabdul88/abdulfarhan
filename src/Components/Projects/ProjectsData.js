@@ -17,7 +17,6 @@ export const ProjectsData = [
       "A CRUD MERN stack fitness app, based on the ongoing pandemic, FiTrack helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.",
     color: "work-container__card-hr-fitrack",
     github: "https://github.com/fabdul88/Abdul-Farhan-Capstone",
-    demo: "https://fitrack-mern.herokuapp.com/",
   },
   {
     id: uuidv4(),
@@ -57,7 +56,6 @@ export const ProjectsData = [
       "A multi-page travel destination site built using HTML and CSS, in 1 day, now converted into a React application",
     color: "work-container__card-hr-travelsite",
     github: "https://github.com/fabdul88/Travel-Site-React",
-    demo: "https://travelsite-react.herokuapp.com/",
   },
   {
     id: uuidv4(),
@@ -68,6 +66,5 @@ export const ProjectsData = [
       "My very first project, a coffee shop webpage that used HTML and CSS, now converted to a React application. ",
     color: "work-container__card-hr-coffeeshop",
     github: "https://github.com/fabdul88/Coffee-Shop-React",
-    demo: "https://coffeeshop-react.herokuapp.com/",
   },
 ];

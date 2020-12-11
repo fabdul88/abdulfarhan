@@ -143,7 +143,7 @@ export default function Projects() {
                     </p>
                     <motion.a
                       className="work-container__demo"
-                      href={item.demo}
+                      href="#"
                       whileHover={hover}
                     >
                       VIEW DEMO
