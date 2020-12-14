@@ -5,7 +5,6 @@
 
   width: 0;
   height: 100vh;
-  // background-color: rgb(52, 73, 94);
   background: linear-gradient(
       217deg,
       rgba(10, 162, 231, 0),
@@ -15,14 +14,12 @@
   position: fixed;
   top: 0;
   transition: 0.3s;
-  // content-visibility: hidden;
+  // visibility:hidden ;
   display: none;
   box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   @include tablet {
-    // margin: 42px 0 0 10px;
     margin: 104px 0 0 10px;
-
     height: 90vh;
   }
   @include desktop {
@@ -32,7 +29,7 @@
     transition: 0.3s;
     background-color: transparent;
     margin: 0;
-    // content-visibility: visible;
+    // visibility: visible;
     display: flex;
     justify-content: flex-end;
     box-shadow: none;
@@ -56,7 +53,8 @@
           rgba(76, 243, 198, 1),
           rgba(76, 243, 198, 0.4) 90.71%
         );
-      transition: 0.3s;
+
+      transition: left 0.3s ease-out, right 0.3s ease-out;
       opacity: 0.97;
     }
     @include tablet {
@@ -74,7 +72,8 @@
           rgba(10, 162, 231, 1),
           rgba(76, 243, 198, 0.4) 90.71%
         );
-      transition: 0.3s;
+
+      transition: left 0.3s ease-out, right 0.3s ease-out;
       margin: 104px 0 0 10px;
 
       border-radius: 4px;
@@ -119,7 +118,6 @@
       cursor: pointer;
     }
     @include tablet {
-      // height: 90vh;
       height: 87.5vh;
     }
 
@@ -142,8 +140,6 @@
     &-skills,
     &-work,
     &-contact {
-      // width: 20px;
-      // height: 20px;
       width: 40px;
       height: 40px;
       @include desktop {
@@ -167,13 +163,12 @@
   &__hover-contact {
     display: none;
     @include desktop {
-      // font-family: "SoulmazeOutlineItalic";
       font-family: "Avenir";
       color: #444649;
       display: flex;
       margin: 0;
       align-self: flex-end;
-      // color: $white;
+
       font-size: 20px;
       text-shadow: none;
       font-weight: bold;
@@ -182,15 +177,22 @@
       }
     }
   }
-  // &__backdrop {
-  //   width: 100vw;
-  //   height: 100vh;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 2;
-  //   background-color: rgba(0, 0, 0, 0.6);
-  // }
+  &__backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__backdrop-false {
+    display: none;
+  }
   &__social-container {
     width: 100px;
     @include desktop {

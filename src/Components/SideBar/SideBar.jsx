@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./sidebar.scss";
 import Burger from "../Burger/Burger";
@@ -46,6 +45,9 @@ export default function SideBar() {
                 className="sidebar-container__list-home"
                 src={Home}
                 alt="Home"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
               <p className="sidebar-container__hover-home">HOME</p>
             </Link>
@@ -64,6 +66,9 @@ export default function SideBar() {
                 className="sidebar-container__list-about"
                 src={About}
                 alt="About"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
               <span className="sidebar-container__hover-about">ABOUT</span>
             </Link>
@@ -82,6 +87,9 @@ export default function SideBar() {
                 className="sidebar-container__list-skills"
                 src={Skills}
                 alt="Skills"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
               <span className="sidebar-container__hover-skills">SKILLS</span>
             </Link>
@@ -100,6 +108,9 @@ export default function SideBar() {
                 className="sidebar-container__list-work"
                 src={Projects}
                 alt="Projects"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
               <span className="sidebar-container__hover-projects">
                 PROJECTS
@@ -120,6 +131,9 @@ export default function SideBar() {
                 className="sidebar-container__list-contact"
                 src={Contact}
                 alt="Contact"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
               <span className="sidebar-container__hover-contact">CONTACT</span>
             </Link>
@@ -132,6 +146,9 @@ export default function SideBar() {
                 whileHover={hover}
                 src={Linkedin}
                 alt="Linkedin"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
             </a>
             <a href="https://www.github.com/fabdul88">
@@ -140,12 +157,22 @@ export default function SideBar() {
                 whileHover={hover}
                 src={Github}
                 alt="Linkedin"
+                onClick={() => {
+                  showSidebar();
+                }}
               />
             </a>
           </div>
         </ul>
       </div>
-      {/* <div className="sidebar-container__backdrop" /> */}
+      <div
+        className={
+          sidebar
+            ? "sidebar-container__backdrop"
+            : "sidebar-container__backdrop-false"
+        }
+      />
+
       <Burger display={showSidebar} />
     </div>
   );
