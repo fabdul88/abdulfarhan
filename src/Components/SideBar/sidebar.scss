@@ -151,9 +151,15 @@
     }
   }
   &__list-link {
+    display: flex;
+    align-items: flex-end;
+    width: 220px;
+    justify-content: flex-start;
     @include desktop {
       display: flex;
       text-decoration: none;
+      width: auto;
+      justify-content: flex-end;
     }
   }
   &__hover-home,
@@ -162,6 +168,16 @@
   &__hover-projects,
   &__hover-contact {
     display: none;
+
+    font-family: "Avenir";
+    color: #444649;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 0 30px;
+    margin: 0;
+    text-shadow: none;
+
     @include desktop {
       font-family: "Avenir";
       color: #444649;
@@ -177,6 +193,38 @@
       }
     }
   }
+  // // ====-------=======-----======
+  // &__hover-color-home,
+  // &__hover-color-about,
+  // &__hover-color-skills,
+  // &__hover-color-projects,
+  // &__hover-color-contact {
+  //   color: #ffffff;
+  //   font-family: "Avenir";
+
+  //   display: flex;
+  //   font-size: 30px;
+  //   font-weight: bold;
+  //   padding: 0 0 0 30px;
+  //   margin: 0;
+  //   text-shadow: none;
+  //   @include desktop {
+  //     font-family: "Avenir";
+
+  //     display: flex;
+  //     margin: 0;
+  //     align-self: flex-end;
+
+  //     font-size: 20px;
+  //     text-shadow: none;
+  //     font-weight: bold;
+  //     &:hover {
+  //       color: #ffffff;
+  //     }
+  //   }
+  // }
+  // // =======-------=======-----=========
+
   &__backdrop {
     width: 100vw;
     height: 100vh;
@@ -222,5 +270,15 @@
   }
   &__github-image {
     margin: 0 0 0 10px;
+  }
+  &__flex-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }

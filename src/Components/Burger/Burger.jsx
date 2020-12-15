@@ -4,18 +4,6 @@ import "./burger.scss";
 export default function Burger({ display }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // ====================
-  // const status = () => display(setIsOpen((state) => !state));
-  // const status = () => {
-  //   if (isOpen === display(!true)) {
-  //     setIsOpen("closed");
-  //   } else {
-  //     setIsOpen("closed");
-  //   }
-  //   // setIsOpen(display());
-  // };
-  // ======================
-
   const topVariants = {
     opened: {
       rotate: 45,
@@ -59,7 +47,6 @@ export default function Burger({ display }) {
             onClick={() => {
               display();
               setIsOpen((state) => !state);
-              // status();
             }}
           ></motion.div>
           <motion.div
@@ -70,7 +57,6 @@ export default function Burger({ display }) {
             onClick={() => {
               display();
               setIsOpen((state) => !state);
-              // status();
             }}
           ></motion.div>
           <motion.div
@@ -81,7 +67,6 @@ export default function Burger({ display }) {
             onClick={() => {
               display();
               setIsOpen((state) => !state);
-              // status();
             }}
           ></motion.div>
         </div>
