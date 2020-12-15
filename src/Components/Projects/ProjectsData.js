@@ -46,6 +46,7 @@ export const ProjectsData = [
       "A project demonstrating responsiveness by using HTML and SASS, as well as the use of Javascript and DOM manipulation. Built in 3 sprints within three weeks.",
     color: "work-container__card-hr-bandsite",
     github: "https://github.com/fabdul88/Abdul-Farhan-bandsite",
+    demo: "https://bandsite-pro.herokuapp.com/",
   },
   {
     id: uuidv4(),
@@ -56,6 +57,7 @@ export const ProjectsData = [
       "A multi-page travel destination site built using HTML and CSS, in 1 day, now converted into a React application",
     color: "work-container__card-hr-travelsite",
     github: "https://github.com/fabdul88/Travel-Site-React",
+    demo: "https://travelsite-react.herokuapp.com/",
   },
   {
     id: uuidv4(),
@@ -66,5 +68,6 @@ export const ProjectsData = [
       "My very first project, a coffee shop webpage that used HTML and CSS, now converted to a React application. ",
     color: "work-container__card-hr-coffeeshop",
     github: "https://github.com/fabdul88/Coffee-Shop-React",
+    demo: "https://coffeeshop-react.herokuapp.com/",
   },
 ];
