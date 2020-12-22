@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/abdulfarhan/static/css/main.8fa9675b.chunk.css",
+    "main.css": "/abdulfarhan/static/css/main.fcea205d.chunk.css",
     "main.js": "/abdulfarhan/static/js/main.d4350f72.chunk.js",
     "main.js.map": "/abdulfarhan/static/js/main.d4350f72.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.eb64a6bf.js",
@@ -12,7 +12,7 @@
     "static/js/3.9ea403b8.chunk.js.map": "/abdulfarhan/static/js/3.9ea403b8.chunk.js.map",
     "index.html": "/abdulfarhan/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/abdulfarhan/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.8fa9675b.chunk.css.map": "/abdulfarhan/static/css/main.8fa9675b.chunk.css.map",
+    "static/css/main.fcea205d.chunk.css.map": "/abdulfarhan/static/css/main.fcea205d.chunk.css.map",
     "static/js/2.ffb45319.chunk.js.LICENSE.txt": "/abdulfarhan/static/js/2.ffb45319.chunk.js.LICENSE.txt",
     "static/media/home.scss": "/abdulfarhan/static/media/MADESoulmazeOutlineItalic.2a3e5666.otf",
     "static/media/about.4e16d9d9.svg": "/abdulfarhan/static/media/about.4e16d9d9.svg",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.eb64a6bf.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.ffb45319.chunk.js",
-    "static/css/main.8fa9675b.chunk.css",
+    "static/css/main.fcea205d.chunk.css",
     "static/js/main.d4350f72.chunk.js"
   ]
 }
