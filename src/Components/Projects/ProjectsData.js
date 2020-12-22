@@ -14,7 +14,7 @@ export const ProjectsData = [
     category: ["all", "REACT-JS", "FULL STACK"],
     image: FiTrack,
     description:
-      "A CRUD MERN stack fitness app, based on the ongoing pandemic, FiTrack helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.",
+      "A MERN stack CRUD operation SPA, based on the ongoing pandemic, FiTrack is a fitness application that helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.",
     color: "work-container__card-hr-fitrack",
     github: "https://github.com/fabdul88/Abdul-Farhan-Capstone",
     demo: "https://fitrack-mern.herokuapp.com/",
