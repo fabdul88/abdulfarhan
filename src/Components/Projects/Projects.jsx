@@ -31,7 +31,10 @@ export default function Projects() {
   }, [filter]);
 
   return (
-    <div id="projects">
+    <div id="projects" className="work-container">
+      <div className="work-container__stars"></div>
+      <div className="work-container__stars-two"></div>
+      <div className="work-container__stars-three"></div>
       <div className="work-container__title-container">
         <h1 data-aos="fade-up" className="work-container__title">
           PRO

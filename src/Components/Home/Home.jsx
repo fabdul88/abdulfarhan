@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link as Scroll } from "react-scroll";
 import { motion } from "framer-motion";
+// import Background from "../Background/Background";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
 import Contact from "../Contact/Contact";
@@ -65,6 +66,9 @@ export default function Home() {
     <div id="home">
       <div className="home-container">
         <div className="home-container__hero-image">
+          <div className="home-container__stars"></div>
+          <div className="home-container__stars-two"></div>
+          <div className="home-container__stars-three"></div>
           <div className="home-container__text-container">
             <h1 className="home-container__text-container-title">
               <span className="home-container__first-name">Abdul </span>
