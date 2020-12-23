@@ -26,7 +26,7 @@ export default function Skills() {
                     {skill.skillType}
                   </h3>
                   <div className="skills-container__loading-bar-container">
-                    <span className="skills-container__bar">
+                    <span className={skill.barColorHighlight}>
                       <span
                         data-aos="slide-right"
                         data-aos-delay="50"

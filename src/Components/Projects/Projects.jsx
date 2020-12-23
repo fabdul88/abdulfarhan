@@ -144,6 +144,9 @@ export default function Projects() {
                     <p className="work-container__description">
                       {item.description}
                     </p>
+                    <p className="work-container__inprocess">
+                      {item.inprocess}
+                    </p>
                     <motion.a
                       className="work-container__demo"
                       href={item.demo}

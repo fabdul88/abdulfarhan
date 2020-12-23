@@ -14,7 +14,7 @@ export const ProjectsData = [
     category: ["all", "REACT-JS", "FULL STACK"],
     image: FiTrack,
     description:
-      "A MERN stack CRUD operation SPA, based on the ongoing pandemic, FiTrack is a fitness application that helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.",
+      "A MERN stack, CRUD operations, SPA, based on the ongoing pandemic, FiTrack is a fitness application that helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.",
     color: "work-container__card-hr-fitrack",
     github: "https://github.com/fabdul88/Abdul-Farhan-Capstone",
     demo: "https://fitrack-mern.herokuapp.com/",
@@ -27,6 +27,7 @@ export const ProjectsData = [
     description:
       "A CRUD App built by a team of 5 Full Stack developers. The stack used included React, SASS, Node.js, Expres.js along-side git, Jira/Atlassian Agile Board and Figma. Built in 1 week.",
     color: "work-container__card-hr-instock",
+    inprocess: "** DEMO IN PROCESS **",
   },
   {
     id: uuidv4(),
@@ -37,6 +38,7 @@ export const ProjectsData = [
       "A YouTube-like remake with some of it's characteristics and functionality, using React, SASS, Node.js and Express.js . Built in 3 sprints within three weeks.",
     color: "work-container__card-hr-brainflix",
     github: "https://github.com/fabdul88/abdul-farhan-brainflix",
+    inprocess: "** DEMO IN PROCESS **",
   },
   {
     id: uuidv4(),
@@ -55,10 +57,11 @@ export const ProjectsData = [
     category: ["all", "REACT-JS"],
     image: Travelsite,
     description:
-      "A multi-page travel destination site built using HTML and CSS, in 1 day, now converted into a React application",
+      "A multi-page travel destination site built using HTML and CSS, in 1 day, now converted into a React application.",
     color: "work-container__card-hr-travelsite",
     github: "https://github.com/fabdul88/Travel-Site-React",
-    demo: "https://travelsite-react.herokuapp.com/",
+    // demo: "https://travelsite-react.herokuapp.com/",
+    inprocess: "** DEMO IN PROCESS **",
   },
   {
     id: uuidv4(),
@@ -69,6 +72,7 @@ export const ProjectsData = [
       "My very first project, a coffee shop webpage that used HTML and CSS, now converted to a React application. ",
     color: "work-container__card-hr-coffeeshop",
     github: "https://github.com/fabdul88/Coffee-Shop-React",
-    demo: "https://coffeeshop-react.herokuapp.com/",
+    // demo: "https://coffeeshop-react.herokuapp.com/",
+    inprocess: "** DEMO IN PROCESS **",
   },
 ];

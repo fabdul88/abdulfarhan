@@ -1,6 +1,7 @@
 @import "../../styles/partials/global";
 
 .skills-container {
+  position: relative;
   background-color: #f5f5f5;
   padding: 0 0 60px 0;
 
@@ -74,7 +75,15 @@
     justify-content: flex-end;
     width: 200px;
   }
-  &__bar {
+  &__bar-html,
+  &__bar-css,
+  &__bar-sass,
+  &__bar-javascript,
+  &__bar-react,
+  &__bar-node,
+  &__bar-express,
+  &__bar-mysql,
+  &__bar-mongo {
     width: 43.4375vw;
     max-width: 155px;
     background: #444649;
@@ -82,7 +91,7 @@
     height: 27px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    box-shadow: 0 0 10px #2187e7b3;
+    // box-shadow: 0 0 10px #2187e7b3;
     @include tablet {
       width: 67.4375vw;
       max-width: 493px;
@@ -90,6 +99,33 @@
     @include desktop {
       max-width: 830px;
     }
+  }
+  &__bar-html {
+    box-shadow: 0 0 10px #a569bd;
+  }
+  &__bar-css {
+    box-shadow: 0 0 10px #48c9b0;
+  }
+  &__bar-sass {
+    box-shadow: 0 0 10px #ec7063;
+  }
+  &__bar-javascript {
+    box-shadow: 0 0 10px #b7950b;
+  }
+  &__bar-react {
+    box-shadow: 0 0 10px #5499c7;
+  }
+  &__bar-node {
+    box-shadow: 0 0 10px #cd6155;
+  }
+  &__bar-express {
+    box-shadow: 0 0 10px #6460cc;
+  }
+  &__bar-mysql {
+    box-shadow: 0 0 10px #9bcc60;
+  }
+  &__bar-mongo {
+    box-shadow: 0 0 10px #cc9060;
   }
 
   &__html {

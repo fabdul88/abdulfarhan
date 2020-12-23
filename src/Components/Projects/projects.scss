@@ -230,6 +230,14 @@
     height: 350px;
     padding: 25px;
   }
+  &__inprocess {
+    font-family: "Avenir";
+    font-weight: 900;
+    color: #a93226;
+    position: absolute;
+    top: 250px;
+    left: 53px;
+  }
   &__demo {
     position: absolute;
     border: 1px solid #4cf3c6;
