@@ -148,37 +148,37 @@ export default function Projects() {
                       <img
                         className="work-container__icons-html"
                         src={item.htmlIcon}
-                        alt="html icon"
+                        alt=""
                       />
                       <img
                         className="work-container__icons-sass"
                         src={item.sassIcon}
-                        alt="sass icon"
+                        alt=""
                       />
                       <img
                         className="work-container__icons-javascript"
                         src={item.javascriptIcon}
-                        alt="javascript icon"
+                        alt=""
                       />
                       <img
                         className="work-container__icons-react"
                         src={item.reactIcon}
-                        alt="react icon"
+                        alt=""
                       />
                       <img
                         className="work-container__icons-node"
                         src={item.nodeIcon}
-                        alt="node icon"
+                        alt=""
                       />
                       <img
                         className="work-container__icons-express"
                         src={item.expressIcon}
-                        alt="express icon"
+                        alt=""
                       />
                       <img
                         className="work-container__icons-mongo"
                         src={item.mongodbIcon}
-                        alt="mongoDB icon"
+                        alt=""
                       />
                     </div>
                     <p className="work-container__inprocess">
