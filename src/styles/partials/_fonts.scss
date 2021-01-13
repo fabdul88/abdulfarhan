@@ -61,3 +61,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "RalewayR";
+  src: url("../../assets/font/Raleway/Raleway-Regular.ttf") format("TrueType");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RalewaySB";
+  src: url("../../assets/font/Raleway/Raleway-SemiBold.ttf") format("TrueType");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RalewayB";
+  src: url("../../assets/font/Raleway/Raleway-Black.ttf") format("TrueType");
+  font-weight: 900;
+  font-style: normal;
+}

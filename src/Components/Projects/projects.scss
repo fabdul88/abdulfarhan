@@ -28,7 +28,7 @@
   }
   &__work-labels {
     // font-family: "Soulmaze";
-    font-family: "Avenir";
+    font-family: "RalewayB";
     font-weight: 800;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
@@ -217,7 +217,7 @@
   }
   &__description {
     // font-family: "SoulmazeItalic";
-    font-family: "Avenir";
+    font-family: "RalewayR";
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 30px;
@@ -254,7 +254,7 @@
     }
   }
   &__inprocess {
-    font-family: "Avenir";
+    font-family: "RalewayR";
     font-weight: 900;
     color: #a93226;
     position: absolute;
@@ -262,6 +262,7 @@
     left: 53px;
   }
   &__demo {
+    font-family: "RalewaySB";
     position: absolute;
     border: 1px solid #4cf3c6;
     text-decoration: none;
@@ -282,6 +283,7 @@
     }
   }
   &__code {
+    font-family: "RalewaySB";
     position: absolute;
     border: 1px solid #0aa2e7;
     text-decoration: none;

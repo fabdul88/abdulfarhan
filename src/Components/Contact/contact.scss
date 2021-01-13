@@ -69,7 +69,7 @@
     &-email,
     &-subject,
     &-message {
-      font-family: "Avenir";
+      font-family: "RalewayR";
       letter-spacing: 1px;
       width: 100%;
       max-width: 500px;
@@ -85,13 +85,12 @@
       margin: 1.5px 0;
       &:hover,
       &:focus {
-        transition: all 0.3s ease-in-out;
         box-shadow: 0 0 3pt 2pt rgba(93, 173, 226, 0.9);
       }
     }
   }
   &__form-button {
-    font-family: "Avenir";
+    font-family: "RalewaySB";
     font-weight: 600;
     display: flex;
     justify-self: center;
@@ -100,16 +99,15 @@
     padding: 15px;
     margin: 10px 0 0 0;
     border-radius: 3px;
-    // border: 1px solid #e31b6d;
+
     border: 1px solid #ffffff;
     outline: none;
     background-color: transparent;
-    // color: #0aa2e7;
+
     color: #ffffff;
     &:hover {
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      // border: 1px solid #0aa2e7;
+
       border: 1px solid transparent;
       background-color: #ffffff;
       color: #0aa2e7;
