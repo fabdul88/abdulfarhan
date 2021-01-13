@@ -14,7 +14,6 @@
   position: fixed;
   top: 0;
   transition: 0.3s;
-  // visibility:hidden ;
   display: none;
   box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
@@ -29,7 +28,6 @@
     transition: 0.3s;
     background-color: transparent;
     margin: 0;
-    // visibility: visible;
     display: flex;
     justify-content: flex-end;
     box-shadow: none;
@@ -155,7 +153,13 @@
     align-items: flex-end;
     width: 220px;
     justify-content: flex-start;
+    filter: drop-shadow(0.4rem 0.3rem 0.1rem rgba(86, 255, 255, 0.8));
+    transition: filter 600ms;
+    &:hover {
+      filter: drop-shadow(0.2rem 0.3rem 0.1rem rgba(174, 214, 241, 0.8));
+    }
     @include desktop {
+      filter: none;
       display: flex;
       text-decoration: none;
       width: auto;
@@ -168,22 +172,15 @@
   &__hover-projects,
   &__hover-contact {
     display: none;
-
     font-family: "RalewaySB";
     color: #444649;
-    // background: linear-gradient(#ffffff, #38495a);
-    // background-clip: text;
-    // -webkit-text-fill-color: transparent;
     display: flex;
     font-size: 30px;
     font-weight: bold;
     padding: 0 0 0 30px;
     margin: 0;
     text-shadow: none;
-    // text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    //   0px 18px 23px rgba(0, 0, 0, 0.1);
     &:hover {
-      // color: #ffffff;
       text-shadow: none;
     }
 
@@ -193,47 +190,13 @@
       display: flex;
       margin: 0;
       align-self: flex-end;
-      // text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-      //   0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
       font-size: 20px;
-      // text-shadow: none;
       font-weight: bold;
       &:hover {
         color: #ffffff;
       }
     }
   }
-  // // ====-------=======-----======
-  // &__hover-color-home,
-  // &__hover-color-about,
-  // &__hover-color-skills,
-  // &__hover-color-projects,
-  // &__hover-color-contact {
-  //   color: #ffffff;
-  //   font-family: "Avenir";
-
-  //   display: flex;
-  //   font-size: 30px;
-  //   font-weight: bold;
-  //   padding: 0 0 0 30px;
-  //   margin: 0;
-  //   text-shadow: none;
-  //   @include desktop {
-  //     font-family: "Avenir";
-
-  //     display: flex;
-  //     margin: 0;
-  //     align-self: flex-end;
-
-  //     font-size: 20px;
-  //     text-shadow: none;
-  //     font-weight: bold;
-  //     &:hover {
-  //       color: #ffffff;
-  //     }
-  //   }
-  // }
-  // // =======-------=======-----=========
 
   &__backdrop {
     width: 100vw;
@@ -277,9 +240,19 @@
   }
   &__linkedin-image {
     margin: 0 10px 0 0;
+    filter: drop-shadow(0.4rem 0.3rem 0.1rem rgba(86, 255, 255, 0.8));
+    transition: filter 600ms;
+    &:hover {
+      filter: drop-shadow(0.2rem 0.3rem 0.1rem rgba(174, 214, 241, 0.8));
+    }
   }
   &__github-image {
     margin: 0 0 0 10px;
+    filter: drop-shadow(0.4rem 0.3rem 0.1rem rgba(86, 255, 255, 0.8));
+    transition: filter 600ms;
+    &:hover {
+      filter: drop-shadow(0.2rem 0.3rem 0.1rem rgba(174, 214, 241, 0.8));
+    }
   }
   &__flex-list {
     display: flex;

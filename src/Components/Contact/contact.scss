@@ -3,9 +3,6 @@
 .contact-container {
   position: relative;
   padding: 0 18px;
-  // background: #252934;
-  // background-color: #d24d57;
-  // background-color: #0aa2e7;
   background: linear-gradient(
       217deg,
       rgba(10, 162, 231, 1),
@@ -17,6 +14,7 @@
       rgba(227, 27, 109, 1),
       rgba(227, 27, 109, 0.5) 90.71%
     );
+  box-shadow: inset 0 0 10px #000000;
   &__title-container {
     display: flex;
     flex-direction: column;
