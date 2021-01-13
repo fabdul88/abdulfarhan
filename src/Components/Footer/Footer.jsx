@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="footer-container__copyright-container">
           <p className="footer-container__copyright">
             ABDUL FARHAN
-            <span className="footer-container__copyright-span"> © 2020</span>
+            <span className="footer-container__copyright-span"> © 2021</span>
           </p>
         </div>
         <ul className="footer-container__social-list">

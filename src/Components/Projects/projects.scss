@@ -230,6 +230,29 @@
     height: 350px;
     padding: 25px;
   }
+  &__icons {
+    position: relative;
+    top: -120px;
+    display: flex;
+    justify-content: center;
+    &-html,
+    &-sass,
+    &-javascript,
+    &-react,
+    &-node,
+    &-mongo {
+      height: 30px;
+      width: auto;
+      margin: 0 2.5px;
+    }
+    &-express {
+      height: 20px;
+      width: auto;
+      margin: 0 0 0 2.5px;
+      display: flex;
+      align-self: center;
+    }
+  }
   &__inprocess {
     font-family: "Avenir";
     font-weight: 900;
@@ -245,7 +268,8 @@
     color: #4cf3c6;
     padding: 15px;
     // top: 270px;
-    top: 310px;
+    // top: 310px;
+    top: 339px;
     left: 22px;
     border-radius: 3px;
     font-weight: 600;
@@ -264,7 +288,8 @@
     color: #0aa2e7;
     padding: 15px;
     // top: 270px;
-    top: 310px;
+    // top: 310px;
+    top: 339px;
 
     left: 159px;
     border-radius: 3px;

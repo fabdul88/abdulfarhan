@@ -5,6 +5,13 @@ import Brainflix from "../../assets/brainflix.png";
 import Bandsite from "../../assets/bandsite.png";
 import Travelsite from "../../assets/travelsite.png";
 import Coffeeshop from "../../assets/coffeeshop.png";
+import html from "../../assets/HTML5-icon.svg";
+import sass from "../../assets/Sass-icon.svg";
+import javascript from "../../assets/javascript-icon.svg";
+import react from "../../assets/react-icon.svg";
+import node from "../../assets/node-icon.svg";
+import mongodb from "../../assets/mongodb-icon.svg";
+import express from "../../assets/expressjs-icon.svg";
 
 // Dynamically setting project cards
 export const ProjectsData = [
@@ -15,6 +22,13 @@ export const ProjectsData = [
     image: FiTrack,
     description:
       "A MERN stack, CRUD operations, SPA, based on the ongoing pandemic, FiTrack is a fitness application that helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.",
+    htmlIcon: html,
+    sassIcon: sass,
+    javascriptIcon: javascript,
+    reactIcon: react,
+    nodeIcon: node,
+    expressIcon: express,
+    mongodbIcon: mongodb,
     color: "work-container__card-hr-fitrack",
     github: "https://github.com/fabdul88/Abdul-Farhan-Capstone",
     demo: "https://fitrack-mern.herokuapp.com/",
@@ -26,6 +40,12 @@ export const ProjectsData = [
     image: InStock,
     description:
       "A CRUD App built by a team of 5 Full Stack developers. The stack used included React, SASS, Node.js, Expres.js along-side git, Jira/Atlassian Agile Board and Figma. Built in 1 week.",
+    htmlIcon: html,
+    sassIcon: sass,
+    javascriptIcon: javascript,
+    reactIcon: react,
+    nodeIcon: node,
+    expressIcon: express,
     color: "work-container__card-hr-instock",
     inprocess: "** DEMO IN PROCESS **",
   },
@@ -36,6 +56,12 @@ export const ProjectsData = [
     image: Brainflix,
     description:
       "A YouTube-like remake with some of it's characteristics and functionality, using React, SASS, Node.js and Express.js . Built in 3 sprints within three weeks.",
+    htmlIcon: html,
+    sassIcon: sass,
+    javascriptIcon: javascript,
+    reactIcon: react,
+    nodeIcon: node,
+    expressIcon: express,
     color: "work-container__card-hr-brainflix",
     github: "https://github.com/fabdul88/abdul-farhan-brainflix",
     inprocess: "** DEMO IN PROCESS **",
@@ -47,6 +73,9 @@ export const ProjectsData = [
     image: Bandsite,
     description:
       "A project demonstrating responsiveness by using HTML and SASS, as well as the use of Javascript and DOM manipulation. Built in 3 sprints within three weeks.",
+    htmlIcon: html,
+    sassIcon: sass,
+    javascriptIcon: javascript,
     color: "work-container__card-hr-bandsite",
     github: "https://github.com/fabdul88/Abdul-Farhan-bandsite",
     demo: "https://bandsite-pro.herokuapp.com/",
@@ -58,6 +87,11 @@ export const ProjectsData = [
     image: Travelsite,
     description:
       "A multi-page travel destination site built using HTML and CSS, in 1 day, now converted into a React application.",
+    htmlIcon: html,
+    sassIcon: sass,
+    javascriptIcon: javascript,
+    reactIcon: react,
+
     color: "work-container__card-hr-travelsite",
     github: "https://github.com/fabdul88/Travel-Site-React",
     // demo: "https://travelsite-react.herokuapp.com/",
@@ -70,6 +104,11 @@ export const ProjectsData = [
     image: Coffeeshop,
     description:
       "My very first project, a coffee shop webpage that used HTML and CSS, now converted to a React application. ",
+    htmlIcon: html,
+    sassIcon: sass,
+    javascriptIcon: javascript,
+    reactIcon: react,
+
     color: "work-container__card-hr-coffeeshop",
     github: "https://github.com/fabdul88/Coffee-Shop-React",
     // demo: "https://coffeeshop-react.herokuapp.com/",
