@@ -91,7 +91,6 @@ export const ProjectsData = [
     sassIcon: sass,
     javascriptIcon: javascript,
     reactIcon: react,
-
     color: "work-container__card-hr-travelsite",
     github: "https://github.com/fabdul88/Travel-Site-React",
     // demo: "https://travelsite-react.herokuapp.com/",
@@ -108,7 +107,6 @@ export const ProjectsData = [
     sassIcon: sass,
     javascriptIcon: javascript,
     reactIcon: react,
-
     color: "work-container__card-hr-coffeeshop",
     github: "https://github.com/fabdul88/Coffee-Shop-React",
     // demo: "https://coffeeshop-react.herokuapp.com/",
