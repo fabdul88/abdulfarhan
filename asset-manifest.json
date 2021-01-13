@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/abdulfarhan/static/css/main.8308639d.chunk.css",
-    "main.js": "/abdulfarhan/static/js/main.c8bbdbb1.chunk.js",
-    "main.js.map": "/abdulfarhan/static/js/main.c8bbdbb1.chunk.js.map",
+    "main.css": "/abdulfarhan/static/css/main.c2abd519.chunk.css",
+    "main.js": "/abdulfarhan/static/js/main.ae5323ea.chunk.js",
+    "main.js.map": "/abdulfarhan/static/js/main.ae5323ea.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.eb64a6bf.js",
     "runtime-main.js.map": "/abdulfarhan/static/js/runtime-main.eb64a6bf.js.map",
     "static/css/2.ec02d681.chunk.css": "/abdulfarhan/static/css/2.ec02d681.chunk.css",
@@ -12,9 +12,11 @@
     "static/js/3.9ea403b8.chunk.js.map": "/abdulfarhan/static/js/3.9ea403b8.chunk.js.map",
     "index.html": "/abdulfarhan/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/abdulfarhan/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.8308639d.chunk.css.map": "/abdulfarhan/static/css/main.8308639d.chunk.css.map",
+    "static/css/main.c2abd519.chunk.css.map": "/abdulfarhan/static/css/main.c2abd519.chunk.css.map",
     "static/js/2.ffb45319.chunk.js.LICENSE.txt": "/abdulfarhan/static/js/2.ffb45319.chunk.js.LICENSE.txt",
+    "static/media/HTML5-icon.dc506050.svg": "/abdulfarhan/static/media/HTML5-icon.dc506050.svg",
     "static/media/home.scss": "/abdulfarhan/static/media/MADESoulmazeOutlineItalic.2a3e5666.otf",
+    "static/media/Sass-icon.6ab23a1a.svg": "/abdulfarhan/static/media/Sass-icon.6ab23a1a.svg",
     "static/media/about.4e16d9d9.svg": "/abdulfarhan/static/media/about.4e16d9d9.svg",
     "static/media/bandsite.f0f1c80b.png": "/abdulfarhan/static/media/bandsite.f0f1c80b.png",
     "static/media/black_transparent.dc528fee.svg": "/abdulfarhan/static/media/black_transparent.dc528fee.svg",
@@ -22,6 +24,7 @@
     "static/media/coffeeshop.d5b3eb71.png": "/abdulfarhan/static/media/coffeeshop.d5b3eb71.png",
     "static/media/contact.0c977fe0.svg": "/abdulfarhan/static/media/contact.0c977fe0.svg",
     "static/media/down.572a275f.svg": "/abdulfarhan/static/media/down.572a275f.svg",
+    "static/media/expressjs-icon.d111c043.svg": "/abdulfarhan/static/media/expressjs-icon.d111c043.svg",
     "static/media/fitrack.b8ab45cd.png": "/abdulfarhan/static/media/fitrack.b8ab45cd.png",
     "static/media/github.d5934730.svg": "/abdulfarhan/static/media/github.d5934730.svg",
     "static/media/github_footer.0e0c3b6f.svg": "/abdulfarhan/static/media/github_footer.0e0c3b6f.svg",
@@ -29,10 +32,14 @@
     "static/media/hexagon_monochrome.d8df732a.png": "/abdulfarhan/static/media/hexagon_monochrome.d8df732a.png",
     "static/media/home.271959a0.svg": "/abdulfarhan/static/media/home.271959a0.svg",
     "static/media/instock.449e1c40.png": "/abdulfarhan/static/media/instock.449e1c40.png",
+    "static/media/javascript-icon.1df1e794.svg": "/abdulfarhan/static/media/javascript-icon.1df1e794.svg",
     "static/media/linkedin.7eaaf389.svg": "/abdulfarhan/static/media/linkedin.7eaaf389.svg",
     "static/media/linkedin_footer.c2fc1ad5.svg": "/abdulfarhan/static/media/linkedin_footer.c2fc1ad5.svg",
+    "static/media/mongodb-icon.6832c8b2.svg": "/abdulfarhan/static/media/mongodb-icon.6832c8b2.svg",
     "static/media/mywork.283129ea.svg": "/abdulfarhan/static/media/mywork.283129ea.svg",
+    "static/media/node-icon.4e53d4e7.svg": "/abdulfarhan/static/media/node-icon.4e53d4e7.svg",
     "static/media/profile.a44710f3.png": "/abdulfarhan/static/media/profile.a44710f3.png",
+    "static/media/react-icon.631e5d20.svg": "/abdulfarhan/static/media/react-icon.631e5d20.svg",
     "static/media/skills.d7591215.svg": "/abdulfarhan/static/media/skills.d7591215.svg",
     "static/media/travelsite.7c3ca3a8.png": "/abdulfarhan/static/media/travelsite.7c3ca3a8.png"
   },
@@ -40,7 +47,7 @@
     "static/js/runtime-main.eb64a6bf.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.ffb45319.chunk.js",
-    "static/css/main.8308639d.chunk.css",
-    "static/js/main.c8bbdbb1.chunk.js"
+    "static/css/main.c2abd519.chunk.css",
+    "static/js/main.ae5323ea.chunk.js"
   ]
 }
