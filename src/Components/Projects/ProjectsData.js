@@ -3,7 +3,7 @@ import FiTrack from "../../assets/fitrack.png";
 import InStock from "../../assets/instock.png";
 import Brainflix from "../../assets/brainflix.png";
 import Bandsite from "../../assets/bandsite.png";
-import Travelsite from "../../assets/travelsite.png";
+import Travelog from "../../assets/travelog.png";
 import Coffeeshop from "../../assets/coffeeshop.png";
 import html from "../../assets/HTML5-icon.svg";
 import sass from "../../assets/Sass-icon.svg";
@@ -82,17 +82,20 @@ export const ProjectsData = [
   },
   {
     id: uuidv4(),
-    name: "TRAVELSITE",
+    name: "TRAVELOG",
     category: ["all", "REACT-JS"],
-    image: Travelsite,
+    image: Travelog,
     description:
-      "A multi-page travel destination site built using HTML and CSS, in 1 day, now converted into a React application.",
+      "A MERN stack travel log where the user can keep track of their travel locations. Using authentication and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ",
     htmlIcon: html,
     sassIcon: sass,
     javascriptIcon: javascript,
     reactIcon: react,
+    nodeIcon: node,
+    expressIcon: express,
+    mongodbIcon: mongodb,
     color: "work-container__card-hr-travelsite",
-    github: "https://github.com/fabdul88/Travel-Site-React",
+    github: "https://github.com/fabdul88/MERN-Travel-log",
     // demo: "https://travelsite-react.herokuapp.com/",
     inprocess: "** DEMO IN PROCESS **",
   },
