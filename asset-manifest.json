@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/abdulfarhan/static/css/main.e3813535.chunk.css",
-    "main.js": "/abdulfarhan/static/js/main.7d3c5258.chunk.js",
-    "main.js.map": "/abdulfarhan/static/js/main.7d3c5258.chunk.js.map",
+    "main.js": "/abdulfarhan/static/js/main.e8ecd498.chunk.js",
+    "main.js.map": "/abdulfarhan/static/js/main.e8ecd498.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.eb64a6bf.js",
     "runtime-main.js.map": "/abdulfarhan/static/js/runtime-main.eb64a6bf.js.map",
     "static/css/2.ec02d681.chunk.css": "/abdulfarhan/static/css/2.ec02d681.chunk.css",
@@ -41,13 +41,13 @@
     "static/media/profile.a44710f3.png": "/abdulfarhan/static/media/profile.a44710f3.png",
     "static/media/react-icon.631e5d20.svg": "/abdulfarhan/static/media/react-icon.631e5d20.svg",
     "static/media/skills.d7591215.svg": "/abdulfarhan/static/media/skills.d7591215.svg",
-    "static/media/travelsite.7c3ca3a8.png": "/abdulfarhan/static/media/travelsite.7c3ca3a8.png"
+    "static/media/travelog.da32d4e6.png": "/abdulfarhan/static/media/travelog.da32d4e6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eb64a6bf.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.ffb45319.chunk.js",
     "static/css/main.e3813535.chunk.css",
-    "static/js/main.7d3c5258.chunk.js"
+    "static/js/main.e8ecd498.chunk.js"
   ]
 }
