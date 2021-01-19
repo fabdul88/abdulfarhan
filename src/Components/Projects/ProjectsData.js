@@ -83,7 +83,7 @@ export const ProjectsData = [
   {
     id: uuidv4(),
     name: "TRAVELOG",
-    category: ["all", "REACT-JS"],
+    category: ["all", "REACT-JS", "FULL STACK"],
     image: Travelog,
     description:
       "A MERN stack travel log where the user can keep track of their travel locations. Using authorization and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ",
