@@ -86,7 +86,7 @@ export const ProjectsData = [
     category: ["all", "REACT-JS"],
     image: Travelog,
     description:
-      "A MERN stack travel log where the user can keep track of their travel locations. Using authentication and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ",
+      "A MERN stack travel log where the user can keep track of their travel locations. Using authorization and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ",
     htmlIcon: html,
     sassIcon: sass,
     javascriptIcon: javascript,
