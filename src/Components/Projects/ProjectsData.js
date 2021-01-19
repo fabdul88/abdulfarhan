@@ -64,7 +64,7 @@ export const ProjectsData = [
     expressIcon: express,
     color: "work-container__card-hr-brainflix",
     github: "https://github.com/fabdul88/abdul-farhan-brainflix",
-    demo: "https://brainflix-react.herokuapp.com/video/1af0jruup5gu",
+    demo: "https://brainflix-react.herokuapp.com/",
   },
   {
     id: uuidv4(),
