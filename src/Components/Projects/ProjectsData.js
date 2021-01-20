@@ -96,8 +96,7 @@ export const ProjectsData = [
     mongodbIcon: mongodb,
     color: "work-container__card-hr-travelsite",
     github: "https://github.com/fabdul88/MERN-Travel-log",
-    // demo: "https://travelsite-react.herokuapp.com/",
-    inprocess: "** DEMO IN PROCESS **",
+    demo: "https://travelog-live.herokuapp.com/",
   },
   {
     id: uuidv4(),
