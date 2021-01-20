@@ -15,8 +15,12 @@
       color: #0aa2e7;
     }
     &-hr {
+      height: 3px;
+      border: none;
+      background: #4cf3c6;
+      border-radius: 6px;
       width: 60px;
-      border: 2px solid #4cf3c6;
+      // border: 2px solid #4cf3c6;
     }
   }
 

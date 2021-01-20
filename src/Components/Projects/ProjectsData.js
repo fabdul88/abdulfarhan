@@ -94,7 +94,7 @@ export const ProjectsData = [
     nodeIcon: node,
     expressIcon: express,
     mongodbIcon: mongodb,
-    color: "work-container__card-hr-travelsite",
+    color: "work-container__card-hr-travelog",
     github: "https://github.com/fabdul88/MERN-Travel-log",
     demo: "https://travelog-live.herokuapp.com/",
   },

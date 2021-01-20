@@ -28,8 +28,12 @@
       // font-size: 50px;
     }
     &-hr {
+      height: 3px;
+      border: none;
+      background: #0aa2e7;
+      border-radius: 6px;
       width: 60px;
-      border: 2px solid #0aa2e7;
+      // border: 2px solid #0aa2e7;
       margin: 5px 0 0 0;
     }
   }

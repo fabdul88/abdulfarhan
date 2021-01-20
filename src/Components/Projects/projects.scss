@@ -74,8 +74,12 @@
       color: #e31b6d;
     }
     &-hr {
+      height: 3px;
+      border: none;
+      background: #4cf3c6;
+      border-radius: 6px;
       width: 60px;
-      border: 2px solid #4cf3c6;
+      // border: 2px solid #4cf3c6;
     }
   }
 
@@ -172,32 +176,57 @@
 
   &__card-hr-fitrack {
     width: 90px;
-    border: 2px solid #e31b6d;
+    height: 3px;
+    border: none;
+    background: #e31b6d;
+    border-radius: 6px;
+    // border: 2px solid #e31b6d;
     margin: 0 93px 0 100px;
   }
   &__card-hr-instock {
     width: 90px;
-    border: 2px solid #0aa2e7;
+    height: 3px;
+    border: none;
+    background: #0aa2e7;
+    border-radius: 6px;
+    // border: 2px solid #0aa2e7;
+
     margin: 0 93px 0 100px;
   }
   &__card-hr-brainflix {
     width: 90px;
-    border: 2px solid #4cf3c6;
+    height: 3px;
+    border: none;
+    background: #4cf3c6;
+    border-radius: 6px;
+    // border: 2px solid #4cf3c6;
     margin: 0 93px 0 100px;
   }
   &__card-hr-bandsite {
     width: 90px;
-    border: 2px solid #4cf3c6;
+    height: 3px;
+    border: none;
+    background: #4cf3c6;
+    border-radius: 6px;
+    // border: 2px solid #4cf3c6;
     margin: 0 93px 0 100px;
   }
-  &__card-hr-travelsite {
+  &__card-hr-travelog {
     width: 90px;
-    border: 2px solid #0aa2e7;
+    height: 3px;
+    border: none;
+    background: #0aa2e7;
+    border-radius: 6px;
+    // border: 2px solid #0aa2e7;
     margin: 0 93px 0 100px;
   }
   &__card-hr-coffeeshop {
     width: 90px;
-    border: 2px solid #e31b6d;
+    height: 3px;
+    border: none;
+    background: #e31b6d;
+    border-radius: 6px;
+    // border: 2px solid #e31b6d;
     margin: 0 93px 0 100px;
   }
 
