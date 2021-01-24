@@ -4,7 +4,6 @@
   position: relative;
   overflow: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #1c2833 100%);
-  // background-color: #ffffff;
   &__work-labels-container {
     display: flex;
     align-items: center;
@@ -27,27 +26,23 @@
     }
   }
   &__work-labels {
-    // font-family: "Soulmaze";
     font-family: "RalewayB";
     font-weight: 800;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    // color: #444649;
     font-size: 10px;
     text-decoration: none;
     border: 1px solid #444649;
     border-radius: 3px;
     padding: 5px;
     &:hover {
-      // background: #0aa2e7;
       color: #0aa2e7;
       border: 1px solid #0aa2e7;
       border-radius: 3px;
       transition: all 0.2s ease-in-out;
     }
     &:focus {
-      // background-color: #0aa2e7;
       color: #0aa2e7;
       border-top: 2px solid #0aa2e7;
       border-left: 0;
@@ -66,7 +61,6 @@
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    // color: #444649;
     padding: 60px 0 0 0;
     margin: 0;
     &-letter {
@@ -79,12 +73,10 @@
       background: #4cf3c6;
       border-radius: 6px;
       width: 60px;
-      // border: 2px solid #4cf3c6;
     }
   }
 
   &__cards-container {
-    // background-color: $cloud;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -110,22 +102,9 @@
     left: 0;
     right: 0;
     perspective: 800;
-    // backface-visibility: hidden;
   }
   &__card {
-    // background-color: transparent;
     background-color: rgba(255, 255, 255, 0.1);
-    // @keyframes textColor {
-    //   0% {
-    //     color: #7e0fff;
-    //   }
-    //   50% {
-    //     color: #0fffc1;
-    //   }
-    //   100% {
-    //     color: #7e0fff;
-    //   }
-    // }
     box-shadow: 0 20px 20px rgba(126, 15, 255, 0.2),
       0px 0px 50px rgba(15, 255, 193, 0.2);
     height: 100%;
@@ -134,12 +113,10 @@
     position: relative;
     transition: all 1.5s ease;
     border-radius: 3px;
-    // backface-visibility: hidden;
     &:hover {
       transform: rotateY(180deg);
       box-shadow: 0 20px 20px rgba(15, 255, 193, 0.2),
         0px 0px 50px rgba(126, 15, 255, 0.2);
-      // backface-visibility: hidden;
     }
   }
   &__back {
@@ -150,24 +127,20 @@
     top: -396px;
     border-radius: 3px;
     transform: rotateY(180deg);
-    // backface-visibility: hidden;
   }
   &__front {
     height: 380px;
-    // padding: 10px;
     padding: 0;
   }
   &__front,
   &__back {
     backface-visibility: hidden;
-    // -webkit-backface-visibility: hidden;
   }
   &__name {
     font-family: "Soulmaze";
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    // color: #444649;
     display: flex;
     font-size: 30px;
     margin: 25px 0 0;
@@ -180,26 +153,23 @@
     border: none;
     background: #e31b6d;
     border-radius: 6px;
-    // border: 2px solid #e31b6d;
     margin: 0 93px 0 100px;
   }
-  &__card-hr-instock {
-    width: 90px;
-    height: 3px;
-    border: none;
-    background: #0aa2e7;
-    border-radius: 6px;
-    // border: 2px solid #0aa2e7;
+  // &__card-hr-instock {
+  //   width: 90px;
+  //   height: 3px;
+  //   border: none;
+  //   background: #0aa2e7;
+  //   border-radius: 6px;
 
-    margin: 0 93px 0 100px;
-  }
+  //   margin: 0 93px 0 100px;
+  // }
   &__card-hr-brainflix {
     width: 90px;
     height: 3px;
     border: none;
     background: #4cf3c6;
     border-radius: 6px;
-    // border: 2px solid #4cf3c6;
     margin: 0 93px 0 100px;
   }
   &__card-hr-bandsite {
@@ -208,7 +178,6 @@
     border: none;
     background: #4cf3c6;
     border-radius: 6px;
-    // border: 2px solid #4cf3c6;
     margin: 0 93px 0 100px;
   }
   &__card-hr-travelog {
@@ -217,22 +186,18 @@
     border: none;
     background: #0aa2e7;
     border-radius: 6px;
-    // border: 2px solid #0aa2e7;
     margin: 0 93px 0 100px;
   }
-  &__card-hr-coffeeshop {
-    width: 90px;
-    height: 3px;
-    border: none;
-    background: #e31b6d;
-    border-radius: 6px;
-    // border: 2px solid #e31b6d;
-    margin: 0 93px 0 100px;
-  }
+  // &__card-hr-coffeeshop {
+  //   width: 90px;
+  //   height: 3px;
+  //   border: none;
+  //   background: #e31b6d;
+  //   border-radius: 6px;
+  //   margin: 0 93px 0 100px;
+  // }
 
   &__image-front {
-    // width: 280px;
-    // height: 280px;
     width: 300px;
     height: 290px;
     border-radius: 3px;
@@ -245,7 +210,6 @@
     height: 300px;
   }
   &__description {
-    // font-family: "SoulmazeItalic";
     font-family: "RalewayR";
     font-weight: 600;
     letter-spacing: 2px;
@@ -253,7 +217,6 @@
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    // color: #444649;
     text-align: left;
     letter-spacing: 1px;
     height: 350px;
@@ -297,8 +260,6 @@
     text-decoration: none;
     color: #4cf3c6;
     padding: 15px;
-    // top: 270px;
-    // top: 310px;
     top: 339px;
     left: 22px;
     border-radius: 3px;
@@ -318,8 +279,6 @@
     text-decoration: none;
     color: #0aa2e7;
     padding: 15px;
-    // top: 270px;
-    // top: 310px;
     top: 339px;
 
     left: 159px;
