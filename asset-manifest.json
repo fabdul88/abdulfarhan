@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/abdulfarhan/static/css/main.7c54c22d.chunk.css",
-    "main.js": "/abdulfarhan/static/js/main.81e6d02c.chunk.js",
-    "main.js.map": "/abdulfarhan/static/js/main.81e6d02c.chunk.js.map",
+    "main.css": "/abdulfarhan/static/css/main.6155de7b.chunk.css",
+    "main.js": "/abdulfarhan/static/js/main.3254153a.chunk.js",
+    "main.js.map": "/abdulfarhan/static/js/main.3254153a.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.bf2cdf06.js",
     "runtime-main.js.map": "/abdulfarhan/static/js/runtime-main.bf2cdf06.js.map",
     "static/css/2.ec02d681.chunk.css": "/abdulfarhan/static/css/2.ec02d681.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.8e040dac.chunk.js.map": "/abdulfarhan/static/js/3.8e040dac.chunk.js.map",
     "index.html": "/abdulfarhan/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/abdulfarhan/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.7c54c22d.chunk.css.map": "/abdulfarhan/static/css/main.7c54c22d.chunk.css.map",
+    "static/css/main.6155de7b.chunk.css.map": "/abdulfarhan/static/css/main.6155de7b.chunk.css.map",
     "static/js/2.c786a384.chunk.js.LICENSE.txt": "/abdulfarhan/static/js/2.c786a384.chunk.js.LICENSE.txt",
     "static/media/HTML5-icon.dc506050.svg": "/abdulfarhan/static/media/HTML5-icon.dc506050.svg",
     "static/media/home.scss": "/abdulfarhan/static/media/Raleway-SemiBold.243af299.ttf",
@@ -45,7 +45,7 @@
     "static/js/runtime-main.bf2cdf06.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.c786a384.chunk.js",
-    "static/css/main.7c54c22d.chunk.css",
-    "static/js/main.81e6d02c.chunk.js"
+    "static/css/main.6155de7b.chunk.css",
+    "static/js/main.3254153a.chunk.js"
   ]
 }
