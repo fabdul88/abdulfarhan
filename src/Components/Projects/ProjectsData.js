@@ -1,10 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import FiTrack from "../../assets/fitrack.png";
-// import InStock from "../../assets/instock.png";
 import Brainflix from "../../assets/brainflix.png";
 import Bandsite from "../../assets/bandsite.png";
 import Travelog from "../../assets/travelog.png";
-// import Coffeeshop from "../../assets/coffeeshop.png";
 import html from "../../assets/HTML5-icon.svg";
 import sass from "../../assets/Sass-icon.svg";
 import javascript from "../../assets/javascript-icon.svg";
@@ -82,36 +80,4 @@ export const ProjectsData = [
     github: "https://github.com/fabdul88/MERN-Travel-log",
     demo: "https://travelog-live.herokuapp.com/",
   },
-  // {
-  //   id: uuidv4(),
-  //   name: "INSTOCK",
-  //   category: ["all", "REACT-JS", "FULL STACK"],
-  //   image: InStock,
-  //   description:
-  //     "A CRUD App built by a team of 5 Full Stack developers. The stack used included React, SASS, Node.js, Expres.js along-side git, Jira/Atlassian Agile Board and Figma. Built in 1 week.",
-  //   htmlIcon: html,
-  //   sassIcon: sass,
-  //   javascriptIcon: javascript,
-  //   reactIcon: react,
-  //   nodeIcon: node,
-  //   expressIcon: express,
-  //   color: "card-container__card-hr-instock",
-  //   inprocess: "** DEMO IN PROCESS **",
-  // },
-  // {
-  //   id: uuidv4(),
-  //   name: "COFFEESHOP",
-  //   category: ["all", "REACT-JS"],
-  //   image: Coffeeshop,
-  //   description:
-  //     "My very first project, a coffee shop webpage that used HTML and CSS, now converted to a React application. ",
-  //   htmlIcon: html,
-  //   sassIcon: sass,
-  //   javascriptIcon: javascript,
-  //   reactIcon: react,
-  //   color: "card-container__card-hr-coffeeshop",
-  //   github: "https://github.com/fabdul88/Coffee-Shop-React",
-  //   // demo: "https://coffeeshop-react.herokuapp.com/",
-  //   inprocess: "** DEMO IN PROCESS **",
-  // },
 ];

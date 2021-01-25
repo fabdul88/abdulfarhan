@@ -10,27 +10,16 @@
   background-color: #252525;
   padding: 0 0 30px 0;
   &__copyright {
-    // color: #ffffff;
     color: #8f9aa7;
     font-size: 13px;
     letter-spacing: 1px;
     margin: 0;
     padding: 50px 0 0 0;
-    // margin-right: 50px;
     &-span {
       color: #e31b6d;
     }
   }
   &__social-list {
-    // display: inline-flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-    // list-style-type: none;
-    // padding: 0;
-    // margin-right: 10px;
-    // background-color: rgb(52, 73, 94);
-    // border-radius: 10px;
-    // height: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,19 +27,10 @@
     list-style-type: none;
     padding: 40px 0 20px 0;
     margin: 0;
-    // background-color: grey;
-    // background-color: #fdfefe;
     background-color: #252525;
     @include tablet {
       flex-direction: row;
     }
-    // @include desktop {
-    //   flex-direction: row;
-    //   justify-content: center;
-    //   align-items: center;
-    //   width: 100vw;
-    //   border-radius: none;
-    // }
     &-item {
       display: flex;
     }
@@ -87,17 +67,13 @@
     &-text {
       font-size: 11px;
       color: #ffffff;
-      // color: #e31b6d;
-      // color: #8f9aa7;
     }
 
     &-linkedin {
-      // border: 1px solid white;
       width: 35px;
       height: 35px;
     }
     &-github {
-      // border: 1px solid white;
       padding: 2.5px;
       margin: 0 33px 0 0;
       width: 30px;

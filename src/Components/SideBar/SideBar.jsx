@@ -18,25 +18,6 @@ export default function SideBar() {
   // Defining a function to toggle between false and true states
   const showSidebar = () => setSidebar(!sidebar);
 
-  // // ============================
-  // const [active, setActive] = useState(false);
-  // const activeState = () => {
-  //   if (active === "sidebar-container__hover-home") {
-  //     setActive("sidebar-container__hover-color-home");
-  //   } else if (active === "sidebar-container__hover-about") {
-  //     setActive("sidebar-container__hover-color-about");
-  //   } else if (active === "sidebar-container__hover-skills") {
-  //     setActive("sidebar-container__hover-color-skills");
-  //   } else if (active === "sidebar-container__hover-projects") {
-  //     setActive("sidebar-container__hover-color-projects");
-  //   } else if (active === "sidebar-container__hover-contact") {
-  //     setActive("sidebar-container__hover-color-contact");
-  //   } else {
-  //     return "";
-  //   }
-  // };
-  // // ==================================
-
   // Hover animations
   const hover = {
     scale: 1.15,
@@ -71,14 +52,8 @@ export default function SideBar() {
                 />
                 <p
                   className="sidebar-container__hover-home"
-                  // className={
-                  //   active
-                  //     ? "sidebar-container__hover-color-home"
-                  //     : "sidebar-container__hover-home"
-                  // }
                   onClick={() => {
                     showSidebar();
-                    // activeState();
                   }}
                 >
                   HOME
@@ -105,14 +80,8 @@ export default function SideBar() {
                 />
                 <span
                   className="sidebar-container__hover-about"
-                  // className={
-                  //   active
-                  //     ? "sidebar-container__hover-color-about"
-                  //     : "sidebar-container__hover-about"
-                  // }
                   onClick={() => {
                     showSidebar();
-                    // activeState();
                   }}
                 >
                   ABOUT
@@ -139,14 +108,8 @@ export default function SideBar() {
                 />
                 <span
                   className="sidebar-container__hover-skills"
-                  // className={
-                  //   active
-                  //     ? "sidebar-container__hover-color-skills"
-                  //     : "sidebar-container__hover-skills"
-                  // }
                   onClick={() => {
                     showSidebar();
-                    // activeState();
                   }}
                 >
                   SKILLS
@@ -173,14 +136,8 @@ export default function SideBar() {
                 />
                 <span
                   className="sidebar-container__hover-projects"
-                  // className={
-                  //   active
-                  //     ? "sidebar-container__hover-color-projects"
-                  //     : "sidebar-container__hover-projects"
-                  // }
                   onClick={() => {
                     showSidebar();
-                    // activeState();
                   }}
                 >
                   PROJECTS
@@ -207,14 +164,8 @@ export default function SideBar() {
                 />
                 <span
                   className="sidebar-container__hover-contact"
-                  // className={
-                  //   active
-                  //     ? "sidebar-container__hover-color-contact"
-                  //     : "sidebar-container__hover-contact"
-                  // }
                   onClick={() => {
                     showSidebar();
-                    // activeState();
                   }}
                 >
                   CONTACT
