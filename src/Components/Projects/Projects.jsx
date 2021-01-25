@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ProjectsData } from "./ProjectsData";
+import Card from "../Card/Card";
 import "./projects.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,10 +9,8 @@ AOS.init();
 
 export default function Projects() {
   const hover = {
-    scale: 1.1,
-    transition: { type: "spring", stiffness: 1000 },
+    scale: 1.05,
   };
-  const transition = { duration: 1.4, ease: [0.43, 0.13, 0.23, 0.96] };
 
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
@@ -119,93 +118,7 @@ export default function Projects() {
       </div>
 
       <div className="work-container__cards-container">
-        <div className="work-container__cards-container-sub">
-          {projects.map((item) =>
-            item.filtered === true ? (
-              <motion.div
-                className="work-container__con"
-                key={item.id}
-                initial={{ opacity: 0, y: "-10vw" }}
-                animate={{ opacity: 1, y: "0" }}
-                exit={{ opacity: 0, y: "-100vw", duration: 0.7 }}
-                transition={transition}
-              >
-                <div className="work-container__card">
-                  <div className="work-container__front">
-                    <img
-                      className="work-container__image-front"
-                      src={item.image}
-                      alt=""
-                    />
-                    <p className="work-container__name">{item.name}</p>
-                    <hr className={item.color} />
-                  </div>
-                  <div className="work-container__back">
-                    <p className="work-container__description">
-                      {item.description}
-                    </p>
-                    <div className="work-container__icons">
-                      <img
-                        className="work-container__icons-html"
-                        src={item.htmlIcon}
-                        alt=""
-                      />
-                      <img
-                        className="work-container__icons-sass"
-                        src={item.sassIcon}
-                        alt=""
-                      />
-                      <img
-                        className="work-container__icons-javascript"
-                        src={item.javascriptIcon}
-                        alt=""
-                      />
-                      <img
-                        className="work-container__icons-react"
-                        src={item.reactIcon}
-                        alt=""
-                      />
-                      <img
-                        className="work-container__icons-node"
-                        src={item.nodeIcon}
-                        alt=""
-                      />
-                      <img
-                        className="work-container__icons-express"
-                        src={item.expressIcon}
-                        alt=""
-                      />
-                      <img
-                        className="work-container__icons-mongo"
-                        src={item.mongodbIcon}
-                        alt=""
-                      />
-                    </div>
-                    <p className="work-container__inprocess">
-                      {item.inprocess}
-                    </p>
-                    <motion.a
-                      className="work-container__demo"
-                      href={item.demo}
-                      whileHover={hover}
-                    >
-                      VIEW DEMO
-                    </motion.a>
-                    <motion.a
-                      className="work-container__code"
-                      href={item.github}
-                      whileHover={hover}
-                    >
-                      VIEW CODE
-                    </motion.a>
-                  </div>
-                </div>
-              </motion.div>
-            ) : (
-              ""
-            )
-          )}
-        </div>
+        <Card projectCard={projects} />
       </div>
     </div>
   );

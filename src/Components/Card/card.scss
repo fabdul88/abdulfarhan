@@ -1,0 +1,210 @@
+@import "../../styles/partials/global";
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1000px;
+  flex-wrap: wrap;
+
+  &__con {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    margin: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    perspective: 800;
+  }
+  &__card {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 20px rgba(126, 15, 255, 0.2),
+      0px 0px 50px rgba(15, 255, 193, 0.2);
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 1.5s ease;
+    border-radius: 3px;
+    &:hover {
+      transform: rotateY(180deg);
+      box-shadow: 0 20px 20px rgba(15, 255, 193, 0.2),
+        0px 0px 50px rgba(126, 15, 255, 0.2);
+    }
+  }
+  &__back {
+    background-color: transparent;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 203px;
+    top: -396px;
+    border-radius: 3px;
+    transform: rotateY(180deg);
+  }
+  &__front {
+    height: 380px;
+    padding: 0;
+  }
+  &__front,
+  &__back {
+    backface-visibility: hidden;
+  }
+  &__name {
+    font-family: "Soulmaze";
+    background: linear-gradient(#ffffff, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    font-size: 30px;
+    margin: 25px 0 0;
+    padding: 0 0 0 20px;
+  }
+
+  &__card-hr-fitrack {
+    width: 90px;
+    height: 3px;
+    border: none;
+    background: #e31b6d;
+    border-radius: 6px;
+    margin: 0 93px 0 100px;
+  }
+  // &__card-hr-instock {
+  //   width: 90px;
+  //   height: 3px;
+  //   border: none;
+  //   background: #0aa2e7;
+  //   border-radius: 6px;
+
+  //   margin: 0 93px 0 100px;
+  // }
+  &__card-hr-brainflix {
+    width: 90px;
+    height: 3px;
+    border: none;
+    background: #4cf3c6;
+    border-radius: 6px;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-bandsite {
+    width: 90px;
+    height: 3px;
+    border: none;
+    background: #4cf3c6;
+    border-radius: 6px;
+    margin: 0 93px 0 100px;
+  }
+  &__card-hr-travelog {
+    width: 90px;
+    height: 3px;
+    border: none;
+    background: #0aa2e7;
+    border-radius: 6px;
+    margin: 0 93px 0 100px;
+  }
+  // &__card-hr-coffeeshop {
+  //   width: 90px;
+  //   height: 3px;
+  //   border: none;
+  //   background: #e31b6d;
+  //   border-radius: 6px;
+  //   margin: 0 93px 0 100px;
+  // }
+
+  &__image-front {
+    width: 300px;
+    height: 290px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &__image-back {
+    width: 200px;
+    height: 300px;
+  }
+  &__description {
+    font-family: "RalewayR";
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 30px;
+    background: linear-gradient(#ffffff, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    letter-spacing: 1px;
+    height: 350px;
+    padding: 25px;
+  }
+  &__icons {
+    position: relative;
+    top: -120px;
+    display: flex;
+    justify-content: center;
+    &-html,
+    &-sass,
+    &-javascript,
+    &-react,
+    &-node,
+    &-mongo {
+      height: 30px;
+      width: auto;
+      margin: 0 2.5px;
+    }
+    &-express {
+      height: 20px;
+      width: auto;
+      margin: 0 0 0 2.5px;
+      display: flex;
+      align-self: center;
+    }
+  }
+  &__inprocess {
+    font-family: "RalewayR";
+    font-weight: 900;
+    color: #a93226;
+    position: absolute;
+    top: 250px;
+    left: 53px;
+  }
+  &__demo {
+    font-family: "RalewaySB";
+    position: absolute;
+    border: 1px solid #4cf3c6;
+    text-decoration: none;
+    color: #4cf3c6;
+    padding: 15px;
+    top: 339px;
+    left: 22px;
+    border-radius: 3px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #4cf3c6;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  &__code {
+    font-family: "RalewaySB";
+    position: absolute;
+    border: 1px solid #0aa2e7;
+    text-decoration: none;
+    color: #0aa2e7;
+    padding: 15px;
+    top: 339px;
+
+    left: 159px;
+    border-radius: 3px;
+    font-weight: 600;
+    &:hover {
+      background-color: #0aa2e7;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
