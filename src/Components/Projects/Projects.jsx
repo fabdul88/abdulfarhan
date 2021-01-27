@@ -56,7 +56,7 @@ export default function Projects() {
               setFilter("all");
             }}
           >
-            All
+            ALL
           </motion.a>
           <motion.a
             data-aos="flip-right"
