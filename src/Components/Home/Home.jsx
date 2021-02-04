@@ -89,7 +89,7 @@ export default function Home() {
               </p>
             </h1>
             <div className="home-container__down-container">
-              <Scroll to="about" smooth={true} duration={1000}>
+              <Scroll to="about" smooth={true} offset={-95} duration={1000}>
                 <motion.img
                   whileHover={hover}
                   className="home-container__down"
