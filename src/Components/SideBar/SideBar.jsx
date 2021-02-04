@@ -40,6 +40,7 @@ export default function SideBar() {
                 className="sidebar-container__list-link"
                 to="home"
                 smooth={true}
+                offset={-95}
                 duration={1000}
               >
                 <img
@@ -68,6 +69,7 @@ export default function SideBar() {
                 className="sidebar-container__list-link"
                 to="about"
                 smooth={true}
+                offset={-95}
                 duration={1000}
               >
                 <img
@@ -96,6 +98,7 @@ export default function SideBar() {
                 className="sidebar-container__list-link"
                 to="skills"
                 smooth={true}
+                offset={-95}
                 duration={1000}
               >
                 <img
@@ -124,6 +127,7 @@ export default function SideBar() {
                 className="sidebar-container__list-link"
                 to="projects"
                 smooth={true}
+                offset={-95}
                 duration={1000}
               >
                 <img
@@ -152,6 +156,7 @@ export default function SideBar() {
                 className="sidebar-container__list-link"
                 to="contact"
                 smooth={true}
+                offset={-95}
                 duration={1000}
               >
                 <img
