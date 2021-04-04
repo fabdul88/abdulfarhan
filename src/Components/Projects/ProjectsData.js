@@ -28,7 +28,7 @@ export const ProjectsData = [
     expressIcon: express,
     mongodbIcon: mongodb,
     color: "card-container__card-hr-fitrack",
-    github: "https://github.com/fabdul88/fitrack-mern",
+    github: "https://github.com/fabdul88/FiTrack",
 
     demo: "https://fitrack-mern.herokuapp.com/",
   },
@@ -46,7 +46,7 @@ export const ProjectsData = [
     nodeIcon: node,
     expressIcon: express,
     color: "card-container__card-hr-brainflix",
-    github: "https://github.com/fabdul88/abdul-farhan-brainflix",
+    github: "https://github.com/fabdul88/Brainflix",
     demo: "https://brainflix-react.herokuapp.com/",
   },
   {
@@ -60,7 +60,7 @@ export const ProjectsData = [
     sassIcon: sass,
     javascriptIcon: javascript,
     color: "card-container__card-hr-bandsite",
-    github: "https://github.com/fabdul88/Abdul-Farhan-bandsite",
+    github: "https://github.com/fabdul88/Bandsite",
     demo: "https://bandsite-pro.herokuapp.com/",
   },
   {
@@ -78,7 +78,7 @@ export const ProjectsData = [
     expressIcon: express,
     mongodbIcon: mongodb,
     color: "card-container__card-hr-travelog",
-    github: "https://github.com/fabdul88/MERN-Travel-log",
+    github: "https://github.com/fabdul88/TraveLog",
     demo: "https://travelog-live.herokuapp.com/",
   },
 ];
