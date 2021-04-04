@@ -28,7 +28,8 @@ export const ProjectsData = [
     expressIcon: express,
     mongodbIcon: mongodb,
     color: "card-container__card-hr-fitrack",
-    github: "https://github.com/fabdul88/Abdul-Farhan-Capstone",
+    github: "https://github.com/fabdul88/fitrack-mern",
+
     demo: "https://fitrack-mern.herokuapp.com/",
   },
   {
