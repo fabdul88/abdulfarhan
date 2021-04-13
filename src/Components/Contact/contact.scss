@@ -29,32 +29,25 @@
   &__title {
     font-family: "SoulmazeItalic";
     margin: 0;
-    // color: #0aa2e7;
     color: #ffffff;
     &-letter {
       font-family: "SoulmazeItalic";
-      // color: #4cf3c6;
       color: #ffffff;
-      // font-size: 50px;
     }
     &-hr {
       width: 60px;
-      // border: 2px solid #e31b6d;
       height: 3px;
       border: none;
       background: #ffffff;
       border-radius: 6px;
-      // border: 2px solid #ffffff;
       margin: 5px 0 0 0;
     }
   }
   &__text {
     font-family: "Soulmaze";
-    // color: #ffffff;
     color: #444649;
     letter-spacing: 1px;
     &-highlight {
-      // color: #e31b6d;
       color: #ffffff;
     }
   }
@@ -75,10 +68,7 @@
       letter-spacing: 1px;
       width: 100%;
       max-width: 500px;
-      // color: #444649;
       color: #ffffff;
-      // background-color: #1e242c;
-      // background-color: #ffffff;
       background-color: #444649;
       padding: 10px;
       border: none;
