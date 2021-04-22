@@ -1,0 +1,28 @@
+@mixin cardHR {
+  width: 90px;
+  height: 3px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 93px 0 100px;
+  @content;
+}
+
+@mixin projectCardButton {
+  font-family: "RalewaySB";
+  position: absolute;
+  text-decoration: none;
+  padding: 15px;
+  top: 339px;
+  left: 22px;
+  border-radius: 3px;
+  font-weight: 600;
+  @content;
+}
+
+@mixin sectionTitleHR {
+  height: 3px;
+  border: none;
+  border-radius: 6px;
+  width: 60px;
+  @content;
+}

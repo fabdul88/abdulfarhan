@@ -48,13 +48,15 @@ export default function SideBar() {
                   src={Home}
                   alt="Home"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
                 <p
                   className="sidebar-container__hover-home"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 >
                   HOME
@@ -77,13 +79,15 @@ export default function SideBar() {
                   src={About}
                   alt="About"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
                 <span
                   className="sidebar-container__hover-about"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 >
                   ABOUT
@@ -106,13 +110,15 @@ export default function SideBar() {
                   src={Skills}
                   alt="Skills"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
                 <span
                   className="sidebar-container__hover-skills"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 >
                   SKILLS
@@ -135,13 +141,15 @@ export default function SideBar() {
                   src={Projects}
                   alt="Projects"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
                 <span
                   className="sidebar-container__hover-projects"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 >
                   PROJECTS
@@ -164,13 +172,15 @@ export default function SideBar() {
                   src={Contact}
                   alt="Contact"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
                 <span
                   className="sidebar-container__hover-contact"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 >
                   CONTACT
@@ -186,7 +196,8 @@ export default function SideBar() {
                   src={Linkedin}
                   alt="Linkedin"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
               </a>
@@ -197,7 +208,8 @@ export default function SideBar() {
                   src={Github}
                   alt="Linkedin"
                   onClick={() => {
-                    showSidebar();
+                    // showSidebar();
+                    setSidebar(false);
                   }}
                 />
               </a>

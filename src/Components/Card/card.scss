@@ -64,36 +64,20 @@
   }
 
   &__card-hr-fitrack {
-    width: 90px;
-    height: 3px;
-    border: none;
+    @include cardHR;
     background: #e31b6d;
-    border-radius: 6px;
-    margin: 0 93px 0 100px;
   }
   &__card-hr-brainflix {
-    width: 90px;
-    height: 3px;
-    border: none;
+    @include cardHR;
     background: #4cf3c6;
-    border-radius: 6px;
-    margin: 0 93px 0 100px;
   }
   &__card-hr-bandsite {
-    width: 90px;
-    height: 3px;
-    border: none;
+    @include cardHR;
     background: #4cf3c6;
-    border-radius: 6px;
-    margin: 0 93px 0 100px;
   }
   &__card-hr-travelog {
-    width: 90px;
-    height: 3px;
-    border: none;
+    @include cardHR;
     background: #0aa2e7;
-    border-radius: 6px;
-    margin: 0 93px 0 100px;
   }
   &__image-front {
     width: 300px;
@@ -152,16 +136,9 @@
     left: 53px;
   }
   &__demo {
-    font-family: "RalewaySB";
-    position: absolute;
+    @include projectCardButton;
     border: 1px solid #4cf3c6;
-    text-decoration: none;
     color: #4cf3c6;
-    padding: 15px;
-    top: 339px;
-    left: 22px;
-    border-radius: 3px;
-    font-weight: 600;
 
     &:hover {
       background-color: #4cf3c6;
@@ -171,17 +148,10 @@
     }
   }
   &__code {
-    font-family: "RalewaySB";
-    position: absolute;
+    @include projectCardButton;
     border: 1px solid #0aa2e7;
-    text-decoration: none;
     color: #0aa2e7;
-    padding: 15px;
-    top: 339px;
-
     left: 159px;
-    border-radius: 3px;
-    font-weight: 600;
     &:hover {
       background-color: #0aa2e7;
       color: #ffffff;

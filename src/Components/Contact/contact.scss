@@ -35,12 +35,9 @@
       color: #ffffff;
     }
     &-hr {
-      width: 60px;
-      height: 3px;
-      border: none;
+      @include sectionTitleHR;
       background: #ffffff;
-      border-radius: 6px;
-      margin: 5px 0 0 0;
+      // margin: 5px 0 0 0;
     }
   }
   &__text {

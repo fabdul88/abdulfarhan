@@ -66,11 +66,8 @@
       color: #e31b6d;
     }
     &-hr {
-      height: 3px;
-      border: none;
+      @include sectionTitleHR;
       background: #4cf3c6;
-      border-radius: 6px;
-      width: 60px;
     }
   }
 

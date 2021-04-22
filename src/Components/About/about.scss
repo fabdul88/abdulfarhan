@@ -27,12 +27,9 @@
       color: #4cf3c6;
     }
     &-hr {
-      height: 3px;
-      border: none;
+      @include sectionTitleHR;
       background: #0aa2e7;
-      border-radius: 6px;
-      width: 60px;
-      margin: 5px 0 0 0;
+      // margin: 5px 0 0 0;
     }
   }
   &__column-container {
