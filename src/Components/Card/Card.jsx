@@ -1,5 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Icon } from "../Icon/Icon";
 import "./card.scss";
 
 export default function Card({ projectCard }) {
@@ -57,42 +58,17 @@ export default function Card({ projectCard }) {
                     {project.description}
                   </p>
                   <div className="card-container__icons">
-                    <img
-                      className="card-container__icons-html"
-                      src={project.htmlIcon}
-                      alt=""
-                    />
-
-                    <img
-                      className="card-container__icons-sass"
-                      src={project.sassIcon}
-                      alt=""
-                    />
-                    <img
-                      className="card-container__icons-javascript"
-                      src={project.javascriptIcon}
-                      alt=""
-                    />
-                    <img
-                      className="card-container__icons-react"
-                      src={project.reactIcon}
-                      alt=""
-                    />
-                    <img
-                      className="card-container__icons-node"
-                      src={project.nodeIcon}
-                      alt=""
-                    />
-                    <img
-                      className="card-container__icons-express"
-                      src={project.expressIcon}
-                      alt=""
-                    />
-                    <img
-                      className="card-container__icons-mongo"
-                      src={project.mongodbIcon}
-                      alt=""
-                    />
+                    {project.icon.map((icons, index) => {
+                      return (
+                        <Icon
+                          key={index}
+                          name={icons}
+                          className="card-container__icons-color"
+                          width="32"
+                          height="32"
+                        />
+                      );
+                    })}
                   </div>
                   <p className="card-container__inprocess">
                     {project.inprocess}

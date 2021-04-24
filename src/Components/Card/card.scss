@@ -109,22 +109,13 @@
     top: -120px;
     display: flex;
     justify-content: center;
-    &-html,
-    &-sass,
-    &-javascript,
-    &-react,
-    &-node,
-    &-mongo {
-      height: 30px;
-      width: auto;
+    &-color {
       margin: 0 2.5px;
-    }
-    &-express {
-      height: 20px;
-      width: auto;
-      margin: 0 0 0 2.5px;
-      display: flex;
-      align-self: center;
+      fill: #a9a6b6;
+      &:hover {
+        fill: url(#gradient);
+        filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
+      }
     }
   }
   &__inprocess {
