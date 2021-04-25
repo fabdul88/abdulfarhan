@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./footer.scss";
-import LinkedIn from "../../assets/linkedin_footer.svg";
-import GitHub from "../../assets/github_footer.svg";
+import { Icon } from "../Icon/Icon";
 import GoToTop from "../../assets/go-to-top.svg";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -28,10 +27,11 @@ export default function Footer() {
               href="https://www.linkedin.com/in/abdul-farhan-9bba3b1b3"
               whileHover={hover}
             >
-              <img
+              <Icon
+                name="linkedin"
                 className="footer-container__social-list-linkedin"
-                src={LinkedIn}
-                alt="LinkedIn"
+                width="35"
+                height="35"
               />
               <p className="footer-container__social-list-text">
                 CONNECT WITH ME ON LINKEDIN
@@ -45,10 +45,11 @@ export default function Footer() {
               href="https://www.github.com/fabdul88"
               whileHover={hover}
             >
-              <img
+              <Icon
+                name="github"
                 className="footer-container__social-list-github"
-                src={GitHub}
-                alt="GitHub"
+                width="35"
+                height="35"
               />
               <p className="footer-container__social-list-text">
                 VIEW MY CODE ON GITHUB

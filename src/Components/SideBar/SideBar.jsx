@@ -10,6 +10,7 @@ import Contact from "../../assets/contact.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
 import { Link } from "react-scroll";
+import { Icon } from "../Icon/Icon";
 
 export default function SideBar() {
   // Setting initial sidebar display state to be false

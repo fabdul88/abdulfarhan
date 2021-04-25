@@ -7,7 +7,6 @@ const Javascript = ({ className, width, height }) => {
       width={width}
       height={height}
       id="Lager_1"
-      // style="enableBackground:new 0 0 128 128;"
       version="1.1"
       viewBox="0 0 128 128"
       xmlSpace="preserve"
@@ -23,12 +22,7 @@ const Javascript = ({ className, width, height }) => {
       <g>
         <g>
           <g>
-            <circle
-              cx="64"
-              cy="64"
-              r="50"
-              // style="fill:#F0DB4F;"
-            />
+            <circle cx="64" cy="64" r="50" />
           </g>
         </g>
         <g id="Layer_1_1_">
