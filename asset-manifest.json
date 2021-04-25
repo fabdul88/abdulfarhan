@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/abdulfarhan/static/css/main.ba5201eb.chunk.css",
-    "main.js": "/abdulfarhan/static/js/main.869921c4.chunk.js",
-    "main.js.map": "/abdulfarhan/static/js/main.869921c4.chunk.js.map",
+    "main.css": "/abdulfarhan/static/css/main.b7868b94.chunk.css",
+    "main.js": "/abdulfarhan/static/js/main.d247593a.chunk.js",
+    "main.js.map": "/abdulfarhan/static/js/main.d247593a.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.bf2cdf06.js",
     "runtime-main.js.map": "/abdulfarhan/static/js/runtime-main.bf2cdf06.js.map",
     "static/css/2.ec02d681.chunk.css": "/abdulfarhan/static/css/2.ec02d681.chunk.css",
-    "static/js/2.21c3c434.chunk.js": "/abdulfarhan/static/js/2.21c3c434.chunk.js",
-    "static/js/2.21c3c434.chunk.js.map": "/abdulfarhan/static/js/2.21c3c434.chunk.js.map",
+    "static/js/2.57aed8a9.chunk.js": "/abdulfarhan/static/js/2.57aed8a9.chunk.js",
+    "static/js/2.57aed8a9.chunk.js.map": "/abdulfarhan/static/js/2.57aed8a9.chunk.js.map",
     "static/js/3.8e040dac.chunk.js": "/abdulfarhan/static/js/3.8e040dac.chunk.js",
     "static/js/3.8e040dac.chunk.js.map": "/abdulfarhan/static/js/3.8e040dac.chunk.js.map",
     "index.html": "/abdulfarhan/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/abdulfarhan/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.ba5201eb.chunk.css.map": "/abdulfarhan/static/css/main.ba5201eb.chunk.css.map",
-    "static/js/2.21c3c434.chunk.js.LICENSE.txt": "/abdulfarhan/static/js/2.21c3c434.chunk.js.LICENSE.txt",
+    "static/css/main.b7868b94.chunk.css.map": "/abdulfarhan/static/css/main.b7868b94.chunk.css.map",
+    "static/js/2.57aed8a9.chunk.js.LICENSE.txt": "/abdulfarhan/static/js/2.57aed8a9.chunk.js.LICENSE.txt",
     "static/media/home.scss": "/abdulfarhan/static/media/Raleway-SemiBold.243af299.ttf",
     "static/media/about.4e16d9d9.svg": "/abdulfarhan/static/media/about.4e16d9d9.svg",
     "static/media/bandsite.518e6cd3.png": "/abdulfarhan/static/media/bandsite.518e6cd3.png",
@@ -23,12 +23,10 @@
     "static/media/down.572a275f.svg": "/abdulfarhan/static/media/down.572a275f.svg",
     "static/media/fitrack.d6b5b7dc.png": "/abdulfarhan/static/media/fitrack.d6b5b7dc.png",
     "static/media/github.d5934730.svg": "/abdulfarhan/static/media/github.d5934730.svg",
-    "static/media/github_footer.0e0c3b6f.svg": "/abdulfarhan/static/media/github_footer.0e0c3b6f.svg",
     "static/media/go-to-top.6d4dca06.svg": "/abdulfarhan/static/media/go-to-top.6d4dca06.svg",
     "static/media/hexagon_monochrome.d8df732a.png": "/abdulfarhan/static/media/hexagon_monochrome.d8df732a.png",
     "static/media/home.271959a0.svg": "/abdulfarhan/static/media/home.271959a0.svg",
     "static/media/linkedin.7eaaf389.svg": "/abdulfarhan/static/media/linkedin.7eaaf389.svg",
-    "static/media/linkedin_footer.c2fc1ad5.svg": "/abdulfarhan/static/media/linkedin_footer.c2fc1ad5.svg",
     "static/media/mywork.283129ea.svg": "/abdulfarhan/static/media/mywork.283129ea.svg",
     "static/media/profile.94d7a982.png": "/abdulfarhan/static/media/profile.94d7a982.png",
     "static/media/skills.d7591215.svg": "/abdulfarhan/static/media/skills.d7591215.svg",
@@ -37,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.bf2cdf06.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.21c3c434.chunk.js",
-    "static/css/main.ba5201eb.chunk.css",
-    "static/js/main.869921c4.chunk.js"
+    "static/js/2.57aed8a9.chunk.js",
+    "static/css/main.b7868b94.chunk.css",
+    "static/js/main.d247593a.chunk.js"
   ]
 }
