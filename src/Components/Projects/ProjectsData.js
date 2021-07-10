@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import FiTrack from "../../assets/fitrack.png";
 import Brainflix from "../../assets/brainflix.png";
-import Bandsite from "../../assets/bandsite.png";
 import Travelog from "../../assets/travelog.png";
+import Covid from "../../assets/covid.png";
 
 // Dynamically setting project cards
 export const ProjectsData = [
@@ -33,26 +33,34 @@ export const ProjectsData = [
   },
   {
     id: uuidv4(),
-    name: "BANDSITE",
-    category: ["all", "OTHERS"],
-    image: Bandsite,
-    description:
-      "A project demonstrating responsiveness by using HTML and SASS, as well as the use of Javascript and DOM manipulation. Built in 3 sprints within three weeks.",
-    icon: ["html", "sass", "javascript"],
-    color: "card-container__card-hr-bandsite",
-    github: "https://github.com/fabdul88/Bandsite",
-    demo: "https://bandsite-pro.herokuapp.com/",
-  },
-  {
-    id: uuidv4(),
     name: "TRAVELOG",
     category: ["all", "REACT-JS", "FULL STACK"],
     image: Travelog,
     description:
       "A MERN stack travel log where the user can keep track of their travel locations. Using authorization and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ",
-    icon: ["html", "sass", "javascript", "react", "node", "express", "mongodb"],
+    icon: ["html", "sass", "javascript", "react", "mapbox", "node", "mongodb"],
     color: "card-container__card-hr-travelog",
     github: "https://github.com/fabdul88/TraveLog",
     demo: "https://travelog-live.herokuapp.com/",
+  },
+  {
+    id: uuidv4(),
+    name: "COVID-19 DASHBOARD",
+    category: ["all", "REACT-JS"],
+    image: Covid,
+    description:
+      " A covid-19 dashboard displaying live cases, total cases, recoveries and deaths. Built with React js library, Material-UI, chart js, react-leaflet and disease.sh API for covid-19 data. ",
+    icon: [
+      "html",
+      "sass",
+      "materialui",
+      "javascript",
+      "chartjs",
+      "reactleaflet",
+      "react",
+    ],
+    color: "card-container__card-hr-covid",
+    github: "https://github.com/fabdul88/COVID-19-TRACKER",
+    demo: "https://covid-19-tracker-live.herokuapp.com/",
   },
 ];

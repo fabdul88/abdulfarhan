@@ -62,6 +62,7 @@ export default function Contact() {
             type="text"
             placeholder="Name"
             name="name"
+            required
           />
           <input
             data-aos="flip-down"
@@ -69,6 +70,7 @@ export default function Contact() {
             type="text"
             placeholder="Email"
             name="email"
+            required
           />
           <input
             data-aos="flip-up"
@@ -76,6 +78,7 @@ export default function Contact() {
             type="text"
             placeholder="Subject"
             name="subject"
+            required
           />
           <textarea
             data-aos="flip-down"
@@ -85,6 +88,7 @@ export default function Contact() {
             rows="10"
             placeholder="Your Message"
             name="message"
+            required
           ></textarea>
           <button
             data-aos="zoom-in"

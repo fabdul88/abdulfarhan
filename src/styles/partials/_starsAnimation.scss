@@ -1,0 +1,38 @@
+// Stars One
+@mixin animationOne {
+  @keyframes one {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  animation: one 3s linear infinite;
+}
+
+// Stars Two
+@mixin animationTwo {
+  animation: two 2s linear infinite;
+  @keyframes two {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+}
+
+// Stars Three
+@mixin animationThree {
+  animation: three 2.5s linear infinite;
+  @keyframes three {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+}

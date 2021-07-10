@@ -61,6 +61,8 @@
     font-size: 30px;
     margin: 25px 0 0;
     padding: 0 0 0 20px;
+    line-height: 30px;
+    text-align: left;
   }
 
   &__card-hr-fitrack {
@@ -76,6 +78,10 @@
     background: #4cf3c6;
   }
   &__card-hr-travelog {
+    @include cardHR;
+    background: #0aa2e7;
+  }
+  &__card-hr-covid {
     @include cardHR;
     background: #0aa2e7;
   }

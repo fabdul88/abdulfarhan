@@ -8,6 +8,11 @@ import { Nodejs } from "./Nodejs";
 import { Mongodb } from "./Mongodb";
 import { Github } from "./Github";
 import { LinkedIn } from "./LinkedIn";
+import { MaterialUI } from "./Material";
+import { Bem } from "./Bem";
+import { ChartJS } from "./ChartJS";
+import { Mapbox } from "./Mapbox";
+import { ReactLeaflet } from "./ReactLeaflet";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -30,6 +35,16 @@ const Icon = (props) => {
       return <Github {...props} />;
     case "linkedin":
       return <LinkedIn {...props} />;
+    case "materialui":
+      return <MaterialUI {...props} />;
+    case "bem":
+      return <Bem {...props} />;
+    case "chartjs":
+      return <ChartJS {...props} />;
+    case "mapbox":
+      return <Mapbox {...props} />;
+    case "reactleaflet":
+      return <ReactLeaflet {...props} />;
     default:
       <div />;
   }

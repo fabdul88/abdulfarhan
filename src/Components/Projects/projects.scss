@@ -87,6 +87,7 @@
   }
   &__stars {
     @include starsOne;
+    @include animationOne;
 
     &:after {
       @include starsOneAfter;
@@ -94,6 +95,7 @@
   }
   &__stars-two {
     @include starsTwo;
+    @include animationTwo;
 
     &:after {
       @include starsTwoAfter;
@@ -101,6 +103,7 @@
   }
   &__stars-three {
     @include starsThree;
+    @include animationThree;
 
     &:after {
       @include starsThreeAfter;
