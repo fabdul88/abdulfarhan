@@ -13,6 +13,7 @@ import { Bem } from "./Bem";
 import { ChartJS } from "./ChartJS";
 import { Mapbox } from "./Mapbox";
 import { ReactLeaflet } from "./ReactLeaflet";
+import { Css } from "./Css";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -45,6 +46,8 @@ const Icon = (props) => {
       return <Mapbox {...props} />;
     case "reactleaflet":
       return <ReactLeaflet {...props} />;
+    case "css":
+      return <Css {...props} />;
     default:
       <div />;
   }

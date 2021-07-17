@@ -52,7 +52,7 @@ export const ProjectsData = [
       " A covid-19 dashboard displaying live cases, total cases, recoveries and deaths. Built with React js library, Material-UI, chart js, react-leaflet and disease.sh API for covid-19 data. ",
     icon: [
       "html",
-      "sass",
+      "css",
       "materialui",
       "javascript",
       "chartjs",
