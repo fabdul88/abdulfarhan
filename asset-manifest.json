@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/abdulfarhan/static/css/main.eb6216ef.chunk.css",
-    "main.js": "/abdulfarhan/static/js/main.fe3228dd.chunk.js",
-    "main.js.map": "/abdulfarhan/static/js/main.fe3228dd.chunk.js.map",
+    "main.js": "/abdulfarhan/static/js/main.e80d29d9.chunk.js",
+    "main.js.map": "/abdulfarhan/static/js/main.e80d29d9.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.bf2cdf06.js",
     "runtime-main.js.map": "/abdulfarhan/static/js/runtime-main.bf2cdf06.js.map",
     "static/css/2.ec02d681.chunk.css": "/abdulfarhan/static/css/2.ec02d681.chunk.css",
@@ -17,9 +17,9 @@
     "static/media/home.scss": "/abdulfarhan/static/media/Raleway-SemiBold.243af299.ttf",
     "static/media/about.4e16d9d9.svg": "/abdulfarhan/static/media/about.4e16d9d9.svg",
     "static/media/black_transparent.dc528fee.svg": "/abdulfarhan/static/media/black_transparent.dc528fee.svg",
-    "static/media/brainflix.0da01919.png": "/abdulfarhan/static/media/brainflix.0da01919.png",
     "static/media/contact.0c977fe0.svg": "/abdulfarhan/static/media/contact.0c977fe0.svg",
     "static/media/covid.65b865d0.png": "/abdulfarhan/static/media/covid.65b865d0.png",
+    "static/media/disneyplus.459bfc00.png": "/abdulfarhan/static/media/disneyplus.459bfc00.png",
     "static/media/down.572a275f.svg": "/abdulfarhan/static/media/down.572a275f.svg",
     "static/media/fitrack.d6b5b7dc.png": "/abdulfarhan/static/media/fitrack.d6b5b7dc.png",
     "static/media/github.d5934730.svg": "/abdulfarhan/static/media/github.d5934730.svg",
@@ -37,6 +37,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.57aed8a9.chunk.js",
     "static/css/main.eb6216ef.chunk.css",
-    "static/js/main.fe3228dd.chunk.js"
+    "static/js/main.e80d29d9.chunk.js"
   ]
 }
