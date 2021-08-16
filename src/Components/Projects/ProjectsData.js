@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import FiTrack from "../../assets/fitrack.png";
-import Brainflix from "../../assets/brainflix.png";
+import Disneyplus from "../../assets/disneyplus.png";
 import Travelog from "../../assets/travelog.png";
 import Covid from "../../assets/covid.png";
 
@@ -21,15 +21,22 @@ export const ProjectsData = [
   },
   {
     id: uuidv4(),
-    name: "BRAINFLIX",
+    name: "Disney+",
     category: ["all", "REACT-JS"],
-    image: Brainflix,
+    image: Disneyplus,
     description:
-      "A YouTube-like remake with some of it's characteristics and functionality, using React, SASS, Node.js and Express.js . Built in 3 sprints within three weeks.",
-    icon: ["html", "sass", "javascript", "react", "node", "express"],
+      "A Front End React Disney plus clone using Redux and Redux toolkit for state management, styled components, and both user authentication and deployment done with Firebase.",
+    icon: [
+      "html",
+      "styledcomponents",
+      "javascript",
+      "react",
+      "redux",
+      "firebase",
+    ],
     color: "card-container__card-hr-brainflix",
-    github: "https://github.com/fabdul88/Brainflix",
-    demo: "https://brainflix-react.herokuapp.com/",
+    github: "https://github.com/fabdul88/Redux-toolkit-Firebase",
+    demo: "https://disneyplus-live.web.app/",
   },
   {
     id: uuidv4(),

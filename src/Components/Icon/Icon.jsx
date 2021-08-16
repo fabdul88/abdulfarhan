@@ -14,6 +14,9 @@ import { ChartJS } from "./ChartJS";
 import { Mapbox } from "./Mapbox";
 import { ReactLeaflet } from "./ReactLeaflet";
 import { Css } from "./Css";
+import { StyledComponents } from "./StyledComponents";
+import { Firebase } from "./Firebase";
+import { Redux } from "./Redux";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -48,6 +51,12 @@ const Icon = (props) => {
       return <ReactLeaflet {...props} />;
     case "css":
       return <Css {...props} />;
+    case "styledcomponents":
+      return <StyledComponents {...props} />;
+    case "firebase":
+      return <Firebase {...props} />;
+    case "redux":
+      return <Redux {...props} />;
     default:
       <div />;
   }

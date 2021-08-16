@@ -12,7 +12,7 @@ const ReactLeaflet = ({ className, height, width }) => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       x="0px"
       y="0px"
-      viewBox="60 0 0.1 100.8"
+      viewBox="50 10 10 85.8"
       xmlSpace="preserve"
     >
       <g>
