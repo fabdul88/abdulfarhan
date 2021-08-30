@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .contact-container {
   position: relative;
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     padding: 60px 0;
-    @include tablet {
+    @include global.tablet {
       margin: 0 0 60px 0;
       padding: 60px 0 0 0;
     }
@@ -35,9 +35,8 @@
       color: #ffffff;
     }
     &-hr {
-      @include sectionTitleHR;
+      @include global.sectionTitleHR;
       background: #ffffff;
-      // margin: 5px 0 0 0;
     }
   }
   &__text {

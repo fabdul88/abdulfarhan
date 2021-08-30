@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .footer-container {
   font-family: "RalewayR";
@@ -27,7 +27,7 @@
     padding: 40px 0 20px 0;
     margin: 0;
     background-color: #252525;
-    @include tablet {
+    @include global.tablet {
       flex-direction: row;
     }
     &-item {
@@ -62,7 +62,7 @@
         background-color: #d15704;
         border: 1px solid transparent;
       }
-      @include tablet {
+      @include global.tablet {
         margin: 0 0 0 20px;
       }
     }
@@ -85,7 +85,7 @@
   &__go-to-top {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.2);
-    @include mobile {
+    @include global.mobile {
       position: absolute;
       top: 1.7%;
       right: 1%;
@@ -94,7 +94,7 @@
       border-radius: 4px;
       padding: 10px;
     }
-    @include tablet {
+    @include global.tablet {
       top: -16.3%;
       right: 5%;
       height: 30px;

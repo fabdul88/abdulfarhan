@@ -1,8 +1,8 @@
-@import "./mediaQuery";
-@import "./fonts";
-@import "./colors";
-@import "./mixins";
-@import "./starsOne";
-@import "./starsTwo";
-@import "./starsThree";
-@import "./starsAnimation";
+@forward "./mediaQuery";
+@forward "./fonts";
+@forward "./colors";
+@forward "./mixins";
+@forward "./starsOne";
+@forward "./starsTwo";
+@forward "./starsThree";
+@forward "./starsAnimation";

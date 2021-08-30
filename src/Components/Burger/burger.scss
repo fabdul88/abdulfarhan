@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .burger-container {
   &__menu-btn {
@@ -14,7 +14,7 @@
     height: 80px;
     cursor: pointer;
 
-    @include desktop {
+    @include global.desktop {
       display: none;
     }
   }

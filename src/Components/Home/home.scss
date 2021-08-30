@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .home-container {
   overflow: hidden;
@@ -8,20 +8,18 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
   }
   &__text-container {
-    @include tablet {
+    @include global.tablet {
       width: 100vw;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
       margin: 0 0 300px 0;
     }
     &-title {
@@ -31,8 +29,8 @@
       margin: 0;
       font-size: 45px;
       letter-spacing: 4px;
-      color: $graphite;
-      @include tablet {
+      color: global.$graphite;
+      @include global.tablet {
         margin: 310px 0 0 0;
         font-size: 93px;
       }
@@ -53,7 +51,7 @@
       &:hover {
         filter: drop-shadow(0.2rem 0.3rem 0.1rem rgba(227, 27, 109, 0.8));
       }
-      @include tablet {
+      @include global.tablet {
         font-size: 27px;
         font-style: normal;
       }
@@ -74,7 +72,6 @@
   }
   &__last-name {
     font-family: "SoulmazeOutlineItalic";
-
     color: #0aa2e7;
     line-height: 0.5;
     filter: drop-shadow(0.4rem 0.6rem 0.1rem rgba(10, 162, 231, 0.2));
@@ -92,7 +89,6 @@
     cursor: pointer;
     height: 50px;
     margin: 50px 0 0 0;
-
     filter: drop-shadow(0.4rem 0.3rem 0.1rem rgba(86, 255, 255, 0.3));
     transition: filter 600ms;
     &:hover {
@@ -107,27 +103,24 @@
     left: 0;
   }
   &__stars {
-    @include starsOne;
-    // @include animationOne;
+    @include global.starsOne;
 
     &:after {
-      @include starsOneAfter;
+      @include global.starsOneAfter;
     }
   }
   &__stars-two {
-    @include starsTwo;
-    // @include animationTwo;
+    @include global.starsTwo;
 
     &:after {
-      @include starsTwoAfter;
+      @include global.starsTwoAfter;
     }
   }
   &__stars-three {
-    @include starsThree;
-    // @include animationThree;
+    @include global.starsThree;
 
     &:after {
-      @include starsThreeAfter;
+      @include global.starsThreeAfter;
     }
   }
 }

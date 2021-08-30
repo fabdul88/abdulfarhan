@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .work-container {
   position: relative;
@@ -16,10 +16,10 @@
       justify-content: space-evenly;
       width: 100%;
       max-width: 589px;
-      @include tablet {
+      @include global.tablet {
         max-width: 776px;
       }
-      @include desktop {
+      @include global.desktop {
         margin: 0;
         max-width: 1253px;
       }
@@ -49,7 +49,7 @@
       border-bottom: 0;
       border-radius: 0;
     }
-    @include tablet {
+    @include global.tablet {
       font-size: 14px;
     }
   }
@@ -66,11 +66,10 @@
       color: #e31b6d;
     }
     &-hr {
-      @include sectionTitleHR;
+      @include global.sectionTitleHR;
       background: #4cf3c6;
     }
   }
-
   &__cards-container {
     display: flex;
     justify-content: center;
@@ -86,27 +85,24 @@
     left: 0;
   }
   &__stars {
-    @include starsOne;
-    // @include animationOne;
+    @include global.starsOne;
 
     &:after {
-      @include starsOneAfter;
+      @include global.starsOneAfter;
     }
   }
   &__stars-two {
-    @include starsTwo;
-    // @include animationTwo;
+    @include global.starsTwo;
 
     &:after {
-      @include starsTwoAfter;
+      @include global.starsTwoAfter;
     }
   }
   &__stars-three {
-    @include starsThree;
-    // @include animationThree;
+    @include global.starsThree;
 
     &:after {
-      @include starsThreeAfter;
+      @include global.starsThreeAfter;
     }
   }
 }

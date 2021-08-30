@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .card-container {
   display: flex;
@@ -66,23 +66,23 @@
   }
 
   &__card-hr-fitrack {
-    @include cardHR;
+    @include global.cardHR;
     background: #e31b6d;
   }
   &__card-hr-brainflix {
-    @include cardHR;
+    @include global.cardHR;
     background: #4cf3c6;
   }
   &__card-hr-bandsite {
-    @include cardHR;
+    @include global.cardHR;
     background: #4cf3c6;
   }
   &__card-hr-travelog {
-    @include cardHR;
+    @include global.cardHR;
     background: #0aa2e7;
   }
   &__card-hr-covid {
-    @include cardHR;
+    @include global.cardHR;
     background: #0aa2e7;
   }
   &__image-front {
@@ -133,7 +133,7 @@
     left: 53px;
   }
   &__demo {
-    @include projectCardButton;
+    @include global.projectCardButton;
     border: 1px solid #4cf3c6;
     color: #4cf3c6;
 
@@ -145,7 +145,7 @@
     }
   }
   &__code {
-    @include projectCardButton;
+    @include global.projectCardButton;
     border: 1px solid #0aa2e7;
     color: #0aa2e7;
     left: 159px;

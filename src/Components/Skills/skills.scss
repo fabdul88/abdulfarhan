@@ -1,4 +1,4 @@
-@import "../../styles/partials/global";
+@use "../../styles/partials/global";
 
 .skills-container {
   position: relative;
@@ -15,7 +15,7 @@
       color: #0aa2e7;
     }
     &-hr {
-      @include sectionTitleHR;
+      @include global.sectionTitleHR;
       background: #4cf3c6;
     }
   }
@@ -38,10 +38,10 @@
       justify-content: center;
       align-items: center;
       height: 50px;
-      @include tablet {
+      @include global.tablet {
         margin: 0 320px 0 0;
       }
-      @include desktop {
+      @include global.desktop {
         margin: 0 630px 0 0;
       }
     }
@@ -51,7 +51,7 @@
     max-width: 290px;
     display: flex;
     margin: 20px 0;
-    @include desktop {
+    @include global.desktop {
       max-width: 900px;
     }
   }
@@ -91,11 +91,11 @@
     height: 27px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    @include tablet {
+    @include global.tablet {
       width: 67.4375vw;
       max-width: 493px;
     }
-    @include desktop {
+    @include global.desktop {
       max-width: 830px;
     }
   }
