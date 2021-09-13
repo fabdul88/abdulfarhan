@@ -39,7 +39,7 @@ export default function Contact() {
       </div>
       <div>
         <p data-aos="slide-down" className="contact-container__text">
-          Like what you see ?{" "}
+          HAVE SOMETHING IN MIND ?{" "}
           <span
             data-aos="fade-up"
             duration="3000"
@@ -51,11 +51,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="contact-container__form-container">
-        <form
-          className="contact-container__form"
-          action=""
-          onSubmit={sendEmail}
-        >
+        <form className="contact-container__form" onSubmit={sendEmail}>
           <input
             data-aos="flip-up"
             className="contact-container__form-name"
@@ -83,7 +79,6 @@ export default function Contact() {
           <textarea
             data-aos="flip-down"
             className="contact-container__form-message"
-            id=""
             cols="30"
             rows="10"
             placeholder="Your Message"

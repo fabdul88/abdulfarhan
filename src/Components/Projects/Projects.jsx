@@ -20,7 +20,7 @@ export default function Projects() {
   }, []);
 
   useEffect(() => {
-    setProjects([]);
+    // setProjects([]);
 
     const filtered = ProjectsData.map((p) => ({
       ...p,
