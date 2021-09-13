@@ -36,7 +36,9 @@
     }
   }
   &__back {
-    background-color: transparent;
+    // background-color: transparent;
+    height: 400px;
+    background: radial-gradient(ellipse at bottom,#1b2735 0,#1c2833 100%);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     position: relative;
     bottom: 203px;
