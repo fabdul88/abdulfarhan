@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/abdulfarhan/static/css/main.be4b480a.chunk.css",
-    "main.js": "/abdulfarhan/static/js/main.033d7423.chunk.js",
-    "main.js.map": "/abdulfarhan/static/js/main.033d7423.chunk.js.map",
+    "main.css": "/abdulfarhan/static/css/main.a961505d.chunk.css",
+    "main.js": "/abdulfarhan/static/js/main.11802439.chunk.js",
+    "main.js.map": "/abdulfarhan/static/js/main.11802439.chunk.js.map",
     "runtime-main.js": "/abdulfarhan/static/js/runtime-main.94bcc2c0.js",
     "runtime-main.js.map": "/abdulfarhan/static/js/runtime-main.94bcc2c0.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/abdulfarhan/static/css/2.7fc9bc2b.chunk.css",
@@ -12,31 +12,31 @@
     "static/js/3.125fa9d6.chunk.js.map": "/abdulfarhan/static/js/3.125fa9d6.chunk.js.map",
     "index.html": "/abdulfarhan/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/abdulfarhan/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.be4b480a.chunk.css.map": "/abdulfarhan/static/css/main.be4b480a.chunk.css.map",
+    "static/css/main.a961505d.chunk.css.map": "/abdulfarhan/static/css/main.a961505d.chunk.css.map",
     "static/js/2.97fe0323.chunk.js.LICENSE.txt": "/abdulfarhan/static/js/2.97fe0323.chunk.js.LICENSE.txt",
     "static/media/home.scss": "/abdulfarhan/static/media/Raleway-SemiBold.243af299.ttf",
     "static/media/about.4e16d9d9.svg": "/abdulfarhan/static/media/about.4e16d9d9.svg",
     "static/media/black_transparent.dc528fee.svg": "/abdulfarhan/static/media/black_transparent.dc528fee.svg",
     "static/media/contact.0c977fe0.svg": "/abdulfarhan/static/media/contact.0c977fe0.svg",
-    "static/media/covid.65b865d0.png": "/abdulfarhan/static/media/covid.65b865d0.png",
-    "static/media/disneyplus.459bfc00.png": "/abdulfarhan/static/media/disneyplus.459bfc00.png",
+    "static/media/covid.efe2472e.webp": "/abdulfarhan/static/media/covid.efe2472e.webp",
+    "static/media/disneyplus.7fee9a1e.webp": "/abdulfarhan/static/media/disneyplus.7fee9a1e.webp",
     "static/media/down.572a275f.svg": "/abdulfarhan/static/media/down.572a275f.svg",
-    "static/media/fitrack.d6b5b7dc.png": "/abdulfarhan/static/media/fitrack.d6b5b7dc.png",
+    "static/media/fitrack.b0acbac5.webp": "/abdulfarhan/static/media/fitrack.b0acbac5.webp",
     "static/media/github.d5934730.svg": "/abdulfarhan/static/media/github.d5934730.svg",
     "static/media/go-to-top.6d4dca06.svg": "/abdulfarhan/static/media/go-to-top.6d4dca06.svg",
-    "static/media/hexagon_monochrome.d8df732a.png": "/abdulfarhan/static/media/hexagon_monochrome.d8df732a.png",
+    "static/media/hexagon_monochrome.0e65261d.webp": "/abdulfarhan/static/media/hexagon_monochrome.0e65261d.webp",
     "static/media/home.271959a0.svg": "/abdulfarhan/static/media/home.271959a0.svg",
     "static/media/linkedin.7eaaf389.svg": "/abdulfarhan/static/media/linkedin.7eaaf389.svg",
     "static/media/mywork.283129ea.svg": "/abdulfarhan/static/media/mywork.283129ea.svg",
-    "static/media/profile.94d7a982.png": "/abdulfarhan/static/media/profile.94d7a982.png",
+    "static/media/profile.868ce01c.webp": "/abdulfarhan/static/media/profile.868ce01c.webp",
     "static/media/skills.d7591215.svg": "/abdulfarhan/static/media/skills.d7591215.svg",
-    "static/media/travelog.08f41e01.png": "/abdulfarhan/static/media/travelog.08f41e01.png"
+    "static/media/travelog.a08c4deb.webp": "/abdulfarhan/static/media/travelog.a08c4deb.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.94bcc2c0.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.97fe0323.chunk.js",
-    "static/css/main.be4b480a.chunk.css",
-    "static/js/main.033d7423.chunk.js"
+    "static/css/main.a961505d.chunk.css",
+    "static/js/main.11802439.chunk.js"
   ]
 }
