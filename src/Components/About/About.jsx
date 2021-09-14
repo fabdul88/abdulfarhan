@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import Profile from "../../assets/profile.png";
-import Hexagon from "../../assets/hexagon_monochrome.png";
+import Profile from "../../assets/profile.webp";
+import Hexagon from "../../assets/hexagon_monochrome.webp";
 import "./about.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
