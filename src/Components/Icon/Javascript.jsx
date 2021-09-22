@@ -6,7 +6,6 @@ const Javascript = ({ className, width, height }) => {
       className={className}
       width={width}
       height={height}
-      id="Lager_1"
       version="1.1"
       viewBox="0 0 128 128"
       xmlSpace="preserve"
@@ -25,7 +24,7 @@ const Javascript = ({ className, width, height }) => {
             <circle cx="64" cy="64" r="50" />
           </g>
         </g>
-        <g id="Layer_1_1_">
+        <g>
           <g>
             <g>
               <path

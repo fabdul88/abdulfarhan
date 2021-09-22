@@ -17,6 +17,8 @@ import { Css } from "./Css";
 import { StyledComponents } from "./StyledComponents";
 import { Firebase } from "./Firebase";
 import { Redux } from "./Redux";
+import { Nextjs } from "./Nextjs";
+import { Figma } from "./Figma";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -57,6 +59,10 @@ const Icon = (props) => {
       return <Firebase {...props} />;
     case "redux":
       return <Redux {...props} />;
+    case "nextjs":
+      return <Nextjs {...props} />;
+    case "figma":
+      return <Figma {...props} />;
     default:
       <div />;
   }

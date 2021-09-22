@@ -2,7 +2,8 @@
 
 .home-container {
   overflow: hidden;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #1c2833 100%);
+  background: radial-gradient(ellipse at bottom, #203a43 0%, #0f2027 100%);
+  position: relative;
   &__hero-image {
     background-repeat: no-repeat;
     background-size: cover;

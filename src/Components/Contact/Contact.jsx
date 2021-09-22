@@ -40,20 +40,13 @@ export default function Contact() {
       <div>
         <p data-aos="slide-down" className="contact-container__text">
           HAVE SOMETHING IN MIND ?{" "}
-          <span
-            data-aos="fade-up"
-            duration="3000"
-            className="contact-container__text-highlight"
-          >
-            Let's talk
-          </span>{" "}
+          <span className="contact-container__text-highlight">Let's talk</span>{" "}
           about your next project
         </p>
       </div>
       <div className="contact-container__form-container">
         <form className="contact-container__form" onSubmit={sendEmail}>
           <input
-            data-aos="flip-up"
             className="contact-container__form-name"
             type="text"
             placeholder="Name"
@@ -61,7 +54,6 @@ export default function Contact() {
             required
           />
           <input
-            data-aos="flip-down"
             className="contact-container__form-email"
             type="text"
             placeholder="Email"
@@ -69,7 +61,6 @@ export default function Contact() {
             required
           />
           <input
-            data-aos="flip-up"
             className="contact-container__form-subject"
             type="text"
             placeholder="Subject"
@@ -77,7 +68,6 @@ export default function Contact() {
             required
           />
           <textarea
-            data-aos="flip-down"
             className="contact-container__form-message"
             cols="30"
             rows="10"
@@ -85,13 +75,7 @@ export default function Contact() {
             name="message"
             required
           ></textarea>
-          <button
-            data-aos="zoom-in"
-            duration="4000"
-            className="contact-container__form-button"
-          >
-            SUBMIT
-          </button>
+          <button className="contact-container__form-button">SUBMIT</button>
         </form>
       </div>
     </div>
