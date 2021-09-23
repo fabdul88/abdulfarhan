@@ -12,6 +12,12 @@ const Leader = ({ className, width, height }) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
+      <defs>
+        <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#4cf3c6" />
+          <stop offset="1" stopColor="#0aa2e7" />
+        </linearGradient>
+      </defs>
       <g>
         <polygon points="91,45 83,45 83,73 73,73 73,119 61,119 61,73 51,73 51,45 43,45 43,81 53,81 53,127 81,127 81,81 91,81  " />
         <path d="M53,15c0,7.7,6.3,14,14,14s14-6.3,14-14S74.7,1,67,1S53,7.3,53,15z M73,15c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6   S73,11.7,73,15z" />

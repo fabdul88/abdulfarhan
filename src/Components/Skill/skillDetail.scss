@@ -301,6 +301,18 @@
       }
     }
   }
+  &__git {
+    width: 75%;
+    animation: git 3s;
+    @keyframes git {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 75%;
+      }
+    }
+  }
   &__redux {
     width: 40%;
     animation: redux 3s;

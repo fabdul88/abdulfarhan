@@ -14,6 +14,12 @@ const Teamwork = ({ className, width, height }) => {
       viewBox="0 0 512 512"
       xmlSpace="preserve"
     >
+      <defs>
+        <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#4cf3c6" />
+          <stop offset="1" stopColor="#0aa2e7" />
+        </linearGradient>
+      </defs>
       <g>
         <g>
           <g>

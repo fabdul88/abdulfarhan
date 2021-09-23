@@ -190,6 +190,19 @@ export const skillData = [
   },
   {
     id: uuidv4(),
+    icon: ["git"],
+    progressBarClassName: "skill__experience-progress-dynamic skill__git",
+    iconClassName: "skill__icons-color",
+    case: ["technical"],
+    name: "git",
+    title: "Git",
+    description:
+      "Git is the most commonly used version control system. Git tracks the changes you make to files, and also makes collaboration easier, allowing changes by multiple people to all be merged into one source.",
+    projectNumber: 27,
+    yearsExperience: 1,
+  },
+  {
+    id: uuidv4(),
     icon: ["figma"],
     progressBarClassName: "skill__experience-progress-dynamic skill__figma",
     iconClassName: "skill__icons-color",

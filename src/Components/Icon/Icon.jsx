@@ -22,6 +22,7 @@ import { Figma } from "./Figma";
 import { Leader } from "./Leader";
 import { Language } from "./Language";
 import { Teamwork } from "./Teamwork";
+import { Git } from "./Git";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -72,6 +73,8 @@ const Icon = (props) => {
       return <Language {...props} />;
     case "teamwork":
       return <Teamwork {...props} />;
+    case "git":
+      return <Git {...props} />;
     default:
       <div />;
   }

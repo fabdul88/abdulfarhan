@@ -15,6 +15,12 @@ const ReactLeaflet = ({ className, height, width }) => {
       viewBox="50 10 10 85.8"
       xmlSpace="preserve"
     >
+      <defs>
+        <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#4cf3c6" />
+          <stop offset="1" stopColor="#0aa2e7" />
+        </linearGradient>
+      </defs>
       <g>
         <path
           d="M46.75,52.15c0.54-0.44,1.08-0.86,1.62-1.26c-1.09-0.27-2.14-0.48-3.13-0.62c-0.06,1.03-0.08,2.1-0.04,3.22
