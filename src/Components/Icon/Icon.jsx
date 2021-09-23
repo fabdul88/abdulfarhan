@@ -19,6 +19,9 @@ import { Firebase } from "./Firebase";
 import { Redux } from "./Redux";
 import { Nextjs } from "./Nextjs";
 import { Figma } from "./Figma";
+import { Leader } from "./Leader";
+import { Language } from "./Language";
+import { Teamwork } from "./Teamwork";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -63,6 +66,12 @@ const Icon = (props) => {
       return <Nextjs {...props} />;
     case "figma":
       return <Figma {...props} />;
+    case "leader":
+      return <Leader {...props} />;
+    case "language":
+      return <Language {...props} />;
+    case "teamwork":
+      return <Teamwork {...props} />;
     default:
       <div />;
   }

@@ -55,7 +55,7 @@ export default function About() {
         </motion.div>
         <div
           data-aos="flip-left"
-          data-aos-duration="4000"
+          data-aos-duration="3000"
           className="about-container__profile-text-container"
         >
           <p className="about-container__profile-text">

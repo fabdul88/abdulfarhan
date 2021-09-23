@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link as Scroll } from "react-scroll";
 import { motion } from "framer-motion";
 import About from "../About/About";
-import Skills from "../Skills/Skills";
+import Skill from "../Skill/Skill";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <Skills />
+      <Skill />
       <Projects />
       <Contact />
       <Footer />

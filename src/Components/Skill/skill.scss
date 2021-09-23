@@ -1,0 +1,243 @@
+@use "../../styles/partials/global";
+
+.skill {
+  background: linear-gradient(
+      217deg,
+      rgba(10, 162, 231, 1),
+      rgba(227, 27, 109, 0) 70.71%
+    ),
+    linear-gradient(336deg, rgba(76, 243, 198, 1), rgba(227, 27, 109, 1) 90.71%),
+    linear-gradient(
+      336deg,
+      rgba(227, 27, 109, 1),
+      rgba(227, 27, 109, 0.5) 90.71%
+    );
+  box-shadow: inset 0 0 10px #000000;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: auto;
+
+  &__title {
+    text-align: center;
+    font-family: "SoulmazeItalic";
+    color: #444649;
+    padding: 60px 0 0 0;
+    margin: 0;
+    &-letter {
+      color: #e31b6d;
+    }
+    &-hr {
+      @include global.sectionTitleHR;
+      background: #4cf3c6;
+    }
+  }
+  &__section-one {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    width: 95vw;
+    max-width: 500px;
+    height: 150px;
+    margin-top: 60px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @include global.tablet {
+      height: 150px;
+      max-width: 970px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    width: 100%;
+
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 10px;
+    @include global.tablet {
+      padding-top: 10px;
+      max-width: 620px;
+      justify-content: space-between;
+    }
+  }
+  &__technical-container,
+  &__design-container,
+  &__management-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 7px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    @include global.tablet {
+      padding: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+      color: #0aa2e7;
+      border: 1px solid #0aa2e7;
+      border-radius: 3px;
+    }
+    &:focus {
+      color: #0aa2e7;
+      border-top: 2px solid #0aa2e7;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-radius: 0;
+    }
+  }
+  &__technical-icon,
+  &__design-icon,
+  &__management-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    @include global.tablet {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icons-color {
+    margin: 0 2.5px;
+    fill: #a9a6b6;
+    width: 42px;
+    height: 42px;
+    &:hover {
+      fill: url(#gradient);
+      filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
+    }
+    @include global.tablet {
+      width: 42px;
+      height: 42px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__technical-description--active,
+  &__design-description--active,
+  &__management-description--active {
+    font-family: "RalewayR";
+    font-size: 13px;
+    background: linear-gradient(#ffffff, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include global.tablet {
+      font-size: 16px;
+    }
+  }
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 5px 0 10px 0;
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(76, 243, 198, 0.6);
+      border-radius: 50px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #0f2027; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #2c5364,
+        #203a43,
+        #0f2027
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #2c5364,
+        #203a43,
+        #0f2027
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    @include global.tablet {
+      padding: 5px 0 15px 0;
+      justify-content: center;
+    }
+  }
+  &__section-two {
+    font-family: "RalewayR";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95vw;
+    max-width: 500px;
+    height: auto;
+
+    margin-top: 10px;
+    margin-bottom: 70px;
+    border-radius: 4px;
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @include global.tablet {
+      max-width: 970px;
+    }
+  }
+  &__wrapper-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 703px;
+    min-height: 703px;
+    letter-spacing: 1px;
+    @include global.tablet {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 500px;
+      min-height: 500px;
+    }
+  }
+}

@@ -1,0 +1,376 @@
+@use "../../styles/partials/global";
+
+.skill {
+  &__stats-container-one,
+  &__stats-container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__stats-container-one {
+    @include global.tablet {
+      height: 100%;
+    }
+  }
+  &__stats-container-two {
+    @include global.tablet {
+      height: 90%;
+    }
+  }
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
+  }
+  &__icons-color-two {
+    fill: url(#gradient);
+    filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
+  }
+  &__image-description-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__image-title,
+  &__image-description,
+  &__projects-completed,
+  &__projects-completed-num,
+  &__years-experience,
+  &__years-experience-num,
+  &__beginner,
+  &__intermediate,
+  &__expert {
+    background: linear-gradient(#ffffff, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__image-title {
+    font-size: 30px;
+  }
+  &__image-description {
+    line-height: 25px;
+    width: 87.5vw;
+    max-width: 390px;
+    height: 175px;
+    min-height: 175px;
+    @include global.tablet {
+      width: 280px;
+      line-height: 30px;
+      height: 210px;
+      min-height: 210px;
+    }
+  }
+  &__projects-completed-container,
+  &__years-experience-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 9px;
+    width: 78.125vw;
+    max-width: 390px;
+    height: 20px;
+    overflow: hidden;
+    @include global.tablet {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  }
+  &__experience-level-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 30px;
+  }
+  &__experience-progress-base {
+    position: relative;
+    width: 87.5vw;
+    max-width: 426px;
+    height: 10px;
+    background: #cacfd2;
+    border-radius: 10px;
+    overflow: hidden;
+    @include global.tablet {
+      width: 280px;
+    }
+  }
+  &__experience-progress-dynamic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(
+        217deg,
+        rgba(10, 162, 231, 1),
+        rgba(227, 27, 109, 0) 70.71%
+      ),
+      linear-gradient(
+        336deg,
+        rgba(76, 243, 198, 1),
+        rgba(227, 27, 109, 1) 90.71%
+      ),
+      linear-gradient(
+        336deg,
+        rgba(227, 27, 109, 1),
+        rgba(227, 27, 109, 0.5) 90.71%
+      );
+    border-radius: 10px;
+  }
+  &__progress-bar-icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  &__beginner-wrapper,
+  &__intermediate-wrapper,
+  &__expert-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__beginner-circle,
+  &__intermediate-circle,
+  &__expert-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  &__beginner-circle {
+    transform: translate(-80%, -70%);
+  }
+  &__intermediate-circle {
+    transform: translate(-30%, -70%);
+  }
+  &__expert-circle {
+    transform: translate(40%, -70%);
+  }
+  &__beginner,
+  &__intermediate,
+  &__expert {
+    margin-top: 0;
+  }
+  &__html {
+    width: 80%;
+    animation: html 3s;
+    @keyframes html {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+    }
+  }
+  &__css {
+    width: 70%;
+    animation: css 3s;
+    @keyframes css {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 70%;
+      }
+    }
+  }
+  &__sass {
+    width: 70%;
+    animation: sass 3s;
+    @keyframes sass {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 70%;
+      }
+    }
+  }
+  &__javascript {
+    width: 50%;
+    animation: javascript 3s;
+    @keyframes javascript {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+  }
+  &__react {
+    width: 60%;
+    animation: react 3s;
+    @keyframes react {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 60%;
+      }
+    }
+  }
+  &__node {
+    width: 50%;
+    animation: node 3s;
+    @keyframes node {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+  }
+  &__express {
+    width: 50%;
+    animation: express 3s;
+    @keyframes express {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+  }
+  &__mongodb {
+    width: 50%;
+    animation: mongo 3s;
+    @keyframes mongo {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+  }
+  &__firebase {
+    width: 40%;
+    animation: firebase 3s;
+    @keyframes firebase {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+  }
+  &__bem {
+    width: 80%;
+    animation: bem 3s;
+    @keyframes bem {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+    }
+  }
+  &__styled {
+    width: 60%;
+    animation: styled 3s;
+    @keyframes styled {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 60%;
+      }
+    }
+  }
+  &__materialui {
+    width: 60%;
+    animation: material 3s;
+    @keyframes material {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 60%;
+      }
+    }
+  }
+  &__redux {
+    width: 40%;
+    animation: redux 3s;
+    @keyframes redux {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+  }
+  &__nextjs {
+    width: 45%;
+    animation: next 3s;
+    @keyframes next {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 45%;
+      }
+    }
+  }
+  &__figma {
+    width: 40%;
+    animation: figma 3s;
+    @keyframes figma {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+  }
+  &__leader {
+    width: 50%;
+    animation: leader 3s;
+    @keyframes leader {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+    }
+  }
+  &__language {
+    width: 100%;
+    animation: language 3s;
+    @keyframes language {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+  &__teamwork {
+    width: 100%;
+    animation: teamwork 3s;
+    @keyframes teamwork {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+}
