@@ -25,7 +25,8 @@ export const FooterInfo = [
     id: uuidv4(),
     listItem: "footer-container__social-list-item",
     listItemLink: "footer-container__social-list-resume-link",
-    listItemHref: process.env.REACT_APP_RESUME_LINK,
+    listItemHref:
+      "https://drive.google.com/uc?id=1rH83IjVTlSaEOftTJHTIjUmjlE794Fm5&export=download",
     target: "_blank",
     rel: "noopener noreferrer",
     iconName: "download",
