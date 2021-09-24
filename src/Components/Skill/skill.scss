@@ -64,6 +64,7 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     @include global.tablet {
       height: 150px;
+      width: 85vw;
       max-width: 970px;
     }
   }
@@ -135,8 +136,10 @@
       filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
     }
     @include global.tablet {
-      width: 42px;
-      height: 42px;
+      // width: 42px;
+      // height: 42px;
+      width: 39px;
+      height: 39px;
     }
     &:hover {
       cursor: pointer;
@@ -222,6 +225,7 @@
       #0f2027
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     @include global.tablet {
+      width: 85vw;
       max-width: 970px;
     }
   }
