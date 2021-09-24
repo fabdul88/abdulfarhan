@@ -20,8 +20,6 @@ export default function Projects() {
   }, []);
 
   useEffect(() => {
-    // setProjects([]);
-
     const filtered = ProjectsData.map((p) => ({
       ...p,
       filtered: p.category.includes(filter),

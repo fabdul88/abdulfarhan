@@ -221,7 +221,7 @@ export const skillData = [
     iconClassName: "skill__icons-color",
     case: ["management"],
     name: "leader",
-    title: "Leader",
+    title: "Leadership",
     description:
       "Leadership is a quality that not everyone takes up voluntarily. I have been leading teams to achieve organizational goals while maintaining a healthy, safe and joyful work environment.",
     projectNumber: "-",

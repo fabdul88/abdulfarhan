@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./footer.scss";
 import { Icon } from "../Icon/Icon";
+import { FooterInfo } from "./FooterInfo";
 import GoToTop from "../../assets/go-to-top.svg";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -22,41 +23,25 @@ export default function Footer() {
           </p>
         </div>
         <ul className="footer-container__social-list">
-          <li className="footer-container__social-list-item">
-            <motion.a
-              className="footer-container__social-list-linkedin-link"
-              href="https://www.linkedin.com/in/abdul-farhan-9bba3b1b3"
-              whileHover={hover}
-            >
-              <Icon
-                name="linkedin"
-                className="footer-container__social-list-linkedin"
-                width="35"
-                height="35"
-              />
-              <p className="footer-container__social-list-text">
-                CONNECT WITH ME ON LINKEDIN
-              </p>
-            </motion.a>
-          </li>
-
-          <li className="footer-container__social-list-item">
-            <motion.a
-              className="footer-container__social-list-github-link"
-              href="https://www.github.com/fabdul88"
-              whileHover={hover}
-            >
-              <Icon
-                name="github"
-                className="footer-container__social-list-github"
-                width="35"
-                height="35"
-              />
-              <p className="footer-container__social-list-text">
-                VIEW MY CODE ON GITHUB
-              </p>
-            </motion.a>
-          </li>
+          {FooterInfo.map((info) => (
+            <li key={info.id} className={info.listItem}>
+              <motion.a
+                className={info.listItemLink}
+                href={info.listItemHref}
+                whileHover={hover}
+                target={info.target}
+                rel={info.rel}
+              >
+                <Icon
+                  name={info.iconName}
+                  className={info.iconClassName}
+                  width="35"
+                  height="35"
+                />
+                <p className={info.descriptionClassName}>{info.description}</p>
+              </motion.a>
+            </li>
+          ))}
         </ul>
       </div>
       <motion.img

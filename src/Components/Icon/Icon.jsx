@@ -23,6 +23,7 @@ import { Leader } from "./Leader";
 import { Language } from "./Language";
 import { Teamwork } from "./Teamwork";
 import { Git } from "./Git";
+import { Download } from "./Download";
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -75,6 +76,8 @@ const Icon = (props) => {
       return <Teamwork {...props} />;
     case "git":
       return <Git {...props} />;
+    case "download":
+      return <Download {...props} />;
     default:
       <div />;
   }
