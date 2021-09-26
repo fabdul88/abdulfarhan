@@ -18,6 +18,7 @@ export default function SideBar() {
     textShadow: "0 0 8px rgb(0,0,0)",
     transition: { type: "spring", stiffness: 1000 },
   };
+
   return (
     <div className="sidebar">
       <div
@@ -47,15 +48,13 @@ export default function SideBar() {
                   src={item.imgSrc}
                   alt={item.imgAlt}
                   onClick={() => {
-                    // showSidebar();
-                    setSidebar(false);
+                    showSidebar();
                   }}
                 />
                 <span
                   className={item.descriptionClassName}
                   onClick={() => {
-                    // showSidebar();
-                    setSidebar(false);
+                    showSidebar();
                   }}
                 >
                   {item.description}
@@ -66,9 +65,12 @@ export default function SideBar() {
         </ul>
       </div>
       <div
+        onClick={() => {
+          showSidebar();
+        }}
         className={sidebar ? "sidebar__backdrop" : "sidebar__backdrop-false"}
       />
-      <Burger display={showSidebar} />
+      <Burger sidebar={sidebar} display={showSidebar} />
     </div>
   );
 }

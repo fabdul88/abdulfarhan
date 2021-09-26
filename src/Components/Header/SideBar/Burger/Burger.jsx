@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import "./burger.scss";
-export default function Burger({ display }) {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function Burger({ sidebar, display }) {
   const topVariants = {
     opened: {
       rotate: 45,
@@ -38,36 +36,29 @@ export default function Burger({ display }) {
   return (
     <>
       <div className="burger-container">
-        <div className="burger-container__menu-btn">
+        <div
+          className="burger-container__menu-btn"
+          onClick={() => {
+            display();
+          }}
+        >
           <motion.div
             className="burger-container__burger"
             initial={false}
             variants={topVariants}
-            animate={isOpen ? "opened" : "closed"}
-            onClick={() => {
-              display();
-              setIsOpen((state) => !state);
-            }}
+            animate={sidebar ? "opened" : "closed"}
           ></motion.div>
           <motion.div
             className="burger-container__burger-center"
             initial={false}
             variants={centerVariants}
-            animate={isOpen ? "opened" : "closed"}
-            onClick={() => {
-              display();
-              setIsOpen((state) => !state);
-            }}
+            animate={sidebar ? "opened" : "closed"}
           ></motion.div>
           <motion.div
             className="burger-container__burger"
             initial={false}
             variants={bottomVariants}
-            animate={isOpen ? "opened" : "closed"}
-            onClick={() => {
-              display();
-              setIsOpen((state) => !state);
-            }}
+            animate={sidebar ? "opened" : "closed"}
           ></motion.div>
         </div>
       </div>
