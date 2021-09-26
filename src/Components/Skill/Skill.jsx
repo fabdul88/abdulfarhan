@@ -50,10 +50,12 @@ const Skill = () => {
               href="/#"
               key={skillCategory.id}
               className={skillCategory.containerClassName}
-              active={filter === skillCategory.case}
+              active={
+                filter === skillCategory.active ? skillCategory.active : ""
+              }
               onClick={(e) => {
                 e.preventDefault();
-                setFilter(skillCategory.case);
+                setFilter(skillCategory.active);
               }}
             >
               <img
@@ -69,7 +71,7 @@ const Skill = () => {
         </section>
         <section className="skill__icon-wrapper">
           {skillCategory.map((skill) =>
-            skill.filtered === true ? (
+            skill.filtered ? (
               <Fragment key={skill.id}>
                 <div
                   className="skill__icon-container"
@@ -77,7 +79,6 @@ const Skill = () => {
                     e.preventDefault();
                     setSkillDetailFilter(skill.name);
                   }}
-                  filter={skillDetailFilter}
                 >
                   <Icon name={skill.name} className={skill.iconClassName} />
                 </div>

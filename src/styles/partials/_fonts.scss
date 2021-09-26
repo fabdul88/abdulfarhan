@@ -1,4 +1,4 @@
-// Avenir font family
+// Soulmaze font family
 
 @font-face {
   font-family: "Soulmaze";
@@ -39,6 +39,7 @@
   font-style: normal;
 }
 
+// Raleway font family
 @font-face {
   font-family: "RalewayR";
   src: url("../../assets/font/Raleway/Raleway-Regular.ttf") format("TrueType");
@@ -56,6 +57,38 @@
 @font-face {
   font-family: "RalewayB";
   src: url("../../assets/font/Raleway/Raleway-Black.ttf") format("TrueType");
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Montserrat font family
+@font-face {
+  font-family: "MontserratR";
+  src: url("../../assets/font/Montserrat/Montserrat-Regular.ttf")
+    format("TrueType");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratRI";
+  src: url("../../assets/font/Montserrat/Montserrat-Italic.ttf")
+    format("TrueType");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MontserratMB";
+  src: url("../../assets/font/Montserrat/Montserrat-Medium.ttf")
+    format("TrueType");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratB";
+  src: url("../../assets/font/Montserrat/Montserrat-Black.ttf")
+    format("TrueType");
   font-weight: 900;
   font-style: normal;
 }

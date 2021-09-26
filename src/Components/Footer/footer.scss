@@ -1,7 +1,9 @@
 @use "../../styles/partials/global";
 
 .footer-container {
-  font-family: "RalewayR";
+  // font-family: "RalewayR";
+  font-family: "MontserratR";
+
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,13 +11,16 @@
   background-color: #252525;
   padding: 0 0 30px 0;
   &__copyright {
-    color: #8f9aa7;
+    // color: #8f9aa7;
+    color: #dce0e5;
     font-size: 12px;
     letter-spacing: 1px;
     margin: 0;
     padding: 70px 0 0 0;
     text-align: center;
     &-span {
+      font-family: "RalewayR";
+
       color: #e31b6d;
     }
   }
@@ -83,7 +88,8 @@
       text-decoration: none;
       margin: 15px 0 0 0;
       &:hover {
-        background-color: #58bda2;
+        // background-color: #58bda2;
+        background-color: #e31b6d;
         border: 1px solid transparent;
       }
       @include global.tablet {
@@ -92,7 +98,7 @@
       }
     }
     &-text {
-      font-size: 11px;
+      font-size: 10px;
       color: #ffffff;
     }
 

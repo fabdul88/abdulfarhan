@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Icon } from "../Icon/Icon";
+import { Icon } from "../../Icon/Icon";
 import "./card.scss";
 
 export default function Card({ projectCard }) {
@@ -33,7 +33,7 @@ export default function Card({ projectCard }) {
       {" "}
       <AnimatePresence>
         {projectCard.map((project) =>
-          project.filtered === true ? (
+          project.filtered ? (
             <motion.div
               key={project.id}
               className="card-container__con"
@@ -54,9 +54,11 @@ export default function Card({ projectCard }) {
                   <hr className={project.color} />
                 </div>
                 <div className="card-container__back">
-                  <p className="card-container__description">
-                    {project.description}
-                  </p>
+                  <div>
+                    <p className="card-container__description">
+                      {project.description}
+                    </p>
+                  </div>
                   <div className="card-container__icons">
                     {project.icon.map((icons, index) => {
                       return (

@@ -1,4 +1,4 @@
-@use "../../styles/partials/global";
+@use "../../../styles/partials/global";
 
 .card-container {
   display: flex;
@@ -55,7 +55,9 @@
     backface-visibility: hidden;
   }
   &__name {
-    font-family: "Soulmaze";
+    // font-family: "Soulmaze";
+    font-family: "MontserratB";
+    text-transform: uppercase;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -96,7 +98,8 @@
     height: 300px;
   }
   &__description {
-    font-family: "RalewayR";
+    // font-family: "RalewayR";
+    font-family: "MontserratR";
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 30px;

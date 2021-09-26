@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ProjectsData } from "./ProjectsData";
-import Card from "../Card/Card";
+import { ProjectCategory, ProjectsData } from "./ProjectsData";
+import Card from "../Projects/Card/Card";
 import "./projects.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 export default function Projects() {
-  const hover = {
-    scale: 1.05,
-  };
-
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
 
@@ -42,76 +38,20 @@ export default function Projects() {
 
       <div className="work-container__work-labels-container">
         <div className="work-container__work-labels-container-sub">
-          <motion.a
-            data-aos="flip-right"
-            duration="3000"
-            whileHover={hover}
-            className="work-container__work-labels"
-            href="/#"
-            active={filter === "all"}
-            onClick={(e) => {
-              e.preventDefault();
-              setFilter("all");
-            }}
-          >
-            ALL
-          </motion.a>
-          <motion.a
-            data-aos="flip-right"
-            duration="3000"
-            whileHover={hover}
-            className="work-container__work-labels"
-            href="/#"
-            active={filter === "REACT-JS"}
-            onClick={(e) => {
-              e.preventDefault();
-              setFilter("REACT-JS");
-            }}
-          >
-            REACT-JS
-          </motion.a>
-          <motion.a
-            data-aos="flip-right"
-            duration="3000"
-            whileHover={hover}
-            className="work-container__work-labels"
-            href="/#"
-            active={filter === "REACT NATIVE"}
-            onClick={(e) => {
-              e.preventDefault();
-              setFilter("REACT NATIVE");
-            }}
-          >
-            REACT NATIVE
-          </motion.a>
-          <motion.a
-            data-aos="flip-right"
-            duration="3000"
-            whileHover={hover}
-            className="work-container__work-labels"
-            href="/#"
-            active={filter === "FULL STACK"}
-            onClick={(e) => {
-              e.preventDefault();
-              setFilter("FULL STACK");
-            }}
-          >
-            FULL STACK
-          </motion.a>
-          <motion.a
-            data-aos="flip-right"
-            duration="3000"
-            whileHover={hover}
-            className="work-container__work-labels"
-            href="/#"
-            active={filter === "OTHERS"}
-            onClick={(e) => {
-              e.preventDefault();
-              setFilter("OTHERS");
-            }}
-          >
-            OTHERS
-          </motion.a>
+          {ProjectCategory.map((category) => (
+            <motion.a
+              key={category.id}
+              className={category.categoryClassName}
+              href="/#"
+              active={filter === category.active}
+              onClick={(e) => {
+                e.preventDefault();
+                setFilter(category.active);
+              }}
+            >
+              {category.categoryDescription}
+            </motion.a>
+          ))}
         </div>
       </div>
 

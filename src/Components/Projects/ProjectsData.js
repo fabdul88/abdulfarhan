@@ -4,6 +4,40 @@ import Disneyplus from "../../assets/disneyplus.webp";
 import Travelog from "../../assets/travelog.webp";
 import Covid from "../../assets/covid.webp";
 
+// Project Category Data
+export const ProjectCategory = [
+  {
+    id: uuidv4(),
+    categoryClassName: "work-container__work-labels",
+    active: "all",
+    categoryDescription: "ALL",
+  },
+  {
+    id: uuidv4(),
+    categoryClassName: "work-container__work-labels",
+    active: "REACT-JS",
+    categoryDescription: "REACT-JS",
+  },
+  {
+    id: uuidv4(),
+    categoryClassName: "work-container__work-labels",
+    active: "REACT-NATIVE",
+    categoryDescription: "REACT-NATIVE",
+  },
+  {
+    id: uuidv4(),
+    categoryClassName: "work-container__work-labels",
+    active: "FULL STACK",
+    categoryDescription: "FULL-STACK",
+  },
+  {
+    id: uuidv4(),
+    categoryClassName: "work-container__work-labels",
+    active: "OTHERS",
+    categoryDescription: "OTHERS",
+  },
+];
+
 // Dynamically setting project cards
 export const ProjectsData = [
   {

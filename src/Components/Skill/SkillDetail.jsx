@@ -10,7 +10,7 @@ const SkillDetail = ({ skillDetail }) => {
   return (
     <Fragment>
       {skillDetail.map((skill) =>
-        skill.filteredIcon === true ? (
+        skill.filteredIcon ? (
           <Fragment key={skill.id}>
             <section className="skill__stats-container-one">
               <div className="skill__image-container">
@@ -22,9 +22,9 @@ const SkillDetail = ({ skillDetail }) => {
                 />
               </div>
               <div className="skill__image-title-container">
-                <h3 data-aos="zoom-out" className="skill__image-title">
+                <h2 data-aos="zoom-out" className="skill__image-title">
                   {skill.title}
-                </h3>
+                </h2>
               </div>
               <div className="skill__image-description-container">
                 <p

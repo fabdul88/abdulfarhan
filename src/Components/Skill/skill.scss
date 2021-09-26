@@ -22,12 +22,16 @@
 
   &__title {
     text-align: center;
-    font-family: "SoulmazeItalic";
+    // font-family: "SoulmazeItalic";
+    font-family: "MontserratB";
+
+    letter-spacing: 2px;
     color: #444649;
     padding: 60px 0 0 0;
     margin: 0;
     &-letter {
-      color: #e31b6d;
+      font-family: "MontserratR";
+      // color: #e31b6d;
     }
     &-hr {
       @include global.sectionTitleHR;
@@ -150,6 +154,7 @@
   &__design-description--active,
   &__management-description--active {
     font-family: "RalewayR";
+    // font-family: "MontserratR";
     font-size: 13px;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;

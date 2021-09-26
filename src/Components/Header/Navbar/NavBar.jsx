@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SideBar from "../SideBar/SideBar";
 import "./navbar.scss";
-import Logo from "../../assets/black_transparent.svg";
+import Logo from "../../../assets/black_transparent.svg";
 import { animateScroll as scroll } from "react-scroll";
 
 export default function NavBar() {

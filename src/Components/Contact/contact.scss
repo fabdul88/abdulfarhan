@@ -27,11 +27,15 @@
     }
   }
   &__title {
-    font-family: "SoulmazeItalic";
+    // font-family: "SoulmazeItalic";
+    font-family: "MontserratB";
+
+    letter-spacing: 2px;
     margin: 0;
     color: #ffffff;
     &-letter {
-      font-family: "SoulmazeItalic";
+      // font-family: "SoulmazeItalic";
+      font-family: "MontserratR";
       color: #ffffff;
     }
     &-hr {
@@ -40,12 +44,17 @@
     }
   }
   &__text {
-    font-family: "Soulmaze";
+    // font-family: "Soulmaze";
+    font-family: "MontserratB";
+    text-transform: uppercase;
+
     color: #444649;
     letter-spacing: 1px;
     font-size: 15px;
     text-align: center;
     &-highlight {
+      font-family: "RalewayR";
+
       color: #ffffff;
     }
   }
@@ -80,7 +89,9 @@
     }
   }
   &__form-button {
-    font-family: "RalewaySB";
+    // font-family: "RalewaySB";
+    font-family: "MontserratR";
+
     font-weight: 600;
     display: flex;
     justify-self: center;

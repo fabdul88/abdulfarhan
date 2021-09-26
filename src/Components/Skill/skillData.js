@@ -6,7 +6,7 @@ import Management from "../../assets/management.svg";
 export const skillData = [
   {
     id: uuidv4(),
-    icon: ["html"],
+    icon: "html",
     progressBarClassName: "skill__experience-progress-dynamic skill__html",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -19,7 +19,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["css"],
+    icon: "css",
     progressBarClassName: "skill__experience-progress-dynamic skill__css",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -32,7 +32,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["bem"],
+    icon: "bem",
     progressBarClassName: "skill__experience-progress-dynamic skill__bem",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -45,7 +45,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["sass"],
+    icon: "sass",
     progressBarClassName: "skill__experience-progress-dynamic skill__sass",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -58,7 +58,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["javascript"],
+    icon: "javascript",
     progressBarClassName:
       "skill__experience-progress-dynamic skill__javascript",
     iconClassName: "skill__icons-color",
@@ -72,7 +72,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["react"],
+    icon: "react",
     progressBarClassName: "skill__experience-progress-dynamic skill__react",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -85,7 +85,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["redux"],
+    icon: "redux",
     progressBarClassName: "skill__experience-progress-dynamic skill__redux",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -98,7 +98,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["nextjs"],
+    icon: "nextjs",
     progressBarClassName: "skill__experience-progress-dynamic skill__nextjs",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -111,7 +111,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["node"],
+    icon: "node",
     progressBarClassName: "skill__experience-progress-dynamic skill__node",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -124,7 +124,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["express"],
+    icon: "express",
     progressBarClassName: "skill__experience-progress-dynamic skill__express",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -137,7 +137,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["mongodb"],
+    icon: "mongodb",
     progressBarClassName: "skill__experience-progress-dynamic skill__mongodb",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -150,7 +150,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["firebase"],
+    icon: "firebase",
     progressBarClassName: "skill__experience-progress-dynamic skill__firebase",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -163,7 +163,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["styledcomponents"],
+    icon: "styledcomponents",
     progressBarClassName: "skill__experience-progress-dynamic skill__styled",
     iconClassName: "skill__icons-color ",
     case: ["technical"],
@@ -176,7 +176,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["materialui"],
+    icon: "materialui",
     progressBarClassName:
       "skill__experience-progress-dynamic skill__materialui",
     iconClassName: "skill__icons-color",
@@ -190,7 +190,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["git"],
+    icon: "git",
     progressBarClassName: "skill__experience-progress-dynamic skill__git",
     iconClassName: "skill__icons-color",
     case: ["technical"],
@@ -203,7 +203,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["figma"],
+    icon: "figma",
     progressBarClassName: "skill__experience-progress-dynamic skill__figma",
     iconClassName: "skill__icons-color",
     case: ["design"],
@@ -216,7 +216,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["leader"],
+    icon: "leader",
     progressBarClassName: "skill__experience-progress-dynamic skill__leader",
     iconClassName: "skill__icons-color",
     case: ["management"],
@@ -229,7 +229,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["teamwork"],
+    icon: "teamwork",
     progressBarClassName: "skill__experience-progress-dynamic skill__teamwork",
     iconClassName: "skill__icons-color",
     case: ["management"],
@@ -242,7 +242,7 @@ export const skillData = [
   },
   {
     id: uuidv4(),
-    icon: ["language"],
+    icon: "language",
     progressBarClassName: "skill__experience-progress-dynamic skill__language",
     iconClassName: "skill__icons-color",
     case: ["management"],
@@ -263,7 +263,7 @@ export const category = [
     spanClassName: "skill__technical-description-hide",
     spanClassNameActive: "skill__technical-description--active",
     description: "Technical",
-    case: "technical",
+    active: "technical",
   },
   {
     id: uuidv4(),
@@ -273,7 +273,7 @@ export const category = [
     spanClassName: "skill__design-description-hide",
     spanClassNameActive: "skill__design-description--active",
     description: "Design",
-    case: "design",
+    active: "design",
   },
   {
     id: uuidv4(),
@@ -283,6 +283,6 @@ export const category = [
     spanClassName: "skill__management-description-hide",
     spanClassNameActive: "skill__management-description--active",
     description: "Management",
-    case: "management",
+    active: "management",
   },
 ];

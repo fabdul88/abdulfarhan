@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
-import Home from "../../assets/home.svg";
-import About from "../../assets/about.svg";
-import Skills from "../../assets/skills.svg";
-import Projects from "../../assets/mywork.svg";
-import Contact from "../../assets/contact.svg";
+import Home from "../../../assets/home.svg";
+import About from "../../../assets/about.svg";
+import Skills from "../../../assets/skills.svg";
+import Projects from "../../../assets/mywork.svg";
+import Contact from "../../../assets/contact.svg";
 
 export const SideBarData = [
   {
