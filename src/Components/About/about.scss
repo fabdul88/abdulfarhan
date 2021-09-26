@@ -19,20 +19,17 @@
     }
   }
   &__title {
-    // font-family: "SoulmazeItalic";
-    font-family: "MontserratB";
+    font-family: "SoulmazeItalic";
     letter-spacing: 2px;
     margin: 0;
     color: #444649;
     &-letter {
-      // font-family: "SoulmazeItalic";
-      font-family: "MontserratR";
-      // color: #4cf3c6;
+      font-family: "SoulmazeItalic";
+      color: #5cc2a7;
     }
     &-hr {
       @include global.sectionTitleHR;
       background: #0aa2e7;
-      // margin: 5px 0 0 0;
     }
   }
   &__column-container {
@@ -80,19 +77,14 @@
     }
   }
   &__profile-text {
-    // font-family: "Soulmaze";
-    text-transform: uppercase;
-    line-height: 20px;
-    font-family: "MontserratB";
-    letter-spacing: 3px;
+    font-family: "Soulmaze";
     color: #444649;
-    // letter-spacing: 2px;
-    // line-height: 18px;
+    letter-spacing: 2px;
+    line-height: 18px;
     width: 290px;
     margin: 25px 18px 18px;
     &-career {
-      font-family: "RalewaySB";
-      // letter-spacing: 3px;
+      font-family: "Soulmaze";
       color: #e31b6d;
     }
   }

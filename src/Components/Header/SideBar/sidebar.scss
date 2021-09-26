@@ -1,70 +1,62 @@
 @use "../../../styles/partials/global";
-
-.sidebar-container {
-  margin: 0;
-  width: 0;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  display: none;
-  overflow: hidden;
-  transition: 0.3s;
+.sidebar {
   @include global.desktop {
-    width: 100%;
-    height: 95px;
-    top: 0;
-    transition: 0.3s;
-    background-color: transparent;
-    margin: 0;
     display: flex;
-    justify-content: flex-end;
-    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%s;
+    max-width: 1500px;
+    height: 95px;
   }
-
-  &--active {
-    @include global.mobile {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      height: 100vh;
-      top: 0;
-      bottom: 0;
-      margin: 0;
-      z-index: 3;
+  &__sidebar-container {
+    margin: 0;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    overflow: hidden;
+    @include global.desktop {
       width: 100%;
-      transition: left 0.3s ease-out, right 0.3s ease-out;
-      opacity: 0.97;
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
+      height: 95px;
+      top: 0;
+      background-color: transparent;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      box-shadow: none;
+    }
+
+    &--active {
+      @include global.mobile {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        z-index: 3;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        @include global.desktop {
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+        }
+      }
+      @include global.tablet {
+        width: 385px;
+      }
       @include global.desktop {
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
+        width: 100%;
+        height: 95px;
+        background: none;
+        margin: 0;
       }
     }
-    @include global.tablet {
-      width: 385px;
-    }
-    @include global.desktop {
-      transition: 0.3s;
-      width: 100%;
-      height: 95px;
-      background: none;
-      margin: 0;
-    }
   }
-
-  &__sidebar-width {
-    @include global.desktop {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%s;
-      max-width: 1500px;
-      height: 95px;
-    }
-  }
-
   &__list {
     background: linear-gradient(
         217deg,
@@ -100,6 +92,21 @@
       @include global.desktop {
         margin: 0 20px 0 0;
       }
+
+      &-link {
+        display: flex;
+        align-items: flex-end;
+        width: 220px;
+        justify-content: flex-start;
+        transition: filter 600ms;
+        @include global.desktop {
+          filter: none;
+          display: flex;
+          text-decoration: none;
+          width: auto;
+          justify-content: flex-end;
+        }
+      }
     }
     &-home,
     &-about,
@@ -116,26 +123,12 @@
       }
     }
   }
-  &__list-link {
-    display: flex;
-    align-items: flex-end;
-    width: 220px;
-    justify-content: flex-start;
-    transition: filter 600ms;
-    @include global.desktop {
-      filter: none;
-      display: flex;
-      text-decoration: none;
-      width: auto;
-      justify-content: flex-end;
-    }
-  }
   &__hover-home,
   &__hover-about,
   &__hover-skills,
   &__hover-projects,
   &__hover-contact {
-    font-family: "MontserratR";
+    font-family: "RalewayR";
     color: #444649;
     display: flex;
     font-size: 30px;
@@ -160,10 +153,9 @@
       }
     }
   }
-
   &__backdrop {
-    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -171,7 +163,6 @@
     left: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
     @include global.desktop {
       display: none;
     }

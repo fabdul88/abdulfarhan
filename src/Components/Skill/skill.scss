@@ -22,20 +22,19 @@
 
   &__title {
     text-align: center;
-    // font-family: "SoulmazeItalic";
-    font-family: "MontserratB";
+    font-family: "SoulmazeItalic";
 
     letter-spacing: 2px;
     color: #444649;
     padding: 60px 0 0 0;
     margin: 0;
     &-letter {
-      font-family: "MontserratR";
-      // color: #e31b6d;
+      font-family: "SoulmazeItalic";
+      color: #c44177;
     }
     &-hr {
       @include global.sectionTitleHR;
-      background: #4cf3c6;
+      background: #58bda2;
     }
   }
   &__section-one {
@@ -140,8 +139,6 @@
       filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
     }
     @include global.tablet {
-      // width: 42px;
-      // height: 42px;
       width: 39px;
       height: 39px;
     }
@@ -154,7 +151,6 @@
   &__design-description--active,
   &__management-description--active {
     font-family: "RalewayR";
-    // font-family: "MontserratR";
     font-size: 13px;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;

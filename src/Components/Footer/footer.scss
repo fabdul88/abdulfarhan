@@ -1,8 +1,7 @@
 @use "../../styles/partials/global";
 
 .footer-container {
-  // font-family: "RalewayR";
-  font-family: "MontserratR";
+  font-family: "RalewayR";
 
   position: relative;
   display: flex;
@@ -11,7 +10,6 @@
   background-color: #252525;
   padding: 0 0 30px 0;
   &__copyright {
-    // color: #8f9aa7;
     color: #dce0e5;
     font-size: 12px;
     letter-spacing: 1px;
@@ -88,7 +86,7 @@
       text-decoration: none;
       margin: 15px 0 0 0;
       &:hover {
-        // background-color: #58bda2;
+        background-color: #58bda2;
         background-color: #e31b6d;
         border: 1px solid transparent;
       }

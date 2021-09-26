@@ -19,12 +19,16 @@ export default function SideBar() {
     transition: { type: "spring", stiffness: 1000 },
   };
   return (
-    <div className="sidebar-container__sidebar-width">
+    <div className="sidebar">
       <div
         // setting either one of the class depending on the sidebar state
-        className={sidebar ? "sidebar-container--active" : "sidebar-container"}
+        className={
+          sidebar
+            ? "sidebar__sidebar-container--active"
+            : "sidebar__sidebar-container"
+        }
       >
-        <ul className="sidebar-container__list">
+        <ul className="sidebar__list">
           {SideBarData.map((item) => (
             <motion.li
               key={item.id}
@@ -62,13 +66,8 @@ export default function SideBar() {
         </ul>
       </div>
       <div
-        className={
-          sidebar
-            ? "sidebar-container__backdrop"
-            : "sidebar-container__backdrop-false"
-        }
+        className={sidebar ? "sidebar__backdrop" : "sidebar__backdrop-false"}
       />
-
       <Burger display={showSidebar} />
     </div>
   );

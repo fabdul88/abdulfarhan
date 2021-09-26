@@ -27,7 +27,6 @@
   }
   &__work-labels {
     font-family: "RalewayR";
-    // font-family: "MontserratR";
 
     font-weight: 800;
     background: linear-gradient(#ffffff, #38495a);
@@ -57,8 +56,7 @@
   }
   &__title {
     text-align: center;
-    // font-family: "SoulmazeOutlineItalic";
-    font-family: "MontserratB";
+    font-family: "SoulmazeOutlineItalic";
 
     letter-spacing: 2px;
     background: linear-gradient(#ffffff, #38495a);
@@ -67,13 +65,11 @@
     padding: 60px 0 0 0;
     margin: 0;
     &-letter {
-      // font-family: "SoulmazeItalic";
-      font-family: "MontserratR";
-      color: #e31b6d;
+      font-family: "SoulmazeItalic";
     }
     &-hr {
       @include global.sectionTitleHR;
-      background: #4cf3c6;
+      background: #58bda2;
     }
   }
   &__cards-container {
