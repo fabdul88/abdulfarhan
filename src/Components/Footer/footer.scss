@@ -9,6 +9,10 @@
   align-items: center;
   background-color: #252525;
   padding: 0 0 30px 0;
+  &__copyright-container {
+    display: flex;
+    justify-content: center;
+  }
   &__copyright {
     color: #dce0e5;
     font-size: 12px;
@@ -16,6 +20,11 @@
     margin: 0;
     padding: 70px 0 0 0;
     text-align: center;
+    width: 77%;
+    max-width: 430px;
+    @include global.tablet {
+      max-width: 455px;
+    }
     &-span {
       font-family: "RalewayR";
 

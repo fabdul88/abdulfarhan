@@ -17,9 +17,12 @@ export default function Footer() {
       <div>
         <div className="footer-container__copyright-container">
           <p className="footer-container__copyright">
-            Abdul Farhan
-            <span className="footer-container__copyright-span"> © 2021 </span>,
-            All Rights Reserved
+            Designed and Built by Abdul Farhan
+            <span className="footer-container__copyright-span">
+              {" "}
+              © 2020-2021{" "}
+            </span>
+            , All Rights Reserved
           </p>
         </div>
         <ul className="footer-container__social-list">
