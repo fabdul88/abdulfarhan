@@ -62,50 +62,54 @@ export default function Home() {
   });
 
   return (
-    <div id="home">
-      <div className="home-container">
-        <div className="home-container__hero-image">
-          <div className="home-container__stars"></div>
-          <div className="home-container__stars-two"></div>
-          <div className="home-container__stars-three"></div>
-          <div className="home-container__text-container">
-            <h1 className="home-container__text-container-title">
-              <span className="home-container__first-name">Abdul </span>
-              <span className="home-container__last-name">Farhan</span>
+    <>
+      <main id="home">
+        <section className="home-container">
+          <div className="home-container__hero-image">
+            <div className="home-container__stars"></div>
+            <div className="home-container__stars-two"></div>
+            <div className="home-container__stars-three"></div>
+            <div className="home-container__text-container">
+              <h1 className="home-container__text-container-title">
+                <span className="home-container__first-name">Abdul </span>
+                <span className="home-container__last-name">Farhan</span>
 
-              <p className="home-container__text-container-description">
-                <span className="home-container__text-container-description-span">
-                  Full
-                </span>
-                <span className="home-container__text-container-description-span">
-                  Stack
-                </span>
-                <span className="home-container__text-container-description-span">
-                  Web
-                </span>
-                <span className="home-container__text-container-description-span">
-                  Developer
-                </span>
-              </p>
-            </h1>
-            <div className="home-container__down-container">
-              <Scroll to="about" smooth={true} offset={-95} duration={1000}>
-                <motion.img
-                  whileHover={hover}
-                  className="home-container__down"
-                  src={Down}
-                  alt="About Scroll Button"
-                />
-              </Scroll>
+                <p className="home-container__text-container-description">
+                  <span className="home-container__text-container-description-span">
+                    Full
+                  </span>
+                  <span className="home-container__text-container-description-span">
+                    Stack
+                  </span>
+                  <span className="home-container__text-container-description-span">
+                    Web
+                  </span>
+                  <span className="home-container__text-container-description-span">
+                    Developer
+                  </span>
+                </p>
+              </h1>
+              <div className="home-container__down-container">
+                <Scroll to="about" smooth={true} offset={-95} duration={1000}>
+                  <motion.img
+                    whileHover={hover}
+                    className="home-container__down"
+                    src={Down}
+                    alt="Scroll to About section Button"
+                  />
+                </Scroll>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <About />
-      <Skill />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+        </section>
+        <About />
+        <Skill />
+        <Projects />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }

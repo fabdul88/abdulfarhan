@@ -61,7 +61,7 @@ const Skill = () => {
               <img
                 className={skillCategory.imageClassName}
                 src={skillCategory.imgSrc}
-                alt="category icon"
+                alt="Skill category icon"
               />
               <span className={skillCategory.spanClassNameActive}>
                 {skillCategory.description}

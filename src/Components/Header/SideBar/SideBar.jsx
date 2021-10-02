@@ -20,7 +20,7 @@ export default function SideBar() {
   };
 
   return (
-    <div className="sidebar">
+    <aside className="sidebar">
       <div
         // setting either one of the class depending on the sidebar state
         className={
@@ -71,6 +71,6 @@ export default function SideBar() {
         className={sidebar ? "sidebar__backdrop" : "sidebar__backdrop-false"}
       />
       <Burger sidebar={sidebar} display={showSidebar} />
-    </div>
+    </aside>
   );
 }

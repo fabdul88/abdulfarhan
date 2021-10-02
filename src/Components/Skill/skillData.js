@@ -105,7 +105,7 @@ export const skillData = [
     name: "nextjs",
     title: "Next JS",
     description:
-      "Next. js is a React framework that enables several extra features, including it's own routing through pages, server-side rendering and generating static websites, that has its own SEO benefits.",
+      "Next. js is a React framework that enables several extra features, including file based routing, server-side rendering and generating static websites, that has its own SEO benefits.",
     projectNumber: 2,
     yearsExperience: 0.25,
   },

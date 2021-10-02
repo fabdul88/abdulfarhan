@@ -13,7 +13,7 @@ export default function NavBar() {
   window.addEventListener("scroll", changeBackground);
   return (
     <>
-      <div className="nav-container">
+      <header className="nav-container">
         <nav
           className={
             navbar ? "nav-container__nav-active" : "nav-container__nav"
@@ -25,11 +25,15 @@ export default function NavBar() {
               scroll.scrollToTop();
             }}
           >
-            <img className="nav-container__logo" src={Logo} alt="" />
+            <img
+              className="nav-container__logo"
+              src={Logo}
+              alt="navigation home logo"
+            />
           </div>
         </nav>
         <SideBar />
-      </div>
+      </header>
     </>
   );
 }

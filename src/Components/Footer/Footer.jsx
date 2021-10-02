@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div>
-        <div className="footer-container__copyright-container">
+        <section className="footer-container__copyright-container">
           <p className="footer-container__copyright">
             Designed and Built by Abdul Farhan
             <span className="footer-container__copyright-span">
@@ -24,7 +24,7 @@ export default function Footer() {
             </span>
             , All Rights Reserved
           </p>
-        </div>
+        </section>
         <ul className="footer-container__social-list">
           {FooterInfo.map((info) => (
             <li key={info.id} className={info.listItem}>

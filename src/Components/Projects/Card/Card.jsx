@@ -48,7 +48,7 @@ export default function Card({ projectCard }) {
                   <img
                     className="card-container__image-front"
                     src={project.image}
-                    alt=""
+                    alt="Card project screenshot"
                   />
                   <p className="card-container__name">{project.name}</p>
                   <hr className={project.color} />
