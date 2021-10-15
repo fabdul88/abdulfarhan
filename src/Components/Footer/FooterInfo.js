@@ -26,7 +26,7 @@ export const FooterInfo = [
     listItem: "footer-container__social-list-item",
     listItemLink: "footer-container__social-list-resume-link",
     listItemHref:
-      "https://drive.google.com/uc?id=1rH83IjVTlSaEOftTJHTIjUmjlE794Fm5&export=download",
+      "https://drive.google.com/uc?id=1ImHU_TZPwD3bWu8rJdeyx-VRr2xWXVvG&export=download",
     target: "_blank",
     rel: "noopener noreferrer",
     iconName: "download",
@@ -35,3 +35,6 @@ export const FooterInfo = [
     description: "DOWNLOAD MY RESUME",
   },
 ];
+
+
+// https://drive.google.com/file/d/1ImHU_TZPwD3bWu8rJdeyx-VRr2xWXVvG/view?usp=sharing
