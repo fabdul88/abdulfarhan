@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import "./sidebar.scss";
-import Burger from "./Burger/Burger";
-import { Link } from "react-scroll";
-import { SideBarData } from "./SideBarData";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import './sidebar.scss';
+import Burger from './Burger/Burger';
+import { Link } from 'react-scroll';
+import { SideBarData } from './SideBarData';
+import { Icon } from '../../Icon/Icon';
 
 export default function SideBar() {
   // Setting initial sidebar display state to be false
@@ -15,8 +16,8 @@ export default function SideBar() {
   // Hover animations
   const hover = {
     scale: 1.15,
-    textShadow: "0 0 8px rgb(0,0,0)",
-    transition: { type: "spring", stiffness: 1000 },
+    textShadow: '0 0 8px rgb(0,0,0)',
+    transition: { type: 'spring', stiffness: 1000 },
   };
 
   return (
@@ -25,8 +26,8 @@ export default function SideBar() {
         // setting either one of the class depending on the sidebar state
         className={
           sidebar
-            ? "sidebar__sidebar-container--active"
-            : "sidebar__sidebar-container"
+            ? 'sidebar__sidebar-container--active'
+            : 'sidebar__sidebar-container'
         }
       >
         <ul className="sidebar__list">
@@ -43,13 +44,11 @@ export default function SideBar() {
                 offset={-95}
                 duration={1000}
               >
-                <img
-                  className={item.imgClassName}
-                  src={item.imgSrc}
-                  alt={item.imgAlt}
-                  onClick={() => {
-                    showSidebar();
-                  }}
+                <Icon
+                  name={item.iconName}
+                  className={item.iconClassName}
+                  width="35"
+                  height="35"
                 />
                 <span
                   className={item.descriptionClassName}
@@ -68,7 +67,7 @@ export default function SideBar() {
         onClick={() => {
           showSidebar();
         }}
-        className={sidebar ? "sidebar__backdrop" : "sidebar__backdrop-false"}
+        className={sidebar ? 'sidebar__backdrop' : 'sidebar__backdrop-false'}
       />
       <Burger sidebar={sidebar} display={showSidebar} />
     </aside>

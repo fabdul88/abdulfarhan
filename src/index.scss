@@ -1,11 +1,12 @@
-@use "./styles/partials/global";
+@use './styles/partials/global';
 
 body {
   margin: 0;
-  font-family: "Soulmaze", "RalewayR";
+  font-family: 'Soulmaze', 'RalewayR';
   scroll-behavior: smooth;
   box-sizing: border-box;
   overflow-x: hidden;
+  background: radial-gradient(ellipse at bottom, #1c2833 100%, #1b2735 0%);
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -19,6 +20,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

@@ -1,16 +1,24 @@
-import React, { useEffect } from "react";
-import { motion } from "framer-motion";
-import Profile from "../../assets/profile.webp";
-import Hexagon from "../../assets/hexagon_monochrome.webp";
-import "./about.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Profile from '../../assets/profile.webp';
+import Hexagon from '../../assets/hexagon_monochrome.webp';
+import './about.scss';
+import { aboutData } from './aboutData';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 AOS.init();
 
 export default function About() {
+  const [filter, setFilter] = useState('short');
+  const [about, setAbout] = useState([]);
+
   useEffect(() => {
-    AOS.init({ duration: 2500 });
-  }, []);
+    const filtered = aboutData.map((version) => ({
+      ...version,
+      filtered: version.activeFilter.includes(filter),
+    }));
+    setAbout(filtered);
+  }, [filter]);
 
   return (
     <div id="about" className="about-container">
@@ -53,28 +61,47 @@ export default function About() {
             alt="Profile"
           />
         </motion.div>
-        <div
-          data-aos="flip-left"
-          data-aos-duration="3000"
-          className="about-container__profile-text-container"
-        >
-          <p className="about-container__profile-text">
-            I'm Abdul Farhan, a
-            <span
-              aos-data="ease-in-cubic"
-              className="about-container__profile-text-career"
-            >
-              {" "}
-              full stack Web Developer{" "}
-            </span>
-            in Vancouver, BC. I have a serious passion for creating interactive
-            web based applications that makes a difference to the lives of those
-            around me.
-          </p>
-          <p className="about-container__profile-text">
-            When I'm not coding, you'll find me gaming, playing sports or
-            experimenting with YouTube food recipes.
-          </p>
+        <div className="about-container__profile-text-container">
+          <div className="about-container__version-filter-container">
+            {aboutData.map((version) => (
+              <a
+                className="about-container__version-filter"
+                key={version.id}
+                href="/#"
+                active={
+                  filter === version.categoryTitle ? version.categoryTitle : ''
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setFilter(version.categoryTitle);
+                }}
+              >
+                {version.categoryTitle}
+              </a>
+            ))}
+          </div>
+          {about.map((version) =>
+            version.filtered ? (
+              <p
+                data-aos="flip-left"
+                data-aos-duration="3000"
+                key={version.id}
+                className="about-container__profile-text"
+              >
+                {version.aboutVersionTop}
+                <span
+                  aos-data="ease-in-cubic"
+                  className="about-container__profile-text-career"
+                >
+                  {' '}
+                  {version.aboutVersionSpan}{' '}
+                </span>
+                {version.aboutVersionBottom}
+              </p>
+            ) : (
+              ''
+            )
+          )}
         </div>
       </div>
     </div>

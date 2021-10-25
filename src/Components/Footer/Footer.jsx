@@ -1,15 +1,14 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "./footer.scss";
-import { Icon } from "../Icon/Icon";
-import { FooterInfo } from "./FooterInfo";
-import GoToTop from "../../assets/go-to-top.svg";
-import { animateScroll as scroll } from "react-scroll";
+import React from 'react';
+import { motion } from 'framer-motion';
+import './footer.scss';
+import { Icon } from '../Icon/Icon';
+import { FooterInfo } from './FooterInfo';
+import { animateScroll as scroll } from 'react-scroll';
 
 export default function Footer() {
   const hover = {
     scale: 1.1,
-    transition: { type: "spring", stiffness: 1000 },
+    transition: { type: 'spring', stiffness: 1000 },
   };
 
   return (
@@ -19,8 +18,8 @@ export default function Footer() {
           <p className="footer-container__copyright">
             Designed and Built by Abdul Farhan
             <span className="footer-container__copyright-span">
-              {" "}
-              © 2020-2021{" "}
+              {' '}
+              © 2020-2021{' '}
             </span>
             , All Rights Reserved
           </p>
@@ -47,15 +46,20 @@ export default function Footer() {
           ))}
         </ul>
       </div>
-      <motion.img
-        whileHover={hover}
-        className="footer-container__go-to-top"
-        src={GoToTop}
-        alt="Go to top of page"
+      <motion.div
+        className="footer-container__arrow-container"
         onClick={() => {
           scroll.scrollToTop();
         }}
-      />
+        whileHover={hover}
+      >
+        <Icon
+          name="arrow"
+          className="footer-container__go-to-top"
+          width="55"
+          height="55"
+        />
+      </motion.div>
     </div>
   );
 }

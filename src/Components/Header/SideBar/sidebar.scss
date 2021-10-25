@@ -1,4 +1,4 @@
-@use "../../../styles/partials/global";
+@use '../../../styles/partials/global';
 .sidebar {
   @include global.desktop {
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%s;
     max-width: 1500px;
-    height: 95px;
+    height: 0px;
   }
   &__sidebar-container {
     margin: 0;
@@ -39,8 +39,8 @@
         margin: 0;
         z-index: 3;
         width: 100%;
-        backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
         @include global.desktop {
           backdrop-filter: none;
           -webkit-backdrop-filter: none;
@@ -86,22 +86,21 @@
     &-item {
       position: relative;
       margin: 0 0 30px 0;
+
       @include global.desktop {
-        margin: 0 20px 0 0;
+        margin: 0 30px 0 0;
       }
 
       &-link {
         display: flex;
-        align-items: flex-end;
-        width: 220px;
         justify-content: flex-start;
-        transition: filter 600ms;
+        align-items: center;
+        width: 220px;
         cursor: pointer;
         @include global.desktop {
-          filter: none;
-          display: flex;
           text-decoration: none;
-          width: auto;
+          width: -moz-fit-content;
+          width: fit-content;
           justify-content: flex-end;
         }
       }
@@ -111,12 +110,8 @@
     &-skills,
     &-work,
     &-contact {
-      width: 40px;
-      height: 40px;
+      fill: #444649;
       @include global.desktop {
-        width: 20px;
-        height: 20px;
-        margin: 0 10px 0 0;
         display: none;
       }
     }
@@ -126,7 +121,7 @@
   &__hover-skills,
   &__hover-projects,
   &__hover-contact {
-    font-family: "RalewayR";
+    font-family: 'RalewayR';
     color: #444649;
     display: flex;
     font-size: 30px;
@@ -140,12 +135,9 @@
     }
 
     @include global.desktop {
-      color: #444649;
-      display: flex;
-      margin: 0;
       align-self: flex-end;
       font-size: 20px;
-      font-weight: bold;
+      padding: 0;
       &:hover {
         color: #ffffff;
       }

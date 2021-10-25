@@ -1,5 +1,6 @@
-@use "../../styles/partials/global";
+@use '../../styles/partials/global';
 .about-container {
+  background: white;
   position: relative;
   display: flex;
   align-items: center;
@@ -19,12 +20,12 @@
     }
   }
   &__title {
-    font-family: "SoulmazeItalic";
+    font-family: 'SoulmazeItalic';
     letter-spacing: 2px;
     margin: 0;
     color: #444649;
     &-letter {
-      font-family: "SoulmazeItalic";
+      font-family: 'SoulmazeItalic';
       color: #5cc2a7;
     }
     &-hr {
@@ -37,10 +38,9 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 690px;
+    height: 100%;
     @include global.tablet {
       flex-direction: row;
-      height: 530px;
       width: 90%;
     }
   }
@@ -55,10 +55,12 @@
     margin: 0 15px 0 0;
     width: 274.953px;
     height: 238px;
+    position: relative;
+    z-index: 2;
     &-background {
       position: absolute;
       height: 299px;
-      z-index: -1;
+      // z-index: -1;
       top: -16px;
       left: 15px;
       bottom: -320px;
@@ -76,15 +78,57 @@
       margin: 110px 10px;
     }
   }
+  &__version-filter-container {
+    display: flex;
+    width: 90%;
+    max-width: 290px;
+    justify-content: space-between;
+    margin: 50px 0 20px;
+    @include global.tablet {
+      margin: 0 0 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  &__version-filter {
+    font-family: 'RalewaySB';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #444649;
+    border: 1px solid #444649;
+    flex: 1;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 16px 0;
+    margin: 0 5px;
+    border-radius: 4px;
+    &:hover {
+      cursor: pointer;
+      color: #0aa2e7;
+      border: 1px solid #0aa2e7;
+      border-radius: 3px;
+    }
+    &:focus {
+      color: #0aa2e7;
+      border-top: 2px solid #0aa2e7;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-radius: 0;
+    }
+  }
   &__profile-text {
-    font-family: "Soulmaze";
+    font-family: 'Soulmaze';
     color: #444649;
     letter-spacing: 2px;
     line-height: 18px;
     width: 290px;
-    margin: 25px 18px 18px;
+    margin: 25px 18px 35px;
+    @include global.tablet {
+      margin: 25px 18px 5px;
+    }
     &-career {
-      font-family: "Soulmaze";
+      font-family: 'Soulmaze';
       color: #e31b6d;
     }
   }

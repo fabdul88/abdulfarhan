@@ -1,83 +1,101 @@
-import React from "react";
-import { Html } from "./Html";
-import { Sass } from "./Sass";
-import { Javascript } from "./Javascript";
-import { Reactjs } from "./Reactjs";
-import { Expressjs } from "./Expressjs";
-import { Nodejs } from "./Nodejs";
-import { Mongodb } from "./Mongodb";
-import { Github } from "./Github";
-import { LinkedIn } from "./LinkedIn";
-import { MaterialUI } from "./Material";
-import { Bem } from "./Bem";
-import { ChartJS } from "./ChartJS";
-import { Mapbox } from "./Mapbox";
-import { ReactLeaflet } from "./ReactLeaflet";
-import { Css } from "./Css";
-import { StyledComponents } from "./StyledComponents";
-import { Firebase } from "./Firebase";
-import { Redux } from "./Redux";
-import { Nextjs } from "./Nextjs";
-import { Figma } from "./Figma";
-import { Leader } from "./Leader";
-import { Language } from "./Language";
-import { Teamwork } from "./Teamwork";
-import { Git } from "./Git";
-import { Download } from "./Download";
+import React from 'react';
+import { Html } from './Html';
+import { Sass } from './Sass';
+import { Javascript } from './Javascript';
+import { Reactjs } from './Reactjs';
+import { Expressjs } from './Expressjs';
+import { Nodejs } from './Nodejs';
+import { Mongodb } from './Mongodb';
+import { Github } from './Github';
+import { LinkedIn } from './LinkedIn';
+import { MaterialUI } from './Material';
+import { Bem } from './Bem';
+import { ChartJS } from './ChartJS';
+import { Mapbox } from './Mapbox';
+import { ReactLeaflet } from './ReactLeaflet';
+import { Css } from './Css';
+import { StyledComponents } from './StyledComponents';
+import { Firebase } from './Firebase';
+import { Redux } from './Redux';
+import { Nextjs } from './Nextjs';
+import { Figma } from './Figma';
+import { Leader } from './Leader';
+import { Language } from './Language';
+import { Teamwork } from './Teamwork';
+import { Git } from './Git';
+import { Download } from './Download';
+import { Arrow } from './ Arrow';
+import { Home } from './Home';
+import { About } from './About';
+import { Skills } from './Skills';
+import { Projects } from './Projects';
+import { Contact } from './Contact';
 
 const Icon = (props) => {
   // using a switch statement to add icons
   switch (props.name.toLowerCase()) {
-    case "html":
+    case 'html':
       return <Html {...props} />;
-    case "sass":
+    case 'sass':
       return <Sass {...props} />;
-    case "javascript":
+    case 'javascript':
       return <Javascript {...props} />;
-    case "react":
+    case 'react':
       return <Reactjs {...props} />;
-    case "express":
+    case 'express':
       return <Expressjs {...props} />;
-    case "node":
+    case 'node':
       return <Nodejs {...props} />;
-    case "mongodb":
+    case 'mongodb':
       return <Mongodb {...props} />;
-    case "github":
+    case 'github':
       return <Github {...props} />;
-    case "linkedin":
+    case 'linkedin':
       return <LinkedIn {...props} />;
-    case "materialui":
+    case 'materialui':
       return <MaterialUI {...props} />;
-    case "bem":
+    case 'bem':
       return <Bem {...props} />;
-    case "chartjs":
+    case 'chartjs':
       return <ChartJS {...props} />;
-    case "mapbox":
+    case 'mapbox':
       return <Mapbox {...props} />;
-    case "reactleaflet":
+    case 'reactleaflet':
       return <ReactLeaflet {...props} />;
-    case "css":
+    case 'css':
       return <Css {...props} />;
-    case "styledcomponents":
+    case 'styledcomponents':
       return <StyledComponents {...props} />;
-    case "firebase":
+    case 'firebase':
       return <Firebase {...props} />;
-    case "redux":
+    case 'redux':
       return <Redux {...props} />;
-    case "nextjs":
+    case 'nextjs':
       return <Nextjs {...props} />;
-    case "figma":
+    case 'figma':
       return <Figma {...props} />;
-    case "leader":
+    case 'leader':
       return <Leader {...props} />;
-    case "language":
+    case 'language':
       return <Language {...props} />;
-    case "teamwork":
+    case 'teamwork':
       return <Teamwork {...props} />;
-    case "git":
+    case 'git':
       return <Git {...props} />;
-    case "download":
+    case 'download':
       return <Download {...props} />;
+    case 'arrow':
+      return <Arrow {...props} />;
+    case 'home':
+      return <Home {...props} />;
+    case 'about':
+      return <About {...props} />;
+    case 'skills':
+      return <Skills {...props} />;
+    case 'projects':
+      return <Projects {...props} />;
+    case 'contact':
+      return <Contact {...props} />;
     default:
       <div />;
   }

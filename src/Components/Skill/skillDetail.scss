@@ -1,4 +1,4 @@
-@use "../../styles/partials/global";
+@use '../../styles/partials/global';
 
 .skill {
   &__stats-container-one,
@@ -46,7 +46,7 @@
   &__beginner,
   &__intermediate,
   &__expert {
-    background: linear-gradient(#ffffff, #38495a);
+    background: linear-gradient(45deg, #ffffff, #607d8b);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }

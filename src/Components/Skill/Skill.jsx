@@ -1,19 +1,19 @@
-import React, { Fragment, useEffect, useState } from "react";
-import "./skill.scss";
-import { skillData, category } from "./skillData";
-import { Icon } from "../Icon/Icon";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import SkillDetail from "./SkillDetail";
+import React, { Fragment, useEffect, useState } from 'react';
+import './skill.scss';
+import { skillData, category } from './skillData';
+import { Icon } from '../Icon/Icon';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import SkillDetail from './SkillDetail';
 AOS.init();
 
 const Skill = () => {
   // useState for filtering category
-  const [filter, setFilter] = useState("technical");
+  const [filter, setFilter] = useState('technical');
   const [skillCategory, setSkillCategory] = useState([]);
 
   // useState for filtering icon
-  const [skillDetailFilter, setSkillDetailFilter] = useState("html");
+  const [skillDetailFilter, setSkillDetailFilter] = useState('html');
   const [skillDetail, setSkillDetail] = useState([]);
 
   // useEffect for filtering category
@@ -36,6 +36,9 @@ const Skill = () => {
 
   return (
     <div id="skills" className="skill">
+      <div className="work-container__stars"></div>
+      <div className="work-container__stars-two"></div>
+      <div className="work-container__stars-three"></div>
       <div className="skill__title-container">
         <h1 data-aos="fade-up" className="skill__title">
           SKILL
@@ -51,7 +54,7 @@ const Skill = () => {
               key={skillCategory.id}
               className={skillCategory.containerClassName}
               active={
-                filter === skillCategory.active ? skillCategory.active : ""
+                filter === skillCategory.active ? skillCategory.active : ''
               }
               onClick={(e) => {
                 e.preventDefault();
@@ -84,7 +87,7 @@ const Skill = () => {
                 </div>
               </Fragment>
             ) : (
-              ""
+              ''
             )
           )}
         </section>
