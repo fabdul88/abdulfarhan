@@ -66,7 +66,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <footer>
+      <footer id="footer">
         <Footer />
       </footer>
     </>
