@@ -95,6 +95,7 @@
     justify-content: center;
     height: 50px;
     width: 50px;
+    outline: 0;
     &:active,
     &:focus {
       outline: 0;
@@ -113,6 +114,7 @@
     fill: #ffffff;
     filter: drop-shadow(0.4rem 0.3rem 0.1rem rgba(86, 255, 255, 0.3));
     transition: filter 600ms;
+    outline: 0;
     &:hover {
       filter: drop-shadow(0.1rem 0.3rem 0.1rem rgba(174, 214, 241, 0.8));
     }

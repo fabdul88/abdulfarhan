@@ -143,6 +143,7 @@
     transform: rotate(180deg);
     fill: #ffffff;
     transition: all 250ms ease-out;
+    outline: 0;
     &:hover {
       fill: url(#arrow);
       filter: drop-shadow(0.35px 3.35px 3px #ffffff);

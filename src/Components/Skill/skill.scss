@@ -84,6 +84,7 @@
     border-radius: 4px;
     border: 1px solid #ffffff;
     text-decoration: none;
+    outline: 0;
     @include global.tablet {
       padding: 10px;
     }
