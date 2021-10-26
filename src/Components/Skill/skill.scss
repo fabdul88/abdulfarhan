@@ -225,4 +225,32 @@
       min-height: 500px;
     }
   }
+  &__stars,
+  &__stars-two,
+  &__stars-three {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__stars {
+    @include global.starsOne;
+
+    &:after {
+      @include global.starsOneAfter;
+    }
+  }
+  &__stars-two {
+    @include global.starsTwo;
+
+    &:after {
+      @include global.starsTwoAfter;
+    }
+  }
+  &__stars-three {
+    @include global.starsThree;
+
+    &:after {
+      @include global.starsThreeAfter;
+    }
+  }
 }

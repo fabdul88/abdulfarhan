@@ -36,9 +36,9 @@ const Skill = () => {
 
   return (
     <div id="skills" className="skill">
-      <div className="work-container__stars"></div>
-      <div className="work-container__stars-two"></div>
-      <div className="work-container__stars-three"></div>
+      <div className="skill__stars"></div>
+      <div className="skill__stars-two"></div>
+      <div className="skill__stars-three"></div>
       <div className="skill__title-container">
         <h1 data-aos="fade-up" className="skill__title">
           SKILL
