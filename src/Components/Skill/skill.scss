@@ -93,13 +93,16 @@
       border: 1px solid #0aa2e7;
       border-radius: 3px;
     }
-    &:focus {
+    &:focus,
+    &:active {
       color: #0aa2e7;
       border-top: 2px solid #0aa2e7;
       border-left: 0;
       border-right: 0;
       border-bottom: 0;
       border-radius: 0;
+      outline: 0;
+      -moz-outline-style: none;
     }
   }
   &__technical-icon,

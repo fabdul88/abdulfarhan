@@ -128,6 +128,12 @@
     position: absolute;
     top: 3%;
     right: 5%;
+    &:active,
+    &:focus {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
+    }
     @include global.tablet {
       top: -25px;
     }
@@ -140,6 +146,12 @@
     &:hover {
       fill: url(#arrow);
       filter: drop-shadow(0.35px 3.35px 3px #ffffff);
+    }
+    &:active,
+    &:focus {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
     }
     @include global.mobile {
       position: absolute;

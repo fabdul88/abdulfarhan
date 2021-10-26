@@ -95,6 +95,12 @@
     justify-content: center;
     height: 50px;
     width: 50px;
+    &:active,
+    &:focus {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
+    }
   }
 
   &__down {
@@ -109,6 +115,12 @@
     transition: filter 600ms;
     &:hover {
       filter: drop-shadow(0.1rem 0.3rem 0.1rem rgba(174, 214, 241, 0.8));
+    }
+    &:active,
+    &:focus {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
     }
   }
   &__stars,
