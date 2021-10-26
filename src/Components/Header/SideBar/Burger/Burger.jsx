@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "./burger.scss";
+import React from 'react';
+import { motion } from 'framer-motion';
+import './burger.scss';
 export default function Burger({ sidebar, display }) {
   const topVariants = {
     opened: {
@@ -14,12 +14,12 @@ export default function Burger({ sidebar, display }) {
 
   const centerVariants = {
     opened: {
-      x: "-100vw",
-      display: "none",
+      x: '-2vw',
+      display: 'none',
     },
     closed: {
       x: 0,
-      display: "inline-flex",
+      display: 'inline-flex',
     },
   };
 
@@ -46,19 +46,19 @@ export default function Burger({ sidebar, display }) {
             className="burger-container__burger"
             initial={false}
             variants={topVariants}
-            animate={sidebar ? "opened" : "closed"}
+            animate={sidebar ? 'opened' : 'closed'}
           ></motion.div>
           <motion.div
             className="burger-container__burger-center"
             initial={false}
             variants={centerVariants}
-            animate={sidebar ? "opened" : "closed"}
+            animate={sidebar ? 'opened' : 'closed'}
           ></motion.div>
           <motion.div
             className="burger-container__burger"
             initial={false}
             variants={bottomVariants}
-            animate={sidebar ? "opened" : "closed"}
+            animate={sidebar ? 'opened' : 'closed'}
           ></motion.div>
         </div>
       </div>
