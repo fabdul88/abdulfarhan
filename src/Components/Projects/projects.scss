@@ -27,8 +27,6 @@
   }
   &__work-labels {
     font-family: 'RalewayR';
-
-    font-weight: 800;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,19 +41,26 @@
       border: 1px solid #0aa2e7;
       border-radius: 3px;
     }
-    &:focus,
-    &:active {
+
+    @include global.tablet {
+      font-size: 14px;
+    }
+    &--active {
+      font-family: 'RalewaySB';
+      font-size: 10px;
+      text-decoration: none;
       color: #0aa2e7;
+      padding: 15px 5px;
       border-top: 2px solid #0aa2e7;
-      border-left: 0;
       border-right: 0;
       border-bottom: 0;
+      border-left: 0;
       border-radius: 0;
       outline: 0;
       -moz-outline-style: none;
-    }
-    @include global.tablet {
-      font-size: 14px;
+      @include global.tablet {
+        font-size: 14px;
+      }
     }
   }
   &__title {

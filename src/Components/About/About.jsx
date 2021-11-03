@@ -11,6 +11,7 @@ AOS.init();
 export default function About() {
   const [filter, setFilter] = useState('short');
   const [about, setAbout] = useState([]);
+  const [activeTab, setActiveTab] = useState('short');
 
   useEffect(() => {
     const filtered = aboutData.map((version) => ({
@@ -65,7 +66,11 @@ export default function About() {
           <div className="about-container__version-filter-container">
             {aboutData.map((version) => (
               <a
-                className="about-container__version-filter"
+                className={
+                  activeTab === version.categoryTitle
+                    ? 'about-container__version-filter--active'
+                    : 'about-container__version-filter'
+                }
                 key={version.id}
                 href="/#"
                 active={
@@ -74,6 +79,7 @@ export default function About() {
                 onClick={(e) => {
                   e.preventDefault();
                   setFilter(version.categoryTitle);
+                  setActiveTab(version.categoryTitle);
                 }}
               >
                 {version.categoryTitle}

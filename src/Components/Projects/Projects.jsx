@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { ProjectCategory, ProjectsData } from "./ProjectsData";
-import Card from "../Projects/Card/Card";
-import "./projects.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { ProjectCategory, ProjectsData } from './ProjectsData';
+import Card from '../Projects/Card/Card';
+import './projects.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 AOS.init();
 
 export default function Projects() {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState('all');
   const [projects, setProjects] = useState([]);
+  const [activeTab, setActiveTab] = useState('all');
 
   useEffect(() => {
     setProjects(ProjectsData);
@@ -41,12 +42,17 @@ export default function Projects() {
           {ProjectCategory.map((category) => (
             <motion.a
               key={category.id}
-              className={category.categoryClassName}
+              className={
+                activeTab === category.active
+                  ? category.categoryClassNameActive
+                  : category.categoryClassName
+              }
               href="/#"
               active={filter === category.active}
               onClick={(e) => {
                 e.preventDefault();
                 setFilter(category.active);
+                setActiveTab(category.active);
               }}
             >
               {category.categoryDescription}

@@ -82,7 +82,7 @@
     justify-content: center;
     padding: 16px 7px;
     border-radius: 4px;
-    border: 1px solid #ffffff;
+    border: 1px solid silver;
     text-decoration: none;
     outline: 0;
     @include global.tablet {
@@ -94,16 +94,24 @@
       border: 1px solid #0aa2e7;
       border-radius: 3px;
     }
-    &:focus,
-    &:active {
+    &--active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
       color: #0aa2e7;
-      border-top: 2px solid #0aa2e7;
+      border-top: 2px solid silver;
+      padding: 16px 7px;
       border-left: 0;
       border-right: 0;
       border-bottom: 0;
       border-radius: 0;
       outline: 0;
       -moz-outline-style: none;
+      text-decoration: none;
+      @include global.tablet {
+        padding: 10px;
+      }
     }
   }
   &__technical-icon,
@@ -130,13 +138,24 @@
     &:hover {
       fill: url(#gradient);
       filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
+      cursor: pointer;
+      fill: #a9a6b6;
     }
     @include global.tablet {
       width: 39px;
       height: 39px;
     }
-    &:hover {
+    &--active {
+      margin: 0 2.5px;
+      width: 42px;
+      height: 42px;
+      fill: url(#gradient);
+      filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
       cursor: pointer;
+      @include global.tablet {
+        width: 39px;
+        height: 39px;
+      }
     }
   }
 

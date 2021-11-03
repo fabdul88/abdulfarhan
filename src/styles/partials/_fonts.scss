@@ -1,62 +1,265 @@
 // Soulmaze font family
 
 @font-face {
-  font-family: "Soulmaze";
-  src: url("../../assets/font/soulmaze/MADESoulmaze.otf") format("OpenType");
+  font-family: 'Soulmaze';
+  src: url('../../assets/font/soulmaze/MADESoulmaze.otf') format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SoulmazeBrush";
-  src: url("../../assets/font/soulmaze/MADESoulmazeBrush.otf")
-    format("OpenType");
+  font-family: 'SoulmazeBrush';
+  src: url('../../assets/font/soulmaze/MADESoulmazeBrush.otf')
+    format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SoulmazeItalic";
-  src: url("../../assets/font/soulmaze/MADESoulmazeItalic.otf")
-    format("OpenType");
+  font-family: 'SoulmazeItalic';
+  src: url('../../assets/font/soulmaze/MADESoulmazeItalic.otf')
+    format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SoulmazeOutline";
-  src: url("../../assets/font/soulmaze/MADESoulmazeOutline.otf")
-    format("OpenType");
+  font-family: 'SoulmazeOutline';
+  src: url('../../assets/font/soulmaze/MADESoulmazeOutline.otf')
+    format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SoulmazeOutlineItalic";
-  src: url("../../assets/font/soulmaze/MADESoulmazeOutlineItalic.otf")
-    format("OpenType");
+  font-family: 'SoulmazeOutlineItalic';
+  src: url('../../assets/font/soulmaze/MADESoulmazeOutlineItalic.otf')
+    format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
 
 // Raleway font family
 @font-face {
-  font-family: "RalewayR";
-  src: url("../../assets/font/Raleway/Raleway-Regular.ttf") format("TrueType");
+  font-family: 'RalewayR';
+  src: url('../../assets/font/Raleway/Raleway-Regular.ttf') format('TrueType');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RalewaySB";
-  src: url("../../assets/font/Raleway/Raleway-SemiBold.ttf") format("TrueType");
+  font-family: 'RalewaySB';
+  src: url('../../assets/font/Raleway/Raleway-SemiBold.ttf') format('TrueType');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RalewayB";
-  src: url("../../assets/font/Raleway/Raleway-Black.ttf") format("TrueType");
+  font-family: 'RalewayB';
+  src: url('../../assets/font/Raleway/Raleway-Black.ttf') format('TrueType');
   font-weight: 900;
   font-style: normal;
+}
+
+// Roboto
+@font-face {
+  font-family: 'RobotoT';
+  src: url('../../assets/font/Roboto/Roboto-Thin.ttf') format('TrueType');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoTI';
+  src: url('../../assets/font/Roboto/Roboto-ThinItalic.ttf') format('TrueType');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'RobotoL';
+  src: url('../../assets/font/Roboto/Roboto-Light.ttf') format('TrueType');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLI';
+  src: url('../../assets/font/Roboto/Roboto-LightItalic.ttf') format('TrueType');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'RobotoR';
+  src: url('../../assets/font/Roboto/Roboto-Regular.ttf') format('TrueType');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoRI';
+  src: url('../../assets/font/Roboto/Roboto-Italic.ttf') format('TrueType');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'RobotoM';
+  src: url('../../assets/font/Roboto/Roboto-Medium.ttf') format('TrueType');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoMI';
+  src: url('../../assets/font/Roboto/Roboto-MediumItalic.ttf')
+    format('TrueType');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'RobotoB';
+  src: url('../../assets/font/Roboto/Roboto-Bold.ttf') format('TrueType');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBI';
+  src: url('../../assets/font/Roboto/Roboto-BoldItalic.ttf') format('TrueType');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'RobotoBL';
+  src: url('../../assets/font/Roboto/Roboto-Black.ttf') format('TrueType');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBLI';
+  src: url('../../assets/font/Roboto/Roboto-BlackItalic.ttf') format('TrueType');
+  font-weight: 900;
+  font-style: italic;
+}
+
+// Montserrat
+@font-face {
+  font-family: 'MontserratT';
+  src: url('../../assets/font/Montserrat/Montserrat-Thin.ttf')
+    format('TrueType');
+  font-weight: 100;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratTI';
+  src: url('../../assets/font/Montserrat/Montserrat-ThinItalic.ttf')
+    format('TrueType');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratEL';
+  src: url('../../assets/font/Montserrat/Montserrat-ExtraLight.ttf')
+    format('TrueType');
+  font-weight: 200;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratELI';
+  src: url('../../assets/font/Montserrat/Montserrat-ExtraLightItalic.ttf')
+    format('TrueType');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratL';
+  src: url('../../assets/font/Montserrat/Montserrat-Light.ttf')
+    format('TrueType');
+  font-weight: 300;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratLI';
+  src: url('../../assets/font/Montserrat/Montserrat-LightItalic.ttf')
+    format('TrueType');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratR';
+  src: url('../../assets/font/Montserrat/Montserrat-Regular.ttf')
+    format('TrueType');
+  font-weight: 400;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratRI';
+  src: url('../../assets/font/Montserrat/Montserrat-Italic.ttf')
+    format('TrueType');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratM';
+  src: url('../../assets/font/Montserrat/Montserrat-Medium.ttf')
+    format('TrueType');
+  font-weight: 500;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratMI';
+  src: url('../../assets/font/Montserrat/Montserrat-MediumItalic.ttf')
+    format('TrueType');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratSB';
+  src: url('../../assets/font/Montserrat/Montserrat-SemiBold.ttf')
+    format('TrueType');
+  font-weight: 600;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratSBI';
+  src: url('../../assets/font/Montserrat/Montserrat-SemiBoldItalic.ttf')
+    format('TrueType');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratB';
+  src: url('../../assets/font/Montserrat/Montserrat-Bold.ttf')
+    format('TrueType');
+  font-weight: 700;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratBI';
+  src: url('../../assets/font/Montserrat/Montserrat-BoldItalic.ttf')
+    format('TrueType');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratEB';
+  src: url('../../assets/font/Montserrat/Montserrat-ExtraBold.ttf')
+    format('TrueType');
+  font-weight: 800;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratEBI';
+  src: url('../../assets/font/Montserrat/Montserrat-ExtraBoldItalic.ttf')
+    format('TrueType');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratBL';
+  src: url('../../assets/font/Montserrat/Montserrat-Black.ttf')
+    format('TrueType');
+  font-weight: 900;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MontserratBI';
+  src: url('../../assets/font/Montserrat/Montserrat-BlackItalic.ttf')
+    format('TrueType');
+  font-weight: 900;
+  font-style: italic;
 }

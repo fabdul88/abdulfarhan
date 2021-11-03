@@ -11,6 +11,8 @@ const Skill = () => {
   // useState for filtering category
   const [filter, setFilter] = useState('technical');
   const [skillCategory, setSkillCategory] = useState([]);
+  const [activeTab, setActiveTab] = useState('technical');
+  const [activeIcon, setActiveIcon] = useState('html');
 
   // useState for filtering icon
   const [skillDetailFilter, setSkillDetailFilter] = useState('html');
@@ -52,13 +54,18 @@ const Skill = () => {
             <a
               href="/#"
               key={skillCategory.id}
-              className={skillCategory.containerClassName}
+              className={
+                activeTab === skillCategory.active
+                  ? skillCategory.containerClassNameActive
+                  : skillCategory.containerClassName
+              }
               active={
                 filter === skillCategory.active ? skillCategory.active : ''
               }
               onClick={(e) => {
                 e.preventDefault();
                 setFilter(skillCategory.active);
+                setActiveTab(skillCategory.active);
               }}
             >
               <img
@@ -81,9 +88,17 @@ const Skill = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     setSkillDetailFilter(skill.name);
+                    setActiveIcon(skill.name);
                   }}
                 >
-                  <Icon name={skill.name} className={skill.iconClassName} />
+                  <Icon
+                    name={skill.name}
+                    className={
+                      activeIcon === skill.name
+                        ? skill.iconClassNameActive
+                        : skill.iconClassName
+                    }
+                  />
                 </div>
               </Fragment>
             ) : (
