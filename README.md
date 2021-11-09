@@ -1,4 +1,4 @@
-# Abdul Farhan Full Stack Web Developer Portfolio
+# Full Stack Web Developer
 
 Welcome to my portfolio !
 
