@@ -12,7 +12,8 @@
 
   &__title {
     text-align: center;
-    font-family: 'SoulmazeItalic';
+    font-family: 'MontserratBL';
+
     letter-spacing: 2px;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
@@ -20,7 +21,7 @@
     padding: 60px 0 0 0;
     margin: 0;
     &-letter {
-      font-family: 'SoulmazeOutlineItalic';
+      font-family: 'MontserratT';
     }
     &-hr {
       @include global.sectionTitleHR;
@@ -34,10 +35,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
+    height: 110px;
+    min-height: 110px;
     width: 95vw;
     max-width: 500px;
-    height: 150px;
     margin-top: 60px;
     border-radius: 4px;
     box-shadow: 0 20px 20px rgba(126, 15, 255, 0.2),
@@ -57,7 +58,8 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     @include global.tablet {
       height: 150px;
-      width: 85vw;
+      min-height: 150px;
+      width: 85.8vw;
       max-width: 970px;
     }
   }
@@ -80,11 +82,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 7px;
+    padding: 10px 7px;
     border-radius: 4px;
     border: 1px solid silver;
     text-decoration: none;
     outline: 0;
+    transition: 0.2s all ease-in-out;
     @include global.tablet {
       padding: 10px;
     }
@@ -101,7 +104,7 @@
       cursor: pointer;
       color: #0aa2e7;
       border-top: 2px solid silver;
-      padding: 16px 7px;
+      padding: 10px 7px;
       border-left: 0;
       border-right: 0;
       border-bottom: 0;
@@ -125,6 +128,18 @@
       height: 25px;
     }
   }
+  &__technical-description--active,
+  &__design-description--active,
+  &__management-description--active {
+    font-family: 'RalewayR';
+    font-size: 13px;
+    background: linear-gradient(#ffffff, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include global.tablet {
+      font-size: 16px;
+    }
+  }
   &__icon-container {
     display: flex;
     align-items: center;
@@ -133,8 +148,10 @@
   &__icons-color {
     margin: 0 2.5px;
     fill: #a9a6b6;
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
+    transition: 0.25s all ease-in-out;
+
     &:hover {
       fill: url(#gradient);
       filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
@@ -147,8 +164,8 @@
     }
     &--active {
       margin: 0 2.5px;
-      width: 42px;
-      height: 42px;
+      width: 32px;
+      height: 32px;
       fill: url(#gradient);
       filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
       cursor: pointer;
@@ -156,19 +173,6 @@
         width: 39px;
         height: 39px;
       }
-    }
-  }
-
-  &__technical-description--active,
-  &__design-description--active,
-  &__management-description--active {
-    font-family: 'RalewayR';
-    font-size: 13px;
-    background: linear-gradient(#ffffff, #38495a);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @include global.tablet {
-      font-size: 16px;
     }
   }
   &__icon-wrapper {
@@ -203,7 +207,8 @@
     justify-content: center;
     width: 95vw;
     max-width: 500px;
-    height: auto;
+    height: 580px;
+    min-height: 580px;
     margin-top: 10px;
     margin-bottom: 70px;
     border-radius: 4px;
@@ -225,8 +230,10 @@
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     @include global.tablet {
-      width: 85vw;
+      width: 85.8vw;
       max-width: 970px;
+      height: auto;
+      min-height: auto;
     }
   }
   &__wrapper-two {
@@ -234,8 +241,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 703px;
-    min-height: 703px;
+    height: 580px;
+    min-height: 580px;
     letter-spacing: 1px;
     @include global.tablet {
       flex-direction: row;

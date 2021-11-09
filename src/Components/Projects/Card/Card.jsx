@@ -1,18 +1,18 @@
-import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Icon } from "../../Icon/Icon";
-import "./card.scss";
+import React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Icon } from '../../Icon/Icon';
+import './card.scss';
 
 export default function Card({ projectCard }) {
   const hover = {
     scale: 1.1,
-    transition: { type: "spring", stiffness: 1000 },
+    transition: { type: 'spring', stiffness: 1000 },
   };
 
   const cardVariants = {
     initial: {
       opacity: 0,
-      y: "-10vh",
+      y: '-10vh',
     },
     in: {
       opacity: 1,
@@ -20,17 +20,17 @@ export default function Card({ projectCard }) {
     },
     out: {
       opacity: 0,
-      y: "-10vh",
+      y: '-10vh',
     },
   };
   const cardTransition = {
-    type: "tween",
-    ease: "anticipate",
+    type: 'tween',
+    ease: 'anticipate',
     duration: 0.8,
   };
   return (
     <div className="card-container">
-      {" "}
+      {' '}
       <AnimatePresence>
         {projectCard.map((project) =>
           project.filtered ? (
@@ -93,9 +93,9 @@ export default function Card({ projectCard }) {
               </div>
             </motion.div>
           ) : (
-            ""
+            ''
           )
-        )}{" "}
+        )}{' '}
       </AnimatePresence>
     </div>
   );

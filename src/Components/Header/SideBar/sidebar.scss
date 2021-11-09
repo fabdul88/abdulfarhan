@@ -42,10 +42,6 @@
         width: 100%;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
-        @include global.desktop {
-          backdrop-filter: none;
-          -webkit-backdrop-filter: none;
-        }
       }
       @include global.tablet {
         width: 385px;
@@ -55,6 +51,8 @@
         height: 95px;
         background: none;
         margin: 0;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
       }
     }
   }

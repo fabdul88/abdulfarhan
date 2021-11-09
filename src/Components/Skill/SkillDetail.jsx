@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-import "./skillDetail.scss";
-import { Icon } from "../Icon/Icon";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { Fragment } from 'react';
+import './skillDetail.scss';
+import { Icon } from '../Icon/Icon';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 AOS.init();
-export { category } from "./skillData";
+export { category } from './skillData';
 
 const SkillDetail = ({ skillDetail }) => {
   return (
@@ -14,12 +14,7 @@ const SkillDetail = ({ skillDetail }) => {
           <Fragment key={skill.id}>
             <section className="skill__stats-container-one">
               <div className="skill__image-container">
-                <Icon
-                  name={skill.name}
-                  width="92"
-                  height="92"
-                  className="skill__icons-color-two"
-                />
+                <Icon name={skill.name} className="skill__icons-color-two" />
               </div>
               <div className="skill__image-title-container">
                 <h2 data-aos="zoom-out" className="skill__image-title">
@@ -96,7 +91,7 @@ const SkillDetail = ({ skillDetail }) => {
             </section>
           </Fragment>
         ) : (
-          ""
+          ''
         )
       )}
     </Fragment>

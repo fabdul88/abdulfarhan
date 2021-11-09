@@ -36,6 +36,7 @@
     border-radius: 3px;
     padding: 15px 5px;
     outline: 0;
+    transition: 0.2s all ease-in-out;
     &:hover {
       color: #0aa2e7;
       border: 1px solid #0aa2e7;
@@ -49,14 +50,18 @@
       font-family: 'RalewaySB';
       font-size: 10px;
       text-decoration: none;
-      color: #0aa2e7;
+      background: linear-gradient(#ffffff, #38495a);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // color: silver;
       padding: 15px 5px;
-      border-top: 2px solid #0aa2e7;
+      border-top: 2px solid silver;
       border-right: 0;
       border-bottom: 0;
       border-left: 0;
       border-radius: 0;
       outline: 0;
+      transition: 0.2s all ease-in-out;
       -moz-outline-style: none;
       @include global.tablet {
         font-size: 14px;
@@ -65,7 +70,7 @@
   }
   &__title {
     text-align: center;
-    font-family: 'SoulmazeOutlineItalic';
+    font-family: 'MontserratT';
 
     letter-spacing: 2px;
     background: linear-gradient(#ffffff, #38495a);
@@ -74,7 +79,7 @@
     padding: 60px 0 0 0;
     margin: 0;
     &-letter {
-      font-family: 'SoulmazeItalic';
+      font-family: 'MontserratBL';
     }
     &-hr {
       @include global.sectionTitleHR;

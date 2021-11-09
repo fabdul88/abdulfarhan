@@ -1,0 +1,112 @@
+@use '../../styles/partials/global';
+
+.contact-container {
+  &__form-container {
+    margin: 0 15px 0px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    &-name,
+    &-email,
+    &-subject,
+    &-message {
+      font-family: 'RalewayR';
+      letter-spacing: 1px;
+      width: 100%;
+      max-width: 500px;
+      color: #ffffff;
+      background-color: #444649;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      margin: 1.5px 0;
+      transition: 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 3pt 2pt rgba(93, 173, 226, 0.9);
+      }
+      &-error {
+        font-family: 'RalewayR';
+        letter-spacing: 1px;
+        width: 100%;
+        max-width: 500px;
+        color: #ffffff;
+        background-color: #444649;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        margin: 1.5px 0;
+        box-shadow: 0 0 3pt 2pt rgba(227, 27, 109, 0.9);
+      }
+    }
+  }
+  &__error-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+  }
+  &__error-name,
+  &__error-email,
+  &__error-subject,
+  &__error-message {
+    font-family: 'RalewaySB';
+    background: rgba(227, 27, 109, 0.2);
+    letter-spacing: 1px;
+    color: hsl(335, 59%, 45%);
+    width: fit-content;
+    max-width: 500px;
+    margin: 0 0 16px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  &__success-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+  }
+  &__success-message {
+    font-family: 'RalewayR';
+    background: rgba(127, 255, 212, 0.2);
+    letter-spacing: 1px;
+    color: hsl(164, 59%, 35%);
+    width: fit-content;
+    max-width: 500px;
+    margin: 0 0 16px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  &__form-button {
+    font-family: 'RalewaySB';
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    width: 150px;
+    padding: 15px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+    transition: 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: #ffffff;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid transparent;
+      background-color: #ffffff;
+      color: #0aa2e7;
+      box-shadow: 0 0 3pt 2pt rgba(93, 173, 226, 0.9);
+    }
+  }
+}

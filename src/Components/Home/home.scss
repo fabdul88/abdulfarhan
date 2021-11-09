@@ -34,14 +34,13 @@
       }
     }
     &-description {
-      font-family: 'Soulmaze';
+      font-family: 'RalewayB';
       color: #e31b6d;
       display: flex;
       width: 100%;
       flex-wrap: wrap;
       justify-content: center;
       font-weight: 600;
-      font-style: italic;
       font-size: 17px;
       letter-spacing: 1.5px;
       filter: drop-shadow(0.4rem 0.6rem 0.1rem rgba(227, 27, 109, 0.2));
@@ -59,7 +58,8 @@
     }
   }
   &__first-name {
-    font-family: 'SoulmazeItalic';
+    font-family: 'MontserratBL';
+    text-transform: uppercase;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,7 +70,8 @@
     }
   }
   &__last-name {
-    font-family: 'SoulmazeOutlineItalic';
+    font-family: 'MontserratBL';
+    text-transform: uppercase;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -20,12 +20,12 @@
     }
   }
   &__title {
-    font-family: 'SoulmazeItalic';
+    font-family: 'MontserratT';
     letter-spacing: 2px;
     margin: 0;
     color: #444649;
     &-letter {
-      font-family: 'SoulmazeItalic';
+      font-family: 'MontserratBL';
       color: #5cc2a7;
     }
     &-hr {
@@ -42,6 +42,7 @@
     @include global.tablet {
       flex-direction: row;
       width: 90%;
+      margin-bottom: 70px;
     }
   }
   &__profile-container {
@@ -91,6 +92,7 @@
   }
   &__version-filter {
     font-family: 'RalewaySB';
+    font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
     color: #444649;
@@ -102,12 +104,17 @@
     margin: 0 5px;
     border-radius: 4px;
     outline: 0;
+    transition: 0.25s all ease;
+    @include global.tablet {
+      font-size: 16px;
+    }
     &:hover {
       color: #0aa2e7;
       border: 1px solid #0aa2e7;
     }
     &--active {
       font-family: 'RalewaySB';
+      font-size: 15px;
       text-transform: uppercase;
       color: #0aa2e7;
       text-decoration: none;
@@ -122,21 +129,46 @@
       border-left: 0;
       outline: 0;
       -moz-outline-style: none;
+      transition: 0.2s all ease;
+      @include global.tablet {
+        font-size: 16px;
+      }
+    }
+  }
+  &__profile-text-wrapper {
+    @include global.tablet {
+      display: flex;
+      align-items: baseline;
+      margin-top: 100px;
+      margin-right: 320px;
     }
   }
   &__profile-text {
-    font-family: 'Soulmaze';
+    font-family: 'MontserratR';
+    font-size: 15px;
     color: #444649;
-    letter-spacing: 2px;
-    line-height: 18px;
+    letter-spacing: 0px;
+    line-height: 25px;
     width: 290px;
     margin: 25px 18px 35px;
-    @include global.tablet {
-      margin: 25px 18px 5px;
-    }
+
     &-career {
-      font-family: 'Soulmaze';
+      font-family: 'RalewayR';
+      font-size: 16px;
       color: #e31b6d;
+      background: silver;
+      border-radius: 4px;
+      padding: 5px;
+      margin: 0 5px;
+    }
+    &-bottom {
+      font-family: 'MontserratR';
+      font-size: 15px;
+      color: #444649;
+      letter-spacing: 0;
+      line-height: 25px;
+      width: 290px;
+      margin: 0 18px 35px;
     }
   }
   &__hexagon-top {

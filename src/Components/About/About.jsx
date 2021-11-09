@@ -9,9 +9,9 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 export default function About() {
-  const [filter, setFilter] = useState('short');
+  const [filter, setFilter] = useState('long');
   const [about, setAbout] = useState([]);
-  const [activeTab, setActiveTab] = useState('short');
+  const [activeTab, setActiveTab] = useState('long');
 
   useEffect(() => {
     const filtered = aboutData.map((version) => ({
@@ -47,7 +47,7 @@ export default function About() {
       <div className="about-container__column-container">
         <motion.div
           className="about-container__profile-container"
-          whileHover={{ scale: 1.2 }}
+          whileHover={{ scale: 1.2, rotate: -5, ease: 100 }}
         >
           <img
             data-aos="flip-left"
@@ -57,7 +57,7 @@ export default function About() {
           />
           <motion.img
             className="about-container__profile"
-            whileHover={{ scale: 1.05, ease: 100, rotate: -5 }}
+            // whileHover={{ scale: 1.05 }}
             src={Profile}
             alt="Profile"
           />
@@ -88,22 +88,27 @@ export default function About() {
           </div>
           {about.map((version) =>
             version.filtered ? (
-              <p
+              <div
+                className="about-container__profile-text-wrapper"
+                key={version.id}
                 data-aos="flip-left"
                 data-aos-duration="3000"
-                key={version.id}
-                className="about-container__profile-text"
               >
-                {version.aboutVersionTop}
-                <span
-                  aos-data="ease-in-cubic"
-                  className="about-container__profile-text-career"
-                >
-                  {' '}
-                  {version.aboutVersionSpan}{' '}
-                </span>
-                {version.aboutVersionBottom}
-              </p>
+                <p className="about-container__profile-text">
+                  {version.aboutVersionTop}
+                  <span
+                    aos-data="ease-in-cubic"
+                    className="about-container__profile-text-career"
+                  >
+                    {' '}
+                    {version.aboutVersionSpan}{' '}
+                  </span>
+                  {version.aboutVersionBottom}
+                </p>
+                <p className="about-container__profile-text-bottom">
+                  {version.aboutVersionBottomTwo}
+                </p>
+              </div>
             ) : (
               ''
             )

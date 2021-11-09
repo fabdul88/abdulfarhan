@@ -14,7 +14,7 @@ export const skillData = [
     name: 'html',
     title: 'HTML5',
     description:
-      'Stands for Hyper Text Markup Language. It allows the modification of web pages, as well as making adjustments to their appearance. It also used to structure and present content for the web.',
+      'Stands for Hyper Text Markup Language. It allows the modification of web pages, as well as making adjustments to their appearance. It is also used to structure and present content for the web.',
     projectNumber: 15,
     yearsExperience: 2,
   },
@@ -28,7 +28,7 @@ export const skillData = [
     name: 'css',
     title: 'CSS3',
     description:
-      'A language that is used to illustrate the look, style, and format of a document written in any markup language. It is used to style and organize the layout of Web pages. CSS3 is the latest version of CSS ',
+      'A language that is used to illustrate the look, style, and format of a document written in any markup language. It is used to style and organize the layout of Web pages. CSS3 is the latest version of CSS. ',
     projectNumber: 5,
     yearsExperience: 1.5,
   },
@@ -169,7 +169,7 @@ export const skillData = [
     name: 'firebase',
     title: 'Firebase',
     description:
-      'Firebase is a cloud platform that includes services like analytics, authentication, realtime databases, configuration and file storage',
+      'Firebase is a cloud platform that includes services like analytics, authentication, realtime databases, configuration and file storage.',
     projectNumber: 1,
     yearsExperience: 1,
   },
@@ -226,7 +226,7 @@ export const skillData = [
     name: 'figma',
     title: 'Figma',
     description:
-      'Figma gives you all the tools you need for the design phase of the project, including vector tools which are capable of fully-fledged illustration, as well as prototyping capabilities, and code generation for hand-off.',
+      'Figma gives you all the tools you need for the design phase of the project, including vector tools which are capable of fully-fledged illustration, as well as prototyping capabilities.',
     projectNumber: 3,
     yearsExperience: 0.5,
   },
@@ -240,7 +240,7 @@ export const skillData = [
     name: 'leader',
     title: 'Leadership',
     description:
-      'Leadership is a quality that not everyone takes up voluntarily. I have been leading teams to achieve organizational goals while maintaining a healthy, safe and joyful work environment.',
+      'Leadership is a quality that not everyone takes up voluntarily. I have been leading teams to achieve organizational goals while maintaining a healthy, safe and friendly work environment.',
     projectNumber: '-',
     yearsExperience: 2,
   },

@@ -49,25 +49,28 @@
   &__front {
     height: 380px;
     padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   &__front,
   &__back {
     backface-visibility: hidden;
   }
   &__name {
-    font-family: 'Soulmaze';
+    font-family: 'MontserratBL';
     text-transform: uppercase;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
-    font-size: 30px;
+    font-size: 23px;
     margin: 25px 0 0;
-    padding: 0 0 0 20px;
     line-height: 30px;
     text-align: left;
   }
-
   &__card-hr-fitrack {
     @include global.cardHR;
     background: #e31b6d;
@@ -117,6 +120,7 @@
     &-color {
       margin: 0 2.5px;
       fill: #a9a6b6;
+      transition: 0.25s all ease-in-out;
       &:hover {
         fill: url(#gradient);
         filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
