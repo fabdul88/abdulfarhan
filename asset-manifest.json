@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c0d286a.chunk.css",
-    "main.js": "/static/js/main.22a50b89.chunk.js",
-    "main.js.map": "/static/js/main.22a50b89.chunk.js.map",
+    "main.css": "/static/css/main.8c02bbb9.chunk.css",
+    "main.js": "/static/js/main.9559254c.chunk.js",
+    "main.js.map": "/static/js/main.9559254c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.879611ce.js",
     "runtime-main.js.map": "/static/js/runtime-main.879611ce.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
@@ -12,25 +12,22 @@
     "static/js/3.125fa9d6.chunk.js.map": "/static/js/3.125fa9d6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.1c0d286a.chunk.css.map": "/static/css/main.1c0d286a.chunk.css.map",
+    "static/css/main.8c02bbb9.chunk.css.map": "/static/css/main.8c02bbb9.chunk.css.map",
     "static/js/2.8f22702c.chunk.js.LICENSE.txt": "/static/js/2.8f22702c.chunk.js.LICENSE.txt",
     "static/media/home.scss": "/static/media/Raleway-Thin.537e4a26.ttf",
     "static/media/black_transparent.dc528fee.svg": "/static/media/black_transparent.dc528fee.svg",
-    "static/media/code.aa52ab93.svg": "/static/media/code.aa52ab93.svg",
-    "static/media/covid.efe2472e.webp": "/static/media/covid.efe2472e.webp",
-    "static/media/design.e81929de.svg": "/static/media/design.e81929de.svg",
-    "static/media/disneyplus.7fee9a1e.webp": "/static/media/disneyplus.7fee9a1e.webp",
-    "static/media/fitrack.b0acbac5.webp": "/static/media/fitrack.b0acbac5.webp",
+    "static/media/covid.374717ff.webp": "/static/media/covid.374717ff.webp",
+    "static/media/disneyplus.55618adc.webp": "/static/media/disneyplus.55618adc.webp",
+    "static/media/fitrack.0843345c.webp": "/static/media/fitrack.0843345c.webp",
     "static/media/hexagon_monochrome.0e65261d.webp": "/static/media/hexagon_monochrome.0e65261d.webp",
-    "static/media/management.f37ce7cf.svg": "/static/media/management.f37ce7cf.svg",
     "static/media/profile.868ce01c.webp": "/static/media/profile.868ce01c.webp",
-    "static/media/travelog.a08c4deb.webp": "/static/media/travelog.a08c4deb.webp"
+    "static/media/travelog.ca4fffcd.webp": "/static/media/travelog.ca4fffcd.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.879611ce.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.8f22702c.chunk.js",
-    "static/css/main.1c0d286a.chunk.css",
-    "static/js/main.22a50b89.chunk.js"
+    "static/css/main.8c02bbb9.chunk.css",
+    "static/js/main.9559254c.chunk.js"
   ]
 }
