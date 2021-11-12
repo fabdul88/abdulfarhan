@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Reactjs = ({ className, width, height }) => {
   return (
@@ -10,6 +10,7 @@ const Reactjs = ({ className, width, height }) => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>React js skill icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

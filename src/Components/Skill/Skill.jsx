@@ -68,10 +68,9 @@ const Skill = () => {
                 setActiveTab(skillCategory.active);
               }}
             >
-              <img
+              <Icon
                 className={skillCategory.imageClassName}
-                src={skillCategory.imgSrc}
-                alt="Skill category icon"
+                name={skillCategory.iconName}
               />
               <span className={skillCategory.spanClassNameActive}>
                 {skillCategory.description}

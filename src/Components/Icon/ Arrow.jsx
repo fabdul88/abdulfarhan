@@ -9,6 +9,7 @@ const Arrow = ({ className, width, height }) => {
       width={width}
       height={height}
     >
+      <title>Arrow icon</title>
       <defs>
         <linearGradient id="arrow" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#ffffff" />

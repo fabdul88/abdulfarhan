@@ -9,6 +9,7 @@ const Skills = ({ className, width, height }) => {
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Skills icon</title>
       <defs>
         <linearGradient id="grad" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#ffffff" />

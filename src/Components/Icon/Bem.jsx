@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Bem = ({ className, width, height }) => {
   return (
@@ -10,6 +10,7 @@ const Bem = ({ className, width, height }) => {
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
     >
+      <title>BEM skill icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

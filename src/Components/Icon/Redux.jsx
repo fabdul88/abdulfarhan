@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Redux = ({ className, height, width }) => {
   return (
@@ -9,6 +9,7 @@ const Redux = ({ className, height, width }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
     >
+      <title>Redux skill icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

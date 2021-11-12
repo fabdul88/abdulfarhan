@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ReactLeaflet = ({ className, height, width }) => {
   return (
@@ -15,6 +15,7 @@ const ReactLeaflet = ({ className, height, width }) => {
       viewBox="50 10 10 85.8"
       xmlSpace="preserve"
     >
+      <title>React leaflet skill icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

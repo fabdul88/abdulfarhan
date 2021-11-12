@@ -67,7 +67,7 @@
     -webkit-text-fill-color: transparent;
     display: flex;
     font-size: 23px;
-    margin: 25px 0 0;
+    margin: 45px 0 0;
     line-height: 30px;
     text-align: left;
   }
@@ -89,11 +89,13 @@
   }
   &__image-front {
     width: 300px;
-    height: 290px;
+    height: 268px;
+    object-fit: contain;
+    object-position: center;
     border-radius: 3px;
-    box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.5);
   }
   &__image-back {
     width: 200px;

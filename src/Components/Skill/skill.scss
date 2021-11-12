@@ -103,7 +103,7 @@
       justify-content: center;
       cursor: pointer;
       color: #0aa2e7;
-      border-top: 2px solid silver;
+      border-top: 1px solid silver;
       padding: 10px 7px;
       border-left: 0;
       border-right: 0;
@@ -123,6 +123,8 @@
     width: 15px;
     height: 15px;
     margin-right: 3px;
+    stroke: #bdc3c7;
+    fill: none;
     @include global.tablet {
       width: 25px;
       height: 25px;

@@ -30,6 +30,9 @@ import { About } from './About';
 import { Skills } from './Skills';
 import { Projects } from './Projects';
 import { Contact } from './Contact';
+import { Management } from './Management';
+import { Design } from './Design';
+import { Code } from './Code';
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -96,6 +99,12 @@ const Icon = (props) => {
       return <Projects {...props} />;
     case 'contact':
       return <Contact {...props} />;
+    case 'code':
+      return <Code {...props} />;
+    case 'design':
+      return <Design {...props} />;
+    case 'management':
+      return <Management {...props} />;
     default:
       <div />;
   }

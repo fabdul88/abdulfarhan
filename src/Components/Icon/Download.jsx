@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Download = ({ className, width, height }) => {
   return (
@@ -11,6 +11,7 @@ const Download = ({ className, width, height }) => {
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
+      <title>Download icon</title>
       <path
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Mapbox = ({ className, height, width }) => {
   return (
@@ -9,6 +9,7 @@ const Mapbox = ({ className, height, width }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1024 1024"
     >
+      <title>Mapbox skill icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

@@ -57,7 +57,6 @@ export default function About() {
           />
           <motion.img
             className="about-container__profile"
-            // whileHover={{ scale: 1.05 }}
             src={Profile}
             alt="Profile"
           />

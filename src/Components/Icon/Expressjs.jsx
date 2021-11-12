@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Expressjs = ({ className, width, height }) => {
   return (
@@ -14,6 +14,7 @@ const Expressjs = ({ className, width, height }) => {
       fillRule="evenodd"
       clipRule="evenodd"
     >
+      <title>Express js skill icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

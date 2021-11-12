@@ -1,7 +1,4 @@
 import { v4 as uuidv4 } from 'uuid';
-import Code from '../../assets/code.svg';
-import Design from '../../assets/design.svg';
-import Management from '../../assets/management.svg';
 
 export const skillData = [
   {
@@ -278,7 +275,7 @@ export const category = [
     id: uuidv4(),
     containerClassName: 'skill__technical-container',
     containerClassNameActive: 'skill__technical-container--active',
-    imgSrc: Code,
+    iconName: 'code',
     imageClassName: 'skill__technical-icon',
     spanClassName: 'skill__technical-description-hide',
     spanClassNameActive: 'skill__technical-description--active',
@@ -289,7 +286,7 @@ export const category = [
     id: uuidv4(),
     containerClassName: 'skill__design-container',
     containerClassNameActive: 'skill__design-container--active',
-    imgSrc: Design,
+    iconName: 'design',
     imageClassName: 'skill__design-icon',
     spanClassName: 'skill__design-description-hide',
     spanClassNameActive: 'skill__design-description--active',
@@ -300,7 +297,7 @@ export const category = [
     id: uuidv4(),
     containerClassName: 'skill__management-container',
     containerClassNameActive: 'skill__management-container--active',
-    imgSrc: Management,
+    iconName: 'management',
     imageClassName: 'skill__management-icon',
     spanClassName: 'skill__management-description-hide',
     spanClassNameActive: 'skill__management-description--active',

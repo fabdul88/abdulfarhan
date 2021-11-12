@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Github = ({ className, width, height }) => {
   return (
@@ -13,6 +13,7 @@ const Github = ({ className, width, height }) => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Github icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />
