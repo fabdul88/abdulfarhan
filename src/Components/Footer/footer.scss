@@ -39,6 +39,13 @@
     margin: 0;
     background-color: #252525;
     @include global.tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    @include global.desktop {
+      display: flex;
       flex-direction: row;
     }
     &-item {
@@ -61,6 +68,25 @@
         width: 230px;
       }
     }
+    &-twitter-link {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 260px;
+      border: 1px solid #ffffff;
+      border-radius: 3px;
+      padding: 5px;
+      text-decoration: none;
+      margin: 15px 0 0 0;
+      &:hover {
+        background-color: #1d9bf0;
+        border: 1px solid transparent;
+      }
+      @include global.tablet {
+        margin: 0;
+        width: 230px;
+      }
+    }
     &-github-link {
       display: flex;
       justify-content: space-evenly;
@@ -77,8 +103,8 @@
         border: 1px solid transparent;
       }
       @include global.tablet {
-        margin: 0 0 0 20px;
-        width: 220px;
+        width: 230px;
+        margin: 0;
       }
     }
     &-resume-link {
@@ -96,8 +122,8 @@
         border: 1px solid transparent;
       }
       @include global.tablet {
-        margin: 0 0 0 20px;
-        width: 220px;
+        margin: 0;
+        width: 230px;
       }
     }
     &-text {
@@ -110,15 +136,20 @@
       padding: 2.5px;
       margin: 0 5px 0 0px;
     }
-    &-github {
-      stroke: #ffffff;
+    &-twitter {
+      fill: #ffffff;
       padding: 2.5px;
-      margin: 0 33px 0 0;
+      margin: 0 15px 0 0px;
+    }
+    &-github {
+      fill: #ffffff;
+      padding: 2.5px;
+      margin: 0 25px 0 0;
     }
     &-download {
       stroke: #ffffff;
       padding: 2.5px;
-      margin: 0 33px 0 0;
+      margin: 0 25px 0 0;
     }
   }
   &__arrow-container {

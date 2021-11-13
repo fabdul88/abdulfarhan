@@ -33,6 +33,7 @@ import { Contact } from './Contact';
 import { Management } from './Management';
 import { Design } from './Design';
 import { Code } from './Code';
+import { Twitter } from './Twitter';
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -55,6 +56,8 @@ const Icon = (props) => {
       return <Github {...props} />;
     case 'linkedin':
       return <LinkedIn {...props} />;
+    case 'twitter':
+      return <Twitter {...props} />;
     case 'materialui':
       return <MaterialUI {...props} />;
     case 'bem':
