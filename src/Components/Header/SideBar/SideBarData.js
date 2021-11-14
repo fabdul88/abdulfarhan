@@ -52,3 +52,16 @@ export const SideBarData = [
     description: 'CONTACT',
   },
 ];
+
+// export const sidebarBlogData = [
+//   {
+//     id: uuidv4(),
+//     listItemClassName: 'sidebar__list-item',
+//     linkClassName: 'sidebar__list-item-link',
+//     linkToBlog: '/blog',
+//     iconClassName: 'sidebar__list-blog',
+//     iconName: 'Projects',
+//     descriptionClassName: 'sidebar__hover-blog',
+//     blogDescription: 'BLOG',
+//   },
+// ];

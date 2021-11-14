@@ -4,44 +4,40 @@ export const FooterInfo = [
   {
     id: uuidv4(),
     listItem: 'footer-container__social-list-item',
-    listItemLink: 'footer-container__social-list-linkedin-link',
+    listItemLink:
+      'footer-container__social-list-linkedin-link footer-container__social-list-link',
     listItemHref: 'https://www.linkedin.com/in/abdul-farhan/',
     iconName: 'linkedin',
     iconClassName: 'footer-container__social-list-linkedin',
-    descriptionClassName: 'footer-container__social-list-text',
-    description: 'CONNECT WITH ME ON LINKEDIN',
   },
   {
     id: uuidv4(),
     listItem: 'footer-container__social-list-item',
-    listItemLink: 'footer-container__social-list-twitter-link',
+    listItemLink:
+      'footer-container__social-list-twitter-link footer-container__social-list-link',
     listItemHref: 'https://twitter.com/F__Abdul',
     iconName: 'twitter',
     iconClassName: 'footer-container__social-list-twitter',
-    descriptionClassName: 'footer-container__social-list-text',
-    description: 'FOLLOW ME ON TWITTER',
   },
   {
     id: uuidv4(),
     listItem: 'footer-container__social-list-item',
-    listItemLink: 'footer-container__social-list-github-link',
+    listItemLink:
+      'footer-container__social-list-github-link footer-container__social-list-link',
     listItemHref: 'https://www.github.com/fabdul88',
     iconName: 'github',
     iconClassName: 'footer-container__social-list-github',
-    descriptionClassName: 'footer-container__social-list-text',
-    description: 'VIEW MY CONTRIBUTIONS',
   },
   {
     id: uuidv4(),
     listItem: 'footer-container__social-list-item',
-    listItemLink: 'footer-container__social-list-resume-link',
+    listItemLink:
+      'footer-container__social-list-resume-link footer-container__social-list-link',
     listItemHref:
       'https://drive.google.com/uc?id=18zTY31s2bAMwhd9ZAypZd2xlWNCrr4jw&export=download',
     target: '_blank',
     rel: 'noopener noreferrer',
     iconName: 'download',
     iconClassName: 'footer-container__social-list-download',
-    descriptionClassName: 'footer-container__social-list-text',
-    description: 'DOWNLOAD MY RESUME',
   },
 ];

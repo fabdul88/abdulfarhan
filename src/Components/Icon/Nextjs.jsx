@@ -9,7 +9,7 @@ const Nextjs = ({ className, width, height }) => {
       viewBox=".5 -.2 1023 1024.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Next js skill icon</title>
+      <title>Next js icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

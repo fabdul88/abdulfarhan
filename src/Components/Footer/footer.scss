@@ -4,10 +4,18 @@
   font-family: 'RalewayR';
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100vw;
   align-items: center;
   background-color: #252525;
   padding: 0 0 30px 0;
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
   &__copyright-container {
     display: flex;
     justify-content: center;
@@ -21,7 +29,8 @@
     text-align: center;
     width: 77%;
     max-width: 430px;
-    @include global.tablet {
+    @include global.desktop {
+      width: 100%;
       max-width: 455px;
     }
     &-span {
@@ -31,126 +40,40 @@
   }
   &__social-list {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    width: 220px;
+    padding: 0;
+    margin: 20px 0;
     list-style-type: none;
-    padding: 40px 0 20px 0;
-    margin: 0;
     background-color: #252525;
-    @include global.tablet {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      row-gap: 20px;
-      column-gap: 20px;
-    }
-    @include global.desktop {
-      display: flex;
-      flex-direction: row;
-    }
-    &-item {
-      display: flex;
-    }
-    &-linkedin-link {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 260px;
-      border: 1px solid #ffffff;
-      border-radius: 3px;
-      padding: 5px;
-      text-decoration: none;
-      &:hover {
-        background-color: #0aa2e7;
-        border: 1px solid transparent;
-      }
-      @include global.tablet {
-        width: 230px;
-      }
-    }
-    &-twitter-link {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 260px;
-      border: 1px solid #ffffff;
-      border-radius: 3px;
-      padding: 5px;
-      text-decoration: none;
-      margin: 15px 0 0 0;
-      &:hover {
-        background-color: #1d9bf0;
-        border: 1px solid transparent;
-      }
-      @include global.tablet {
-        margin: 0;
-        width: 230px;
-      }
-    }
-    &-github-link {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-
-      width: 260px;
-      border: 1px solid #ffffff;
-      border-radius: 3px;
-      padding: 5px;
-      text-decoration: none;
-      margin: 15px 0 0 0;
-      &:hover {
-        background-color: #d15704;
-        border: 1px solid transparent;
-      }
-      @include global.tablet {
-        width: 230px;
-        margin: 0;
-      }
-    }
-    &-resume-link {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 260px;
-      border: 1px solid #ffffff;
-      border-radius: 3px;
-      padding: 5px;
-      text-decoration: none;
-      margin: 15px 0 0 0;
-      &:hover {
-        background-color: #e31b6d;
-        border: 1px solid transparent;
-      }
-      @include global.tablet {
-        margin: 0;
-        width: 230px;
-      }
-    }
-    &-text {
-      font-size: 10px;
-      color: #ffffff;
-    }
-
     &-linkedin {
       fill: #ffffff;
-      padding: 2.5px;
-      margin: 0 5px 0 0px;
+      &:hover {
+        fill: #ffffff;
+      }
     }
     &-twitter {
       fill: #ffffff;
-      padding: 2.5px;
-      margin: 0 15px 0 0px;
+      &:hover {
+        fill: #1d9bf0;
+      }
     }
     &-github {
       fill: #ffffff;
-      padding: 2.5px;
-      margin: 0 25px 0 0;
+      &:hover {
+        fill: silver;
+      }
     }
     &-download {
       stroke: #ffffff;
-      padding: 2.5px;
-      margin: 0 25px 0 0;
+      &:hover {
+        stroke: #e31b6d;
+      }
     }
+  }
+  &__social-list-link {
+    display: flex;
   }
   &__arrow-container {
     width: 55px;

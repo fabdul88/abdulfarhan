@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
-import NavBar from './Components/Header/Navbar/NavBar';
-import Home from './Components/Home/Home';
+import { NavBar } from './Components/Header/Navbar/NavBar';
+import { Home } from './Components/Home/Home';
 
 function App() {
   const [scrollTop, setScrollTop] = useState(0);

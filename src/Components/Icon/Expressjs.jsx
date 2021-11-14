@@ -14,7 +14,7 @@ const Expressjs = ({ className, width, height }) => {
       fillRule="evenodd"
       clipRule="evenodd"
     >
-      <title>Express js skill icon</title>
+      <title>Express js icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

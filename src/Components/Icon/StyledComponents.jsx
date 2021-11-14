@@ -10,7 +10,7 @@ const StyledComponents = ({ className, height, width }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
-      <title>Styled components skill icon</title>
+      <title>Styled components icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

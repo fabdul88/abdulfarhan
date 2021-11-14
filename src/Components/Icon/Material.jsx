@@ -10,7 +10,7 @@ const MaterialUI = ({ className, width, height }) => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Material UI skill icon</title>
+      <title>Material UI icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

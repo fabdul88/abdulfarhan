@@ -10,7 +10,7 @@ const Css = ({ className, width, height }) => {
       height={height}
       width={width}
     >
-      <title>CSS skill icon</title>
+      <title>CSS icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

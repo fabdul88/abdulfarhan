@@ -5,7 +5,7 @@ import { Icon } from '../Icon/Icon';
 import { FooterInfo } from './FooterInfo';
 import { animateScroll as scroll } from 'react-scroll';
 
-export default function Footer() {
+const Footer = () => {
   const hover = {
     scale: 1.1,
     transition: { type: 'spring', stiffness: 1000 },
@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <div className="footer-container">
-      <div>
+      <div className="footer-container__sub-container">
         <section className="footer-container__copyright-container">
           <p className="footer-container__copyright">
             Designed and Built by Abdul Farhan
@@ -26,11 +26,14 @@ export default function Footer() {
         </section>
         <ul className="footer-container__social-list">
           {FooterInfo.map((info) => (
-            <li key={info.id} className={info.listItem}>
-              <motion.a
+            <motion.li
+              key={info.id}
+              className={info.listItem}
+              whileHover={hover}
+            >
+              <a
                 className={info.listItemLink}
                 href={info.listItemHref}
-                whileHover={hover}
                 target={info.target}
                 rel={info.rel}
               >
@@ -40,9 +43,8 @@ export default function Footer() {
                   width="35"
                   height="35"
                 />
-                <p className={info.descriptionClassName}>{info.description}</p>
-              </motion.a>
-            </li>
+              </a>
+            </motion.li>
           ))}
         </ul>
       </div>
@@ -62,4 +64,6 @@ export default function Footer() {
       </motion.div>
     </div>
   );
-}
+};
+
+export { Footer };

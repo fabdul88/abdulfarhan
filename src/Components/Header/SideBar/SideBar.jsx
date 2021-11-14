@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
-import Burger from './Burger/Burger';
-import { Link } from 'react-scroll';
-import { SideBarData } from './SideBarData';
+import { Burger } from './Burger/Burger';
+// import { Link } from 'react-router-dom';
+import { Link as Scroll } from 'react-scroll';
+import {
+  SideBarData,
+  // sidebarBlogData
+} from './SideBarData';
 import { Icon } from '../../Icon/Icon';
 
-export default function SideBar() {
+const SideBar = () => {
   // Setting initial sidebar display state to be false
   const [sidebar, setSidebar] = useState(false);
 
@@ -37,13 +41,14 @@ export default function SideBar() {
               className={item.listItemClassName}
               whileHover={hover}
             >
-              <Link
+              <Scroll
                 className={item.linkClassName}
                 to={item.linkTo}
                 smooth={true}
                 offset={-95}
                 duration={1000}
               >
+                {/* <Link to="/"> */}
                 <Icon
                   name={item.iconName}
                   className={item.iconClassName}
@@ -58,9 +63,21 @@ export default function SideBar() {
                 >
                   {item.description}
                 </span>
-              </Link>
+                {/* </Link> */}
+              </Scroll>
             </motion.li>
           ))}
+          {/* {sidebarBlogData.map((item) => (
+            <Link
+              key={item.id}
+              to={item.linkToBlog}
+              onClick={() => {
+                showSidebar();
+              }}
+            >
+              <p>{item.blogDescription}</p>
+            </Link>
+          ))} */}
         </ul>
       </div>
       <div
@@ -72,4 +89,6 @@ export default function SideBar() {
       <Burger sidebar={sidebar} display={showSidebar} />
     </aside>
   );
-}
+};
+
+export { SideBar };

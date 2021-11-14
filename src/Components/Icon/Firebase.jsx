@@ -10,7 +10,7 @@ const Firebase = ({ className, height, width }) => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Firebase skill icon</title>
+      <title>Firebase icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './burger.scss';
-export default function Burger({ sidebar, display }) {
+
+const Burger = ({ sidebar, display }) => {
   const topVariants = {
     opened: {
       rotate: 45,
@@ -64,4 +65,5 @@ export default function Burger({ sidebar, display }) {
       </div>
     </>
   );
-}
+};
+export { Burger };

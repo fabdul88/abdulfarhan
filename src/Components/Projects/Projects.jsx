@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { ProjectCategory, ProjectsData } from './ProjectsData';
 import Card from '../Projects/Card/Card';
 import './projects.scss';
@@ -7,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
-export default function Projects() {
+const Projects = () => {
   const [filter, setFilter] = useState('all');
   const [projects, setProjects] = useState([]);
   const [activeTab, setActiveTab] = useState('all');
@@ -40,7 +39,7 @@ export default function Projects() {
       <div className="work-container__work-labels-container">
         <div className="work-container__work-labels-container-sub">
           {ProjectCategory.map((category) => (
-            <motion.a
+            <a
               key={category.id}
               className={
                 activeTab === category.active
@@ -48,7 +47,7 @@ export default function Projects() {
                   : category.categoryClassName
               }
               href="/#"
-              active={filter === category.active}
+              active={filter === category.active ? category.active : ''}
               onClick={(e) => {
                 e.preventDefault();
                 setFilter(category.active);
@@ -56,7 +55,7 @@ export default function Projects() {
               }}
             >
               {category.categoryDescription}
-            </motion.a>
+            </a>
           ))}
         </div>
       </div>
@@ -66,4 +65,6 @@ export default function Projects() {
       </div>
     </div>
   );
-}
+};
+
+export { Projects };

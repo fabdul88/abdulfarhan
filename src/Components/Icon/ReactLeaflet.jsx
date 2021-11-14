@@ -15,7 +15,7 @@ const ReactLeaflet = ({ className, height, width }) => {
       viewBox="50 10 10 85.8"
       xmlSpace="preserve"
     >
-      <title>React leaflet skill icon</title>
+      <title>React leaflet icon</title>
       <defs>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#4cf3c6" />

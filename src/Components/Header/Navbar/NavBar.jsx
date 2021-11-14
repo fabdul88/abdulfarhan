@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import SideBar from "../SideBar/SideBar";
-import "./navbar.scss";
-import Logo from "../../../assets/black_transparent.svg";
-import { animateScroll as scroll } from "react-scroll";
+import React, { useState } from 'react';
+import { SideBar } from '../SideBar/SideBar';
+import './navbar.scss';
+import Logo from '../../../assets/black_transparent.svg';
+import { animateScroll as scroll } from 'react-scroll';
 
-export default function NavBar() {
+const NavBar = () => {
   // setting the scroll Y on navigation to change background color at 95px
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
     window.scrollY >= 95 ? setNavbar(true) : setNavbar(false);
   };
-  window.addEventListener("scroll", changeBackground);
+  window.addEventListener('scroll', changeBackground);
   return (
     <>
       <header className="nav-container">
         <nav
           className={
-            navbar ? "nav-container__nav-active" : "nav-container__nav"
+            navbar ? 'nav-container__nav-active' : 'nav-container__nav'
           }
         >
           <div
@@ -36,4 +36,6 @@ export default function NavBar() {
       </header>
     </>
   );
-}
+};
+
+export { NavBar };

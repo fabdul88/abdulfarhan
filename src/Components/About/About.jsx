@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import Profile from '../../assets/profile.webp';
-import Hexagon from '../../assets/hexagon_monochrome.webp';
 import './about.scss';
 import { aboutData } from './aboutData';
+import Profile from '../../assets/profile.webp';
+import Hexagon from '../../assets/hexagon_monochrome.webp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
-export default function About() {
+const About = () => {
   const [filter, setFilter] = useState('long');
   const [about, setAbout] = useState([]);
   const [activeTab, setActiveTab] = useState('long');
@@ -45,22 +44,19 @@ export default function About() {
         <hr data-aos="fade-down" className="about-container__title-hr" />
       </div>
       <div className="about-container__column-container">
-        <motion.div
-          className="about-container__profile-container"
-          whileHover={{ scale: 1.2, rotate: -5, ease: 100 }}
-        >
+        <div className="about-container__profile-container">
           <img
             data-aos="flip-left"
             className="about-container__profile-background"
             src={Hexagon}
             alt="Hexagon Background"
           />
-          <motion.img
+          <img
             className="about-container__profile"
             src={Profile}
             alt="Profile"
           />
-        </motion.div>
+        </div>
         <div className="about-container__profile-text-container">
           <div className="about-container__version-filter-container">
             {aboutData.map((version) => (
@@ -90,8 +86,6 @@ export default function About() {
               <div
                 className="about-container__profile-text-wrapper"
                 key={version.id}
-                data-aos="flip-left"
-                data-aos-duration="3000"
               >
                 <p className="about-container__profile-text">
                   {version.aboutVersionTop}
@@ -106,6 +100,15 @@ export default function About() {
                 </p>
                 <p className="about-container__profile-text-bottom">
                   {version.aboutVersionBottomTwo}
+                  <a
+                    className={version.listItemLink}
+                    href={version.listItemHref}
+                    target={version.target}
+                    rel={version.rel}
+                  >
+                    {' '}
+                    Download resume
+                  </a>
                 </p>
               </div>
             ) : (
@@ -116,4 +119,6 @@ export default function About() {
       </div>
     </div>
   );
-}
+};
+
+export { About };
