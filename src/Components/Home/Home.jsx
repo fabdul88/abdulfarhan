@@ -1,9 +1,7 @@
 import React from 'react';
-// import { Switch, Route } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { About, Skill, Projects, Contact, Footer } from '../index';
-// import Blog from '../Blog/Blog';
 import { Icon } from '../Icon/Icon';
 import './home.scss';
 
@@ -16,8 +14,6 @@ const Home = () => {
   return (
     <>
       <main id="home">
-        {/* <Switch> */}
-        {/* <Route exact path="/"> */}
         <section className="home-container">
           <div className="home-container__hero-image">
             <div className="home-container__stars"></div>
@@ -65,14 +61,6 @@ const Home = () => {
         <Skill />
         <Projects />
         <Contact />
-        {/* </Route> */}
-        {/* <Route
-            path="/blog"
-            render={() => {
-              return <Blog />;
-            }}
-          /> */}
-        {/* </Switch> */}
       </main>
       <footer id="footer">
         <Footer />
