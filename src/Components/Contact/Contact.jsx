@@ -10,7 +10,7 @@ const Contact = () => {
     <div id="contact" className="contact-container">
       <div className="contact-container__title-container">
         <h1 data-aos="fade-up" className="contact-container__title">
-          <span className="contact-container__title-letter">C</span>ONTACT
+          <span className="contact-container__title-letter">CONT</span>ACT
         </h1>
         <hr data-aos="fade-down" className="contact-container__title-hr" />
       </div>
