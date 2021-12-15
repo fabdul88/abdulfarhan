@@ -11,7 +11,7 @@ export const ProjectCategory = [
     categoryClassName: 'work-container__work-labels',
     categoryClassNameActive: 'work-container__work-labels--active',
     active: 'all',
-    categoryDescription: 'ALL',
+    categoryDescription: 'All',
   },
   {
     id: uuidv4(),
@@ -19,31 +19,23 @@ export const ProjectCategory = [
     categoryClassNameActive: 'work-container__work-labels--active',
 
     active: 'REACT-JS',
-    categoryDescription: 'REACT-JS',
+    categoryDescription: 'React Js',
   },
   {
     id: uuidv4(),
     categoryClassName: 'work-container__work-labels',
     categoryClassNameActive: 'work-container__work-labels--active',
 
-    active: 'REACT-NATIVE',
-    categoryDescription: 'REACT-NATIVE',
+    active: 'NEXT-JS',
+    categoryDescription: 'Next Js',
   },
   {
     id: uuidv4(),
     categoryClassName: 'work-container__work-labels',
     categoryClassNameActive: 'work-container__work-labels--active',
 
-    active: 'FULL STACK',
-    categoryDescription: 'FULL-STACK',
-  },
-  {
-    id: uuidv4(),
-    categoryClassName: 'work-container__work-labels',
-    categoryClassNameActive: 'work-container__work-labels--active',
-
-    active: 'OTHERS',
-    categoryDescription: 'OTHERS',
+    active: 'FULL-STACK',
+    categoryDescription: 'Full-Stack',
   },
 ];
 
@@ -91,7 +83,7 @@ export const ProjectsData = [
   {
     id: uuidv4(),
     name: 'TRAVELOG',
-    category: ['all', 'REACT-JS', 'FULL STACK'],
+    category: ['all', 'REACT-JS', 'FULL-STACK'],
     image: Travelog,
     description:
       'A MERN stack travel log where the user can keep track of their travel locations. Using authorization and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ',
@@ -103,7 +95,7 @@ export const ProjectsData = [
   {
     id: uuidv4(),
     name: 'FITRACK',
-    category: ['all', 'REACT-JS', 'FULL STACK'],
+    category: ['all', 'REACT-JS', 'FULL-STACK'],
     image: FiTrack,
     description:
       'A MERN stack, CRUD operations, SPA, based on the ongoing pandemic, FiTrack is a fitness application that helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.',

@@ -29,8 +29,10 @@
     }
   }
   &__section-one {
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    @supports (backdrop-filter: blur(2px)) {
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+    }
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -84,7 +86,7 @@
     justify-content: center;
     padding: 10px 7px;
     border-radius: 4px;
-    border: 1px solid silver;
+    // border: 1px solid silver;
     text-decoration: none;
     outline: 0;
     transition: 0.2s all ease-in-out;
@@ -229,8 +231,10 @@
       rgba(32, 58, 67, 0.7),
       rgba(15, 32, 39, 0.7)
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    @supports (backdrop-filter: blur(2px)) {
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+    }
     @include global.tablet {
       width: 85.8vw;
       max-width: 970px;
