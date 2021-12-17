@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
 import { Burger } from './Burger/Burger';
-// import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
 import {
   SideBarData,
-  // sidebarBlogData
 } from './SideBarData';
 import { Icon } from '../../Icon/Icon';
 
@@ -48,7 +46,6 @@ const SideBar = () => {
                 offset={-95}
                 duration={1000}
               >
-                {/* <Link to="/"> */}
                 <Icon
                   name={item.iconName}
                   className={item.iconClassName}
@@ -63,21 +60,9 @@ const SideBar = () => {
                 >
                   {item.description}
                 </span>
-                {/* </Link> */}
               </Scroll>
             </motion.li>
           ))}
-          {/* {sidebarBlogData.map((item) => (
-            <Link
-              key={item.id}
-              to={item.linkToBlog}
-              onClick={() => {
-                showSidebar();
-              }}
-            >
-              <p>{item.blogDescription}</p>
-            </Link>
-          ))} */}
         </ul>
       </div>
       <div

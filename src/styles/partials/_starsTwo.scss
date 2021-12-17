@@ -1,4 +1,5 @@
 @mixin starsTwo {
+  border-radius: 100%;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -62,6 +63,7 @@
   top: 2000px;
   width: 2px;
   height: 2px;
+  border-radius: 100%;
   background: transparent;
   box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,

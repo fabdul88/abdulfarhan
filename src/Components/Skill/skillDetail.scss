@@ -8,12 +8,12 @@
     align-items: center;
   }
   &__stats-container-one {
-    @include global.tablet {
+    @include global.breakpoint(tablet){
       height: 100%;
     }
   }
   &__stats-container-two {
-    @include global.tablet {
+    @include global.breakpoint(tablet){
       height: 90%;
     }
   }
@@ -28,7 +28,7 @@
     padding: 10px;
     margin-top: 20px;
     filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       width: 120px;
       height: 120px;
     }
@@ -38,7 +38,7 @@
     filter: drop-shadow(0.35px 3.35px 3px #0aa2e7);
     width: 72px;
     height: 72px;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       width: 92px;
       height: 92px;
     }
@@ -62,7 +62,7 @@
   }
   &__image-title {
     font-size: 20px;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       font-size: 25px;
     }
   }
@@ -73,7 +73,7 @@
     height: 160px;
     min-height: 160px;
     font-size: 14px;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       font-size: 16px;
       width: 280px;
       line-height: 30px;
@@ -93,7 +93,7 @@
     max-width: 390px;
     height: 20px;
     overflow: hidden;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       padding: 15px;
       width: 250px;
       margin-bottom: 20px;
@@ -107,7 +107,7 @@
   &__intermediate,
   &__expert {
     font-size: 14px;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       font-size: 16px;
     }
   }
@@ -125,7 +125,7 @@
     background: #cacfd2;
     border-radius: 10px;
     overflow: hidden;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       width: 280px;
       height: 10px;
     }
@@ -151,7 +151,7 @@
         rgba(227, 27, 109, 0.5) 90.71%
       );
     border-radius: 10px;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       height: 10px;
     }
   }
@@ -174,14 +174,14 @@
     height: 25px;
     border-radius: 50%;
     background: #ffffff;
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       width: 30px;
       height: 30px;
     }
   }
   &__beginner-circle {
     transform: translate(-84%, -70%);
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       transform: translate(-80%, -70%);
     }
   }
@@ -190,7 +190,7 @@
   }
   &__expert-circle {
     transform: translate(46%, -70%);
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       transform: translate(40%, -70%);
     }
   }

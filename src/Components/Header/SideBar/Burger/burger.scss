@@ -14,7 +14,7 @@
     height: 80px;
     cursor: pointer;
 
-    @include global.desktop {
+    @include global.breakpoint(desktop) {
       display: none;
     }
   }

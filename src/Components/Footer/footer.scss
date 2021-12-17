@@ -29,7 +29,7 @@
     text-align: center;
     width: 77%;
     max-width: 430px;
-    @include global.desktop {
+    @include global.breakpoint(desktop) {
       width: 100%;
       max-width: 455px;
     }
@@ -87,7 +87,7 @@
       border: none;
       -moz-outline-style: none;
     }
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       top: -25px;
     }
   }
@@ -107,7 +107,7 @@
       border: none;
       -moz-outline-style: none;
     }
-    @include global.mobile {
+    @include global.breakpoint(mobile) {
       position: absolute;
       inset: 0;
     }

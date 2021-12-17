@@ -11,45 +11,18 @@
     width: 100%;
     margin: 50px 0 20px 0;
     &-sub {
-      // ==================
-      box-shadow: 0 20px 20px rgb(126 15 255 / 20%),
-        0px 0px 50px rgb(15 255 193 / 20%);
+   @include global.glowBoxShadow;
       max-width: 480px;
       border-radius: 4px;
       width: 89%;
       padding: 10px;
-      background: rgba(15, 32, 39, 0.7);
-      background: -webkit-linear-gradient(
-        to right,
-        rgba(44, 83, 100, 0.7),
-        rgba(32, 58, 67, 0.7),
-        rgba(15, 32, 39, 0.7)
-      );
-      background: linear-gradient(
-        to right,
-        rgba(44, 83, 100, 0.7),
-        rgba(32, 58, 67, 0.7),
-        rgba(15, 32, 39, 0.7)
-      );
-      @supports (backdrop-filter: blur(2px)) {
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-      }
-      // ====================
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      // width: 100%;
-      // max-width: 589px;
-      @include global.tablet {
-        // max-width: 776px;
+      @include global.breakpoint(tablet) {
         width: 83vw;
         max-width: 940px;
       }
-      // @include global.desktop {
-      //   margin: 0;
-      //   max-width: 1253px;
-      // }
     }
   }
   &__work-labels {
@@ -57,27 +30,22 @@
     background: linear-gradient(#ffffff, #c4c4c4);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    // font-size: 10px;
     font-size: 13px;
     text-decoration: none;
-    // border: 1px solid #444649;
-    // border: 1px solid silver;
     border-radius: 3px;
     padding: 15px 5px;
     outline: 0;
     transition: 0.2s all ease-in-out;
     &:hover {
-      // color: #0aa2e7;
       border-top: 1px solid #0aa2e7;
       border-radius: 0;
     }
 
-    @include global.tablet {
+    @include global.breakpoint(tablet) {
       font-size: 16px;
     }
     &--active {
       font-family: 'RalewaySB';
-      // font-size: 10px;
       font-size: 13px;
       text-decoration: none;
       background: linear-gradient(#ffffff, #c4c4c4);
@@ -92,7 +60,7 @@
       outline: 0;
       transition: 0.2s all ease-in-out;
       -moz-outline-style: none;
-      @include global.tablet {
+      @include global.breakpoint(tablet) {
         font-size: 16px;
       }
     }
@@ -100,7 +68,6 @@
   &__title {
     text-align: center;
     font-family: 'MontserratT';
-
     letter-spacing: 2px;
     background: linear-gradient(#ffffff, #38495a);
     background-clip: text;
