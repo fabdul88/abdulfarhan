@@ -32,36 +32,66 @@
 
 @mixin glowBoxShadow {
   background: rgba(15, 32, 39, 0.7); /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      rgba(44, 83, 100, 0.7),
-      rgba(32, 58, 67, 0.7),
-      rgba(15, 32, 39, 0.7)
-    ); /* Chrome 10-25, Safari 6.1-6 */
-    background: linear-gradient(
-      to right,
-      rgba(44, 83, 100, 0.7),
-      rgba(32, 58, 67, 0.7),
-      rgba(15, 32, 39, 0.7)
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0 20px 20px rgba(126, 15, 255, 0.2),
-      0px 0px 50px rgba(15, 255, 193, 0.2);
-      @supports (backdrop-filter: blur(2px)) {
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-      }
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(44, 83, 100, 0.7),
+    rgba(32, 58, 67, 0.7),
+    rgba(15, 32, 39, 0.7)
+  ); /* Chrome 10-25, Safari 6.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(44, 83, 100, 0.7),
+    rgba(32, 58, 67, 0.7),
+    rgba(15, 32, 39, 0.7)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 20px 20px rgba(126, 15, 255, 0.2),
+    0px 0px 50px rgba(15, 255, 193, 0.2);
+  @supports (backdrop-filter: blur(2px)) {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
 }
 
 @mixin appProgressBar {
   background: #ee0979; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #ff6a00,
-      #ee0979
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ff6a00,
-      #ee0979
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin formInputStyle {
+  font-family: 'RalewayR';
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  color: #444649;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+@mixin scrollbarStyle {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(76, 243, 198, 0.8);
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #777;
+  }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -21,19 +21,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
-    @include global.breakpoint(tablet) {
-      margin: 0 0 60px 0;
-      padding: 60px 0 0 0;
-    }
+    padding: 60px 0 20px 0;
+    // @include global.breakpoint(tablet) {
+    //   // margin: 0 0 60px 0;
+    //   padding: 60px 0 20px 0;
+    // }
   }
   &__title {
     font-family: 'MontserratT';
     letter-spacing: 2px;
     margin: 0;
     color: #ffffff;
-    &-letter{
-    font-family: 'MontserratBL';
+    &-letter {
+      font-family: 'MontserratBL';
     }
     &-hr {
       @include global.sectionTitleHR;
@@ -44,13 +44,17 @@
     font-family: 'MontserratSB';
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     color: #444649;
     font-size: 15px;
     text-align: center;
-    line-height: 25px;
+    // text-align: left;
+    // line-height: 25px;
+    line-height: 16px;
     &-highlight {
       font-family: 'RalewayB';
+      margin-top: 50px;
+      font-size: 25px;
       color: #ffffff;
       text-transform: uppercase;
     }

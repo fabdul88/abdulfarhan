@@ -7,18 +7,5 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background: radial-gradient(ellipse at bottom, #1c2833 100%, #1b2735 0%);
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: rgba(76, 243, 198, 0.8);
-    border-radius: 50px;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: #777;
-  }
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include global.scrollbarStyle;
 }

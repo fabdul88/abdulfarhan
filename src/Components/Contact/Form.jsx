@@ -57,7 +57,7 @@ const Form = () => {
               : 'contact-container__form-name'
           }
           type="text"
-          placeholder="Name"
+          placeholder="Full Name"
           name="name"
           value={values.name}
           onChange={handleChange}
@@ -74,7 +74,7 @@ const Form = () => {
               : 'contact-container__form-email'
           }
           type="email"
-          placeholder="Email"
+          placeholder="Email Address"
           name="email"
           value={values.email}
           onChange={handleChange}
@@ -128,7 +128,7 @@ const Form = () => {
           </div>
         )}
         <button type="submit" className="contact-container__form-button">
-          SUBMIT{' '}
+          Send Message{' '}
         </button>
       </form>
     </div>

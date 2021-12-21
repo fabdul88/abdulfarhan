@@ -16,7 +16,7 @@ const Contact = () => {
       </div>
       <div>
         <p data-aos="slide-up" className="contact-container__text">
-          HAVE SOMETHING IN MIND, A QUESTION, OR JUST WANT TO SAY HI{' '}
+          HAVE SOMETHING IN MIND, A QUESTION, OR JUST WANT TO SAY HI?{' '}
           <span className="contact-container__text-highlight">Let's talk</span>
         </p>
       </div>
