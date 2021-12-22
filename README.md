@@ -43,7 +43,7 @@ Deployed live on <https://abdulfarhan.com/>
 1. Start the web server using `npm start` command. The app will be served at <http://localhost:3000>
 1. Go to <http://localhost:3000> in your local browser to view the app.
 
-### App Dependencies And Version Numbers
+### App Dependencies
 
 ```json
 "dependencies": {
@@ -68,5 +68,5 @@ Deployed live on <https://abdulfarhan.com/>
 ### Future Iterations
 
 1. Blog page that will contain articles about my journey in tech and things I have learnt as a web developer.
-1. Shift over my portfolio from React.js to Next.js framework.
+1. Portfolio transition from React.js to Next.js framework.
 1. Internationalization support (i18n) for both English and French.
