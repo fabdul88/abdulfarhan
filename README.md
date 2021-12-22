@@ -24,6 +24,18 @@ Deployed live on <https://abdulfarhan.com/>
 
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
+### Other Tech Used To Compliment The Project
+
+1.  Animate on Scroll (AOS)
+1.  React Scroll
+1.  Framer Motion
+1.  Email JS
+1.  UUID
+
+### Continuous Integration (CI)
+
+![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 ### How To Run The App
 
 1. Either `fork` or download the app and open the folder in CLI
@@ -31,7 +43,7 @@ Deployed live on <https://abdulfarhan.com/>
 1. Start the web server using `npm start` command. The app will be served at <http://localhost:3000>
 1. Go to <http://localhost:3000> in your local browser to view the app.
 
-### App Dependencies
+### App Dependencies And Version Numbers
 
 ```json
 "dependencies": {
@@ -56,4 +68,5 @@ Deployed live on <https://abdulfarhan.com/>
 ### Future Iterations
 
 1. Blog page that will contain articles about my journey in tech and things I have learnt as a web developer.
-1. Shift over my portfolio from a stand alone React.js app to Next.js framework, which will better support SEO for blog posts.
+1. Shift over my portfolio from React.js to Next.js framework.
+1. Internationalization support (i18n) for both English and French.
