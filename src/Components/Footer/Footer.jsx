@@ -19,7 +19,7 @@ const Footer = () => {
             Designed and Built by Abdul Farhan
             <span className="footer-container__copyright-span">
               {' '}
-              © 2020-2021{' '}
+              © 2020-2022{' '}
             </span>
             , All Rights Reserved
           </p>
