@@ -27,24 +27,32 @@ const Form = () => {
 
   // using EmailJS to send messages directly from portfolio
   function sendEmail(e) {
-    e.preventDefault();
-    setErrors(validateInfo(values));
-    emailjs
-      .sendForm(
-        'service_76w6ea7',
-        'template_0etamta',
-        e.target,
-        'user_rLzSKiFIdpb3kuMRAxUjI'
-      )
-      .then((res) => {
-        console.log(res.text);
-      })
-      .catch((error) => {
-        console.log(error.text);
-      });
+    // !errors &&
+    if(values.name && values.email && values.subject && values.message){
 
-    e.target.reset();
-    setIsSubmitting(true);
+      e.preventDefault();
+      // setErrors(validateInfo(values));
+      emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+        )
+        .then((res) => {
+          console.log(res.text);
+        })
+        .catch((error) => {
+          console.log(error.text);
+        });
+        
+        setIsSubmitting(true);
+        e.target.reset()
+    }
+    else{
+      e.preventDefault();
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -127,9 +135,17 @@ const Form = () => {
             </p>
           </div>
         )}
-        <button type="submit" className="contact-container__form-button">
-          Send Message{' '}
-        </button>
+        {Object.keys(errors).length !== 0 || (!values.name && !values.email && !values.subject && !values.message) ?
+        <button type="submit"
+        disabled className="contact-container__form-button-disabled">
+         Send Message{' '}
+        </button> 
+        :
+        <button type="submit"
+        className="contact-container__form-button">
+        Send Message{' '}
+      </button>}
+        
       </form>
     </div>
   );
