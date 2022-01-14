@@ -17,6 +17,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: npm install
+        env:
+          REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
+          REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}
+          REACT_APP_USER_ID: ${{ secrets.REACT_APP_USER_ID }}
       - name: Deploy to GH Pages
         run: |
           git config --global user.email "kukluu@hotmail.com"
