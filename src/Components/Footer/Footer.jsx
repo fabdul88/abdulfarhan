@@ -3,13 +3,19 @@ import { motion } from 'framer-motion';
 import './footer.scss';
 import { Icon } from '../Icon/Icon';
 import { FooterInfo } from './FooterInfo';
-import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
   const hover = {
     scale: 1.1,
     transition: { type: 'spring', stiffness: 1000 },
   };
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
 
   return (
     <div className="footer-container">
@@ -51,7 +57,7 @@ const Footer = () => {
       <motion.div
         className="footer-container__arrow-container"
         onClick={() => {
-          scroll.scrollToTop();
+          scrollToTop();
         }}
         whileHover={hover}
       >
