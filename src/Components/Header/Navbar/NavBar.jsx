@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { SideBar } from '../SideBar/SideBar';
 import './navbar.scss';
 import Logo from '../../../assets/black_transparent.svg';
-import { animateScroll as scroll } from 'react-scroll';
 
 const NavBar = () => {
   // setting the scroll Y on navigation to change background color at 95px
@@ -11,6 +10,15 @@ const NavBar = () => {
     window.scrollY >= 95 ? setNavbar(true) : setNavbar(false);
   };
   window.addEventListener('scroll', changeBackground);
+
+  // Scroll to top for logo
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <header className="nav-container">
@@ -22,7 +30,7 @@ const NavBar = () => {
           <div
             className="nav-container__logo-container"
             onClick={() => {
-              scroll.scrollToTop();
+              scrollToTop();
             }}
           >
             <img

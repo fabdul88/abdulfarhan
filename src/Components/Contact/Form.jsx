@@ -28,16 +28,15 @@ const Form = () => {
   // using EmailJS to send messages directly from portfolio
   function sendEmail(e) {
     // !errors &&
-    if(values.name && values.email && values.subject && values.message){
-
+    if (values.name && values.email && values.subject && values.message) {
       e.preventDefault();
       // setErrors(validateInfo(values));
       emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_USER_ID
+        .sendForm(
+          'service_76w6ea7',
+          'template_0etamta',
+          e.target,
+          'user_rLzSKiFIdpb3kuMRAxUjI'
         )
         .then((res) => {
           console.log(res.text);
@@ -45,13 +44,12 @@ const Form = () => {
         .catch((error) => {
           console.log(error.text);
         });
-        
-        setIsSubmitting(true);
-        e.target.reset()
-    }
-    else{
+
+      setIsSubmitting(true);
+      e.target.reset();
+    } else {
       e.preventDefault();
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 
@@ -135,17 +133,23 @@ const Form = () => {
             </p>
           </div>
         )}
-        {Object.keys(errors).length !== 0 || (!values.name && !values.email && !values.subject && !values.message) ?
-        <button type="submit"
-        disabled className="contact-container__form-button-disabled">
-         Send Message{' '}
-        </button> 
-        :
-        <button type="submit"
-        className="contact-container__form-button">
-        Send Message{' '}
-      </button>}
-        
+        {Object.keys(errors).length !== 0 ||
+        (!values.name &&
+          !values.email &&
+          !values.subject &&
+          !values.message) ? (
+          <button
+            type="submit"
+            disabled
+            className="contact-container__form-button-disabled"
+          >
+            Send Message{' '}
+          </button>
+        ) : (
+          <button type="submit" className="contact-container__form-button">
+            Send Message{' '}
+          </button>
+        )}
       </form>
     </div>
   );
