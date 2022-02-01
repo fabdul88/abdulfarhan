@@ -34,6 +34,8 @@ import { Management } from './Management';
 import { Design } from './Design';
 import { Code } from './Code';
 import { Twitter } from './Twitter';
+import { MySQL } from './MySQL';
+import { Docker } from './Docker';
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -52,6 +54,8 @@ const Icon = (props) => {
       return <Nodejs {...props} />;
     case 'mongodb':
       return <Mongodb {...props} />;
+    case 'mysql':
+      return <MySQL {...props} />;
     case 'github':
       return <Github {...props} />;
     case 'linkedin':
@@ -74,6 +78,8 @@ const Icon = (props) => {
       return <StyledComponents {...props} />;
     case 'firebase':
       return <Firebase {...props} />;
+    case 'docker':
+      return <Docker {...props} />;
     case 'redux':
       return <Redux {...props} />;
     case 'nextjs':

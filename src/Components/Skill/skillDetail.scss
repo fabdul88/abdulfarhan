@@ -8,12 +8,12 @@
     align-items: center;
   }
   &__stats-container-one {
-    @include global.breakpoint(tablet){
+    @include global.breakpoint(tablet) {
       height: 100%;
     }
   }
   &__stats-container-two {
-    @include global.breakpoint(tablet){
+    @include global.breakpoint(tablet) {
       height: 90%;
     }
   }
@@ -295,6 +295,18 @@
       }
     }
   }
+  &__mysql {
+    width: 40%;
+    animation: mysql 3s;
+    @keyframes mysql {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+  }
   &__firebase {
     width: 40%;
     animation: firebase 3s;
@@ -304,6 +316,18 @@
       }
       100% {
         width: 40%;
+      }
+    }
+  }
+  &__docker {
+    width: 30%;
+    animation: docker 3s;
+    @keyframes docker {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 30%;
       }
     }
   }

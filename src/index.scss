@@ -2,10 +2,18 @@
 
 body {
   margin: 0;
-  font-family: 'RalewayR', 'MontserratR';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'RalewayR', 'MontserratR';
+  font-display: fallback;
   scroll-behavior: smooth;
   box-sizing: border-box;
   overflow-x: hidden;
   background: radial-gradient(ellipse at bottom, #1c2833 100%, #1b2735 0%);
   @include global.bodyScrollbarStyle;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

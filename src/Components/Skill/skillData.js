@@ -158,6 +158,20 @@ export const skillData = [
   },
   {
     id: uuidv4(),
+    icon: 'mysql',
+    progressBarClassName: 'skill__experience-progress-dynamic skill__mysql',
+    iconClassName: 'skill__icons-color',
+    iconClassNameActive: 'skill__icons-color--active',
+    case: ['technical'],
+    name: 'mysql',
+    title: 'MySQL',
+    description:
+      'MySQL is a relational database management system that stores data in tables made up of rows and columns. Users can define, manipulate, control, and query data using Structured Query Language.',
+    projectNumber: '-',
+    yearsExperience: 1,
+  },
+  {
+    id: uuidv4(),
     icon: 'firebase',
     progressBarClassName: 'skill__experience-progress-dynamic skill__firebase',
     iconClassName: 'skill__icons-color',
@@ -169,6 +183,20 @@ export const skillData = [
       'Firebase is a cloud platform that includes services like analytics, authentication, realtime databases, configuration and file storage.',
     projectNumber: 1,
     yearsExperience: 1,
+  },
+  {
+    id: uuidv4(),
+    icon: 'docker',
+    progressBarClassName: 'skill__experience-progress-dynamic skill__docker',
+    iconClassName: 'skill__icons-color',
+    iconClassNameActive: 'skill__icons-color--active',
+    case: ['technical'],
+    name: 'docker',
+    title: 'Docker',
+    description:
+      'Docker is a containerization platform that enables developers to package applications into containers with all of the parts it needs, such as libraries and other dependencies required to run that code in any environment. ',
+    projectNumber: '-',
+    yearsExperience: 0.25,
   },
   {
     id: uuidv4(),
@@ -251,7 +279,7 @@ export const skillData = [
     name: 'teamwork',
     title: 'Teamwork/Collaborate',
     description:
-      'There is no progress/growth without teamwork. I believe this is a crucial skill for success, and I effectively collaborate in a team setting.',
+      'A crucial skill for success, where I effectively collaborate and communicate in a team setting.',
     projectNumber: '-',
     yearsExperience: 7,
   },
