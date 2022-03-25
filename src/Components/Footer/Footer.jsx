@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './footer.scss';
 import { Icon } from '../Icon/Icon';
 import { FooterInfo } from './FooterInfo';
+import ScrollButton from '../ScrollButton/ScrollButton';
 
 const Footer = () => {
   const hover = {
@@ -10,12 +11,12 @@ const Footer = () => {
     transition: { type: 'spring', stiffness: 1000 },
   };
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
+  // function scrollToTop() {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // }
 
   return (
     <div className="footer-container">
@@ -54,20 +55,20 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-      <motion.div
+      <div
         className="footer-container__arrow-container"
-        onClick={() => {
-          scrollToTop();
-        }}
-        whileHover={hover}
+        // onClick={() => {
+        //   scrollToTop();
+        // }}
       >
-        <Icon
+        {/* <Icon
           name="arrow"
           className="footer-container__go-to-top"
           width="55"
           height="55"
-        />
-      </motion.div>
+        /> */}
+        <ScrollButton />
+      </div>
     </div>
   );
 };

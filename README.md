@@ -18,7 +18,7 @@ Welcome to my portfolio!
 
 Deployed live on <https://abdulfarhan.com/>
 
-![portfolio homepage](portfolio.png)
+![portfolioHme](https://user-images.githubusercontent.com/60126985/160060979-cbcd5a9e-0455-4434-bf1e-b77754e93404.png)
 
 ### Main Tech Stack Used
 

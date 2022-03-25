@@ -135,7 +135,7 @@
 
     @include global.breakpoint(desktop) {
       align-self: flex-end;
-      font-size: 20px;
+      font-size: 16px;
       padding: 0;
       &:hover {
         color: #ffffff;
