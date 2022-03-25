@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d6cd783.chunk.css",
-    "main.js": "/static/js/main.18fe7b99.chunk.js",
-    "main.js.map": "/static/js/main.18fe7b99.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.879611ce.js",
-    "runtime-main.js.map": "/static/js/runtime-main.879611ce.js.map",
+    "main.css": "/static/css/main.c96b6765.chunk.css",
+    "main.js": "/static/js/main.b31d5f46.chunk.js",
+    "main.js.map": "/static/js/main.b31d5f46.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.50e2df6b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.50e2df6b.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.14697338.chunk.js": "/static/js/2.14697338.chunk.js",
-    "static/js/2.14697338.chunk.js.map": "/static/js/2.14697338.chunk.js.map",
-    "static/js/3.125fa9d6.chunk.js": "/static/js/3.125fa9d6.chunk.js",
-    "static/js/3.125fa9d6.chunk.js.map": "/static/js/3.125fa9d6.chunk.js.map",
+    "static/js/2.d1396117.chunk.js": "/static/js/2.d1396117.chunk.js",
+    "static/js/2.d1396117.chunk.js.map": "/static/js/2.d1396117.chunk.js.map",
+    "static/js/3.aa090bcd.chunk.js": "/static/js/3.aa090bcd.chunk.js",
+    "static/js/3.aa090bcd.chunk.js.map": "/static/js/3.aa090bcd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.4d6cd783.chunk.css.map": "/static/css/main.4d6cd783.chunk.css.map",
-    "static/js/2.14697338.chunk.js.LICENSE.txt": "/static/js/2.14697338.chunk.js.LICENSE.txt",
+    "static/css/main.c96b6765.chunk.css.map": "/static/css/main.c96b6765.chunk.css.map",
+    "static/js/2.d1396117.chunk.js.LICENSE.txt": "/static/js/2.d1396117.chunk.js.LICENSE.txt",
     "static/media/home.scss": "/static/media/Raleway-Thin.537e4a26.ttf",
     "static/media/black_transparent.dc528fee.svg": "/static/media/black_transparent.dc528fee.svg",
     "static/media/covid.374717ff.webp": "/static/media/covid.374717ff.webp",
@@ -24,10 +24,10 @@
     "static/media/travelog.ca4fffcd.webp": "/static/media/travelog.ca4fffcd.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.879611ce.js",
+    "static/js/runtime-main.50e2df6b.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.14697338.chunk.js",
-    "static/css/main.4d6cd783.chunk.css",
-    "static/js/main.18fe7b99.chunk.js"
+    "static/js/2.d1396117.chunk.js",
+    "static/css/main.c96b6765.chunk.css",
+    "static/js/main.b31d5f46.chunk.js"
   ]
 }
