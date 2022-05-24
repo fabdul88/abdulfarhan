@@ -1,22 +1,33 @@
-# Portfolio
+<div align="center">
+  <img alt="Logo" src="https://user-images.githubusercontent.com/60126985/169964013-0b39831a-bde6-4175-8ea7-b84627ee18f5.svg" width="100" />
+</div>
+  
+<h1 align="center">
+  abdulfarhan.com - v1
+</h1>
 
-## Full-Stack Web Developer
+<p align="center">
+  The first iteration of <a href="https://abdulfarhan.com" target="_blank">abdulfarhan.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> .
+</p>
 
-Welcome to my portfolio!
 
-- Here:
-  - You will learn a little bit about me.
-  - My current skills as a full stack developer.
-  - Projects I have worked on.
-
-### Project Stats
-
-![issues](https://img.shields.io/github/issues/fabdul88/abdulfarhan?style=for-the-badge) ![forks](https://img.shields.io/github/forks/fabdul88/abdulfarhan?style=for-the-badge) ![stars](https://img.shields.io/github/stars/fabdul88/abdulfarhan?style=for-the-badge)
-![lisence](https://img.shields.io/github/license/fabdul88/abdulfarhan?style=for-the-badge)
-
-### Demo
-
-Deployed live on <https://abdulfarhan.com/>
+<p align="center">
+  <a href="https://img.shields.io/github/issues/fabdul88/abdulfarhan?style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/issues/fabdul88/abdulfarhan?style=for-the-badge" alt="issues"/>
+  </a>
+  <a href="https://img.shields.io/github/forks/fabdul88/abdulfarhan?style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/forks/fabdul88/abdulfarhan?style=for-the-badge" alt="forks"/>
+  </a>
+   <a href="https://img.shields.io/github/stars/fabdul88/abdulfarhan?style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/stars/fabdul88/abdulfarhan?style=for-the-badge" alt="stars"/>
+  </a>
+  <a href="https://img.shields.io/github/license/fabdul88/abdulfarhan?color=blue&style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/license/fabdul88/abdulfarhan?color=blue&style=for-the-badge" alt="GitHub"/>
+  </a>
+  <a href="https://img.shields.io/github/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" alt="GitHub Workflow Status"/>
+  </a>
+</p>
 
 ![portfolioHme](https://user-images.githubusercontent.com/60126985/160060979-cbcd5a9e-0455-4434-bf1e-b77754e93404.png)
 
@@ -35,6 +46,10 @@ Deployed live on <https://abdulfarhan.com/>
 ### Continuous Integration (CI)
 
 ![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+### Forking This Repo
+
+While keeping my site open source, feel free to fork this repo, remix and reuse to your heart’s content, as long as a good faith effort is made to **attribute the content** back to <a href="https://abdulfarhan.com" target="_blank">abdulfarhan.com</a> . Thank you!
 
 ### How To Run The App
 
