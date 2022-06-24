@@ -10,7 +10,6 @@
   The first iteration of <a href="https://abdulfarhan.com" target="_blank">abdulfarhan.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> .
 </p>
 
-
 <p align="center">
   <a href="https://img.shields.io/github/issues/fabdul88/abdulfarhan?style=for-the-badge" target="_blank">
    <img src="https://img.shields.io/github/issues/fabdul88/abdulfarhan?style=for-the-badge" alt="issues"/>
@@ -68,8 +67,8 @@ While keeping my site open source, feel free to fork this repo, remix and reuse 
     "aos": "^2.3.4",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^2.9.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
@@ -77,7 +76,7 @@ While keeping my site open source, feel free to fork this repo, remix and reuse 
     "sass": "^1.38.2",
     "uuid": "^8.3.1",
     "web-vitals": "^0.2.4"
-  }
+  },
 ```
 
 ### Future Iterations
