@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProjectCategory, ProjectsData } from './ProjectsData';
+import { FeaturedProj } from '../Proj/FeaturedProj';
 import Card from '../Projects/Card/Card';
 import './projects.scss';
 import AOS from 'aos';
@@ -35,7 +36,7 @@ const Projects = () => {
         </h1>
         <hr data-aos="fade-down" className="work-container__title-hr" />
       </div>
-
+      <FeaturedProj />
       <div className="work-container__work-labels-container">
         <div className="work-container__work-labels-container-sub">
           {ProjectCategory.map((category) => (

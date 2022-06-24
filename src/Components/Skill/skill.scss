@@ -143,10 +143,6 @@
       cursor: pointer;
       fill: #a9a6b6;
     }
-    // @include global.breakpoint(tablet) {
-    //   width: 39px;
-    //   height: 39px;
-    // }
     &--active {
       margin: 0 2.5px;
       fill: url(#gradient);

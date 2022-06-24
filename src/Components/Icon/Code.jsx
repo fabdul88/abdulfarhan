@@ -9,7 +9,7 @@ const Code = ({ className, width, height }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
-      <title>Technical skill category icon</title>
+      <title>Code icon</title>
       <defs>
         <linearGradient id="categoryGradient" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#ffffff" />

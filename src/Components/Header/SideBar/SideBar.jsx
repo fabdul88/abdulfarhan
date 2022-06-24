@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
 import { Burger } from './Burger/Burger';
 import { Link as Scroll } from 'react-scroll';
-import {
-  SideBarData,
-} from './SideBarData';
+import { SideBarData } from './SideBarData';
 import { Icon } from '../../Icon/Icon';
 
 const SideBar = () => {
+  const history = useHistory();
   // Setting initial sidebar display state to be false
   const [sidebar, setSidebar] = useState(false);
 
@@ -33,36 +33,105 @@ const SideBar = () => {
         }
       >
         <ul className="sidebar__list">
-          {SideBarData.map((item) => (
-            <motion.li
-              key={item.id}
-              className={item.listItemClassName}
-              whileHover={hover}
-            >
-              <Scroll
-                className={item.linkClassName}
-                to={item.linkTo}
-                smooth={true}
-                offset={-95}
-                duration={1000}
-              >
-                <Icon
-                  name={item.iconName}
-                  className={item.iconClassName}
-                  width="35"
-                  height="35"
-                />
-                <span
-                  className={item.descriptionClassName}
-                  onClick={() => {
-                    showSidebar();
-                  }}
+          {/* conditionally render navbar based on url path */}
+          {history.location.pathname === '/' ? (
+            <>
+              {SideBarData.map((item) => (
+                <motion.li
+                  key={item.id}
+                  className={item.listItemClassName}
+                  whileHover={hover}
                 >
-                  {item.description}
-                </span>
-              </Scroll>
-            </motion.li>
-          ))}
+                  <Scroll
+                    className={item.linkClassName}
+                    to={item.linkTo}
+                    smooth={true}
+                    spy={true}
+                    hashSpy={true}
+                    offset={-95}
+                    duration={1000}
+                  >
+                    <Icon
+                      name={item.iconName}
+                      className={
+                        item.iconName.toLowerCase() ===
+                        window.location.hash.replace('#', '')
+                          ? item.iconClassNameActive
+                          : item.iconClassName
+                      }
+                      width="35"
+                      height="35"
+                    />
+                    <span
+                      className={item.descriptionClassName}
+                      onClick={() => {
+                        showSidebar();
+                      }}
+                    >
+                      {item.description}
+                    </span>
+                  </Scroll>
+                </motion.li>
+              ))}
+              <motion.li className="sidebar__list-item" whileHover={hover}>
+                <Link className="sidebar__list-item-link" to="/blog">
+                  <Icon
+                    name="typewriter"
+                    className="sidebar__list-contact"
+                    width="35"
+                    height="35"
+                  />
+                  <span
+                    className="sidebar__hover-contact"
+                    onClick={() => {
+                      showSidebar();
+                    }}
+                  >
+                    BLOG
+                  </span>
+                </Link>
+              </motion.li>
+            </>
+          ) : (
+            <>
+              <motion.li className="sidebar__list-item" whileHover={hover}>
+                <Link className="sidebar__list-item-link" to="/blog">
+                  <Icon
+                    name="typewriter"
+                    className="sidebar__list-contact"
+                    width="35"
+                    height="35"
+                  />
+                  <span
+                    className="sidebar__hover-contact"
+                    onClick={() => {
+                      showSidebar();
+                    }}
+                  >
+                    BLOG
+                  </span>
+                </Link>
+              </motion.li>
+              <motion.li className="sidebar__list-item" whileHover={hover}>
+                <Link className="sidebar__list-item-link" to="/">
+                  <Icon
+                    name="home"
+                    className="sidebar__list-contact"
+                    width="35"
+                    height="35"
+                  />
+                  <span
+                    className="sidebar__hover-contact"
+                    onClick={() => {
+                      showSidebar();
+                    }}
+                  >
+                    HOME
+                  </span>
+                </Link>
+              </motion.li>
+            </>
+          )}
         </ul>
       </div>
       <div

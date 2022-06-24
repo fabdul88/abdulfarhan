@@ -17,9 +17,7 @@ const Arrow = ({ className, width, height, outerFill, innerFill }) => {
         </linearGradient>
       </defs>
       <title />
-      <g
-      // fill={fill}
-      >
+      <g>
         <path
           fill={outerFill}
           d="M16,1A15,15,0,1,1,1,16,15,15,0,0,1,16,1Zm0,28A13,13,0,1,0,3,16,13,13,0,0,0,16,29Z"

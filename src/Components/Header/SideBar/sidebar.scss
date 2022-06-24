@@ -96,6 +96,7 @@
         align-items: center;
         width: 220px;
         cursor: pointer;
+        text-decoration: none;
         @include global.breakpoint(desktop) {
           text-decoration: none;
           width: -moz-fit-content;
@@ -114,6 +115,16 @@
         display: none;
       }
     }
+    &-home-active,
+    &-about-active,
+    &-skills-active,
+    &-work-active,
+    &-contact-active {
+      fill: #ffffff;
+      @include global.breakpoint(desktop) {
+        display: none;
+      }
+    }
   }
   &__hover-home,
   &__hover-about,
@@ -121,7 +132,6 @@
   &__hover-projects,
   &__hover-contact {
     font-family: 'RalewayR';
-    color: #444649;
     display: flex;
     font-size: 30px;
     font-weight: bold;

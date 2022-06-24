@@ -11,7 +11,7 @@
     width: 100%;
     margin: 50px 0 20px 0;
     &-sub {
-   @include global.glowBoxShadow;
+      @include global.glowBoxShadow;
       max-width: 480px;
       border-radius: 4px;
       width: 89%;

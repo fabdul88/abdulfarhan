@@ -14,6 +14,7 @@ const Form = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState(true);
 
   //  updating values in name attribute
   const handleChange = (e) => {
@@ -46,7 +47,17 @@ const Form = () => {
         });
 
       setIsSubmitting(true);
-      e.target.reset();
+      setValues({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+
+      setTimeout(() => {
+        setSuccessMessage(false);
+      }, 3000);
+      setSuccessMessage(true);
     } else {
       e.preventDefault();
       setIsSubmitting(false);
@@ -126,7 +137,7 @@ const Form = () => {
           </div>
         )}
         {/* If validation is successful, display success message */}
-        {Object.keys(errors).length === 0 && isSubmitting && (
+        {Object.keys(errors).length === 0 && isSubmitting && successMessage && (
           <div className="contact-container__success-container">
             <p className="contact-container__success-message">
               Thank you for your submission

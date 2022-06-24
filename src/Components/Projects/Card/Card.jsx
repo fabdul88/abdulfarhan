@@ -33,7 +33,7 @@ export default function Card({ projectCard }) {
       {' '}
       <AnimatePresence>
         {projectCard.map((project) =>
-          project.filtered ? (
+          project.filtered && project.featured !== true ? (
             <motion.div
               key={project.id}
               className="card-container__con"

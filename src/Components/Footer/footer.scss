@@ -8,6 +8,7 @@
 
 .footer-container {
   font-family: 'RalewayR';
+  background: #252525;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -93,9 +94,6 @@
       border: none;
       -moz-outline-style: none;
     }
-    // @include global.breakpoint(tablet) {
-    //   top: -25px;
-    // }
   }
   &__go-to-top {
     cursor: pointer;
@@ -117,5 +115,20 @@
       position: absolute;
       inset: 0;
     }
+  }
+
+  &__github-stat-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+  }
+  &__star,
+  &__forked {
+    fill: #ffffff;
+    margin-right: 5px;
+  }
+  &__github-star-span,
+  &__github-forked-span {
+    color: #ffffff;
   }
 }

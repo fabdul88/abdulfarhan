@@ -18,15 +18,15 @@
     left: 0;
     right: 0;
     perspective: 800;
-       @supports (backdrop-filter: blur(2px)) {
-          -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-        }
+    @supports (backdrop-filter: blur(2px)) {
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+    }
   }
   &__card {
     @include global.glowBoxShadow;
     // setting blur support to none to avoid breaking card style, and placing blur support to class '&__con' at line 21 instead.
-    @supports (backdrop-filter:none) {
+    @supports (backdrop-filter: none) {
       -webkit-backdrop-filter: none;
       backdrop-filter: none;
     }
@@ -48,12 +48,12 @@
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     position: relative;
     bottom: 203px;
-    top: -396px;
+    top: -400px;
     border-radius: 3px;
     transform: rotateY(180deg);
   }
   &__front {
-    height: 380px;
+    height: 400px;
     padding: 0;
     overflow: hidden;
     display: flex;
@@ -73,7 +73,7 @@
     -webkit-text-fill-color: transparent;
     display: flex;
     font-size: 23px;
-    margin: 45px 0 0;
+    margin: 23px 0 0;
     line-height: 30px;
     text-align: left;
   }
@@ -95,13 +95,13 @@
   }
   &__image-front {
     width: 300px;
-    height: 268px;
-    object-fit: contain;
-    object-position: center;
     border-radius: 3px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    object-position: top;
+    height: 320px;
   }
   &__image-back {
     width: 200px;
@@ -119,6 +119,7 @@
     letter-spacing: 1px;
     height: 350px;
     padding: 25px;
+    margin: 0;
   }
   &__icons {
     position: relative;

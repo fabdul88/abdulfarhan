@@ -1,0 +1,224 @@
+@use '../../styles/partials/global';
+
+.proj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+
+  &__featuredTitle {
+    @include global.breakpoint(tablet) {
+      width: 100%;
+
+      letter-spacing: 2px;
+    }
+  }
+  &__featuredDescription {
+    font-size: 11px;
+    color: #4cf3c6;
+    background: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 4px;
+    text-transform: lowercase;
+    margin: 0;
+  }
+  &__flexWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 20px 20px rgb(126 15 255 / 20%),
+      0px 0px 50px rgb(15 255 193 / 20%);
+    width: 93.75vw;
+    border-radius: 4px;
+    margin-top: 60px;
+    max-width: 500px;
+    @include global.breakpoint(tablet) {
+      flex-wrap: nowrap;
+      width: 85.677083vw;
+      height: 23.0313rem;
+      max-width: 960px;
+    }
+  }
+  &__projectContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__wrapperOne {
+    display: flex;
+    margin: 10px 0 0 10px;
+    @include global.breakpoint(tablet) {
+      margin: 15px 15px 0 15px;
+      padding-left: 10px;
+    }
+  }
+  &__img {
+    width: 93.75vw;
+    height: 113.75vw;
+    max-width: 31.25rem;
+    max-height: 27.9513rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    object-fit: cover;
+    object-position: top;
+    @include global.breakpoint(tablet) {
+      width: 300px;
+      height: 368.5px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-top-right-radius: 0;
+    }
+  }
+  &__wrapperTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    max-width: 330px;
+    @include global.breakpoint(tablet) {
+      margin-left: 15px;
+      max-width: 600px;
+    }
+  }
+  &__title,
+  &__description {
+    background: linear-gradient(45deg, #ffffff, #c4c4c4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__title {
+    margin: 0;
+    @include global.breakpoint(tablet) {
+      margin: 15px 0;
+    }
+  }
+  &__descWrapper {
+    @include global.breakpoint(tablet) {
+      height: 90px;
+      overflow-y: scroll;
+      @include global.featuredScrollbarStyle;
+    }
+  }
+  &__description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    @include global.breakpoint(tablet) {
+      font-size: 11px;
+      min-height: 90px;
+      font-size: 14px;
+      margin-top: 0;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+      max-width: 638.94px;
+    }
+  }
+  &__btnWrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 320px;
+    @include global.breakpoint(tablet) {
+      justify-content: left;
+      margin-top: 15px;
+    }
+  }
+  &__btnCode,
+  &__btnDemo,
+  &__btnCaseStudy {
+    font-family: 'RalewaySB';
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 11px;
+    border-radius: 3px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btnCode {
+    border: 1px solid #4cf3c6;
+    color: #4cf3c6;
+
+    @include global.breakpoint(tablet) {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      background-color: #4cf3c6;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  &__btnDemo {
+    border: 1px solid #0aa2e7;
+    color: #0aa2e7;
+    @include global.breakpoint(tablet) {
+      margin-right: 15px;
+    }
+    &:hover {
+      background-color: #0aa2e7;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  &__btnCaseStudy {
+    border: 1px solid #e31b6d;
+    color: #e31b6d;
+    &:hover {
+      background-color: #e31b6d;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  &__btnCode-icon,
+  &__btnDemo-icon,
+  &__btnCaseStudy-icon {
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    &:hover {
+      fill: #ffffff;
+    }
+  }
+  &__btnCode-icon {
+    fill: #4cf3c6;
+  }
+  &__btnDemo-icon {
+    fill: #0aa2e7;
+  }
+  &__btnCaseStudy-icon {
+    fill: #e31b6d;
+  }
+  &__iconsWrapper {
+    @include global.breakpoint(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      margin-top: 15px;
+    }
+  }
+  &__iconWrapperTitle {
+    font-family: 'MontserratSB';
+    background: linear-gradient(45deg, #ffffff, #38495a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__iconWrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__icon {
+    margin: 0 2.5px;
+    fill: #a9a6b6;
+    transition: 0.25s all ease-in-out;
+  }
+}

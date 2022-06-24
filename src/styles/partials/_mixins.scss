@@ -131,3 +131,20 @@
     scrollbar-height: 4px;
   }
 }
+@mixin featuredScrollbarStyle {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(76, 243, 198, 0.6);
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+  // Firefox support
+  @supports (scrollbar-color: rgba(76, 243, 198, 0.6) none) {
+    scrollbar-color: rgba(76, 243, 198, 0.6) none;
+    scrollbar-height: 4px;
+  }
+}

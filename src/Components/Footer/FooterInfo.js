@@ -34,7 +34,7 @@ export const FooterInfo = [
     listItemLink:
       'footer-container__social-list-resume-link footer-container__social-list-link',
     listItemHref:
-      'https://drive.google.com/uc?id=18zTY31s2bAMwhd9ZAypZd2xlWNCrr4jw&export=download',
+      'https://drive.google.com/uc?id=1Ve2WgPuZEhdg_q6MCiureZsvr6Rsgixa&export=download',
     target: '_blank',
     rel: 'noopener noreferrer',
     iconName: 'download',

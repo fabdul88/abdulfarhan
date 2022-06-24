@@ -36,6 +36,11 @@ import { Code } from './Code';
 import { Twitter } from './Twitter';
 import { MySQL } from './MySQL';
 import { Docker } from './Docker';
+import { Forked } from './Forked';
+import { Star } from './Star';
+import { Typewriter } from './Typewriter';
+import { CaseStudy } from './CaseStudy';
+import { Globe } from './Globe';
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -114,6 +119,16 @@ const Icon = (props) => {
       return <Design {...props} />;
     case 'management':
       return <Management {...props} />;
+    case 'forked':
+      return <Forked {...props} />;
+    case 'star':
+      return <Star {...props} />;
+    case 'typewriter':
+      return <Typewriter {...props} />;
+    case 'casestudy':
+      return <CaseStudy {...props} />;
+    case 'globe':
+      return <Globe {...props} />;
     default:
       <div />;
   }

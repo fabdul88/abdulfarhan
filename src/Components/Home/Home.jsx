@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link as Scroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { About, Skill, Projects, Contact, Footer } from '../index';
@@ -6,6 +6,15 @@ import { Icon } from '../Icon/Icon';
 import './home.scss';
 
 const Home = () => {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+      });
+    }
+    return scrollToTop;
+  }, []);
+
   const hover = {
     scale: 1.1,
     transition: { type: 'spring', stiffness: 1000 },
@@ -13,8 +22,8 @@ const Home = () => {
 
   return (
     <>
-      <main id="home">
-        <section className="home-container">
+      <main>
+        <section id="home" className="home-container">
           <div className="home-container__hero-image">
             <div className="home-container__stars"></div>
             <div className="home-container__stars-two"></div>
