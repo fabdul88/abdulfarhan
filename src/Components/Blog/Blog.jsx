@@ -19,7 +19,6 @@ const Blog = () => {
       >
         <h1>BLOG</h1>
         <Index />
-        {/* <p>THIS PAGE IS UNDER CONSTRUCTION. PLEASE CHECK BACK LATER</p> */}
         <img
           src={construction}
           alt=""
