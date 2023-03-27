@@ -28,10 +28,8 @@ const Form = () => {
 
   // using EmailJS to send messages directly from portfolio
   function sendEmail(e) {
-    // !errors &&
     if (values.name && values.email && values.subject && values.message) {
       e.preventDefault();
-      // setErrors(validateInfo(values));
       emailjs
         .sendForm(
           'service_76w6ea7',

@@ -12,10 +12,10 @@ const Skill = () => {
   const [filter, setFilter] = useState('technical');
   const [skillCategory, setSkillCategory] = useState([]);
   const [activeTab, setActiveTab] = useState('technical');
-  const [activeIcon, setActiveIcon] = useState('html');
+  const [activeIcon, setActiveIcon] = useState('react');
 
   // useState for filtering icon
-  const [skillDetailFilter, setSkillDetailFilter] = useState('html');
+  const [skillDetailFilter, setSkillDetailFilter] = useState('react');
   const [skillDetail, setSkillDetail] = useState([]);
 
   // useEffect for filtering category

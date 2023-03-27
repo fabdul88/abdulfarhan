@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
 import { Burger } from './Burger/Burger';
@@ -8,12 +8,50 @@ import { SideBarData } from './SideBarData';
 import { Icon } from '../../Icon/Icon';
 
 const SideBar = () => {
-  const history = useHistory();
+  const location = useLocation();
+
   // Setting initial sidebar display state to be false
   const [sidebar, setSidebar] = useState(false);
 
+  // Listening for window inner width , if 1280px or more , set overflowY to auto and sidebar state to false
+  useEffect(() => {
+    const handleInnerWidth = () => {
+      if (window.innerWidth >= 1280) {
+        window.document.body.style.overflowY = 'auto';
+        setSidebar(false);
+      }
+    };
+    window.addEventListener('resize', handleInnerWidth);
+    return () => window.removeEventListener('resize', handleInnerWidth);
+  }, []);
+
   // Defining a function to toggle between false and true states
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => {
+    // If innerWidth is less than 1280
+    setSidebar((prevState) => {
+      if (window.innerWidth < 1280) {
+        if (prevState === true) {
+          window.document.body.style.overflowY = 'auto';
+          return !prevState;
+        }
+        if (prevState === false) {
+          window.document.body.style.overflowY = 'hidden';
+          return !prevState;
+        }
+      }
+      // If innerWidth is greater than or equal to 1280
+      if (window.innerWidth >= 1280) {
+        if (prevState === false) {
+          window.document.body.style.overflowY = 'auto';
+          return prevState;
+        }
+        if (prevState === 'undefined') {
+          window.document.body.style.overflowY = 'auto';
+          return false;
+        }
+      }
+    });
+  };
 
   // Hover animations
   const hover = {
@@ -34,7 +72,7 @@ const SideBar = () => {
       >
         <ul className="sidebar__list">
           {/* conditionally render navbar based on url path */}
-          {history.location.pathname === '/' ? (
+          {(location.pathname === '/' || location.pathname === '') && (
             <>
               {SideBarData.map((item) => (
                 <motion.li
@@ -92,7 +130,8 @@ const SideBar = () => {
                 </Link>
               </motion.li>
             </>
-          ) : (
+          )}
+          {location.pathname === '/blog' && (
             <>
               <motion.li className="sidebar__list-item" whileHover={hover}>
                 <Link className="sidebar__list-item-link" to="/blog">
@@ -109,6 +148,51 @@ const SideBar = () => {
                     }}
                   >
                     BLOG
+                  </span>
+                </Link>
+              </motion.li>
+              <motion.li className="sidebar__list-item" whileHover={hover}>
+                <Link className="sidebar__list-item-link" to="/">
+                  <Icon
+                    name="home"
+                    className="sidebar__list-contact"
+                    width="35"
+                    height="35"
+                  />
+                  <span
+                    className="sidebar__hover-contact"
+                    onClick={() => {
+                      showSidebar();
+                    }}
+                  >
+                    HOME
+                  </span>
+                </Link>
+              </motion.li>
+            </>
+          )}
+          {(location.pathname ===
+            `/projects/${location?.state?.projName?.toLowerCase()}/case-study` ||
+            location.pathname.includes('/case-study')) && (
+            <>
+              <motion.li className="sidebar__list-item" whileHover={hover}>
+                <Link
+                  className="sidebar__list-item-link"
+                  to={location.pathname}
+                >
+                  <Icon
+                    name="casestudy"
+                    className="sidebar__list-contact"
+                    width="35"
+                    height="35"
+                  />
+                  <span
+                    className="sidebar__hover-contact"
+                    onClick={() => {
+                      showSidebar();
+                    }}
+                  >
+                    CASE STUDY
                   </span>
                 </Link>
               </motion.li>

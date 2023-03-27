@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+
 import { SideBar } from '../SideBar/SideBar';
 import './navbar.scss';
 import Logo from '../../../assets/black_transparent.svg';
 
 const NavBar = () => {
+  const history = useHistory();
   // setting the scroll Y on navigation to change background color at 95px
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
@@ -19,6 +22,14 @@ const NavBar = () => {
     });
   }
 
+  // Switch component to home if pathname is not '/'
+  function switchToHome() {
+    if (history.location.pathname !== '/') {
+      history.push('/');
+    }
+    return;
+  }
+
   return (
     <>
       <header className="nav-container">
@@ -31,6 +42,7 @@ const NavBar = () => {
             className="nav-container__logo-container"
             onClick={() => {
               scrollToTop();
+              switchToHome();
             }}
           >
             <img

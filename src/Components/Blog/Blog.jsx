@@ -1,6 +1,7 @@
 import React from 'react';
 import { Footer } from '../Footer/Footer';
 import construction from '../../assets/under_construction.svg';
+import Index from './Index';
 
 const Blog = () => {
   return (
@@ -17,7 +18,8 @@ const Blog = () => {
         }}
       >
         <h1>BLOG</h1>
-        <p>THIS PAGE IS UNDER CONSTRUCTION. PLEASE CHECK BACK LATER</p>
+        <Index />
+        {/* <p>THIS PAGE IS UNDER CONSTRUCTION. PLEASE CHECK BACK LATER</p> */}
         <img
           src={construction}
           alt=""
