@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link as Scroll } from 'react-scroll';
-import { motion } from 'framer-motion';
 import { About, Skill, Projects, Contact, Footer } from '../index';
-import { Icon } from '../Icon/Icon';
 import './home.scss';
+import CircularText from '../CircularText/CircularText';
 
 const Home = () => {
   useEffect(() => {
@@ -14,11 +13,6 @@ const Home = () => {
     }
     return scrollToTop;
   }, []);
-
-  const hover = {
-    scale: 1.1,
-    transition: { type: 'spring', stiffness: 1000 },
-  };
 
   return (
     <>
@@ -50,17 +44,9 @@ const Home = () => {
               </p>
               <div className="home-container__down-container">
                 <Scroll to="about" smooth={true} offset={-95} duration={1000}>
-                  <motion.div
-                    className="home-container__down-icon-container"
-                    whileHover={hover}
-                  >
-                    <Icon
-                      name="arrow"
-                      className="home-container__down"
-                      width="55"
-                      height="55"
-                    />
-                  </motion.div>
+                  <div>
+                    <CircularText />
+                  </div>
                 </Scroll>
               </div>
             </div>

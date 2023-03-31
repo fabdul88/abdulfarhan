@@ -41,6 +41,7 @@ import { Star } from './Star';
 import { Typewriter } from './Typewriter';
 import { CaseStudy } from './CaseStudy';
 import { Globe } from './Globe';
+import { Mouse } from './Mouse';
 
 const Icon = (props) => {
   // using a switch statement to add icons
@@ -127,6 +128,8 @@ const Icon = (props) => {
       return <Typewriter {...props} />;
     case 'casestudy':
       return <CaseStudy {...props} />;
+    case 'mouse':
+      return <Mouse {...props} />;
     case 'globe':
       return <Globe {...props} />;
     default:
