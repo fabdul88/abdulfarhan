@@ -23,8 +23,8 @@
   <a href="https://img.shields.io/github/license/fabdul88/abdulfarhan?color=blue&style=for-the-badge" target="_blank">
    <img src="https://img.shields.io/github/license/fabdul88/abdulfarhan?color=blue&style=for-the-badge" alt="GitHub"/>
   </a>
-  <a href="https://img.shields.io/github/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" target="_blank">
-   <img src="https://img.shields.io/github/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" alt="GitHub Workflow Status"/>
+  <a href="https://img.shields.io/github/actions/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/actions/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" alt="GitHub Workflow Status"/>
   </a>
 </p>
 
