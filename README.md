@@ -23,12 +23,12 @@
   <a href="https://img.shields.io/github/license/fabdul88/abdulfarhan?color=blue&style=for-the-badge" target="_blank">
    <img src="https://img.shields.io/github/license/fabdul88/abdulfarhan?color=blue&style=for-the-badge" alt="GitHub"/>
   </a>
-  <a href="https://img.shields.io/github/actions/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" target="_blank">
-   <img src="https://img.shields.io/github/actions/workflow/status/fabdul88/abdulfarhan/MasterDeployCI?style=for-the-badge" alt="GitHub Workflow Status"/>
+  <a href="https://img.shields.io/github/actions/workflow/status/fabdul88/abdulfarhan/master_deploy.yml?style=for-the-badge" target="_blank">
+   <img src="https://img.shields.io/github/actions/workflow/status/fabdul88/abdulfarhan/master_deploy.yml?style=for-the-badge" alt="GitHub Workflow Status"/>
   </a>
 </p>
 
-![portfolioHme](https://user-images.githubusercontent.com/60126985/160060979-cbcd5a9e-0455-4434-bf1e-b77754e93404.png)
+![portfolio](https://user-images.githubusercontent.com/60126985/229294246-67865202-d899-4931-82c1-24c30b877cba.png)
 
 ### Main Tech Stack Used
 
@@ -61,18 +61,19 @@ While keeping my site open source, feel free to fork this repo, remix and reuse 
 
 ```json
 "dependencies": {
-    "@testing-library/jest-dom": "^5.11.5",
+   "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
     "aos": "^2.3.4",
     "emailjs-com": "^2.6.4",
-    "framer-motion": "^2.9.4",
+    "framer-motion": "^6.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.8.1",
+    "react-use-measure": "^2.1.1",
     "sass": "^1.38.2",
     "uuid": "^8.3.1",
     "web-vitals": "^0.2.4"
