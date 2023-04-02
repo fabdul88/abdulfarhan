@@ -1,9 +1,10 @@
-@use "../../../../styles/partials/global";
+@use '../../../../styles/partials/global';
 
 .burger-container {
   &__menu-btn {
     position: absolute;
-    top: 5%;
+    // top: 5%;
+    top: 8%;
     right: 3%;
     z-index: 4;
     display: flex;
@@ -26,7 +27,7 @@
     border-radius: 5px;
   }
   &__burger-center {
-    margin: 15px 0 10px 0;
+    margin: 15px 0 15px 0;
     background-color: #e31b6d;
   }
 }
