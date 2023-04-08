@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { SideBar } from '../SideBar/SideBar';
@@ -9,10 +9,17 @@ const NavBar = () => {
   const history = useHistory();
   // setting the scroll Y on navigation to change background color at 95px
   const [navbar, setNavbar] = useState(false);
-  const changeBackground = () => {
-    window.scrollY >= 95 ? setNavbar(true) : setNavbar(false);
-  };
-  window.addEventListener('scroll', changeBackground);
+
+  const navPosition = 95;
+
+  const changeBackground = useCallback(() => {
+    window.scrollY >= navPosition ? setNavbar(true) : setNavbar(false);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+    return () => window.removeEventListener('scroll', changeBackground);
+  }, [changeBackground]);
 
   // Scroll to top for logo
   function scrollToTop() {

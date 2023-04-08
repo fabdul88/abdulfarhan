@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
@@ -13,17 +13,18 @@ const SideBar = () => {
   // Setting initial sidebar display state to be false
   const [sidebar, setSidebar] = useState(false);
 
+  const handleInnerWidth = useCallback(() => {
+    if (window.innerWidth >= 1280) {
+      window.document.body.style.overflowY = 'auto';
+      setSidebar(false);
+    }
+  }, []);
+
   // Listening for window inner width , if 1280px or more , set overflowY to auto and sidebar state to false
   useEffect(() => {
-    const handleInnerWidth = () => {
-      if (window.innerWidth >= 1280) {
-        window.document.body.style.overflowY = 'auto';
-        setSidebar(false);
-      }
-    };
     window.addEventListener('resize', handleInnerWidth);
     return () => window.removeEventListener('resize', handleInnerWidth);
-  }, []);
+  }, [handleInnerWidth]);
 
   // Defining a function to toggle between false and true states
   const showSidebar = () => {

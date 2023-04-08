@@ -42,11 +42,11 @@ const Skill = () => {
       <div className="skill__stars-two"></div>
       <div className="skill__stars-three"></div>
       <div className="skill__title-container">
-        <h1 data-aos="fade-up" className="skill__title">
+        <h1 data-aos="fade-up" data-aos-once className="skill__title">
           SKILL
           <span className="skill__title-letter">S</span>
         </h1>
-        <hr data-aos="fade-down" className="skill__title-hr" />
+        <hr data-aos="fade-down" data-aos-once className="skill__title-hr" />
       </div>
       <section className="skill__section-one">
         <section className="skill__wrapper">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Icon } from '../Icon/Icon';
 import { text } from './circularData';
 import './circularText.scss';
@@ -7,12 +7,18 @@ const CircularText = () => {
   const [mouseIconSize, setMouseIconSize] = useState(false);
 
   // checking the size of the mouse icon
-  const size = () => {
+  const size = useCallback(() => {
     window.innerWidth >= 768 ? setMouseIconSize(true) : setMouseIconSize(false);
-  };
+  }, []);
   // Listening for a resize and load to determine the size of the mouse icon
-  window.addEventListener('resize', size);
-  window.addEventListener('load', size);
+  useEffect(() => {
+    window.addEventListener('resize', size);
+    return () => window.removeEventListener('resize', size);
+  }, [size]);
+  useEffect(() => {
+    window.addEventListener('load', size);
+    return () => window.removeEventListener('load', size);
+  }, [size]);
 
   return (
     <div className="circle">
