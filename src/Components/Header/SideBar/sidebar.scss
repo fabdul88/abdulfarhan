@@ -94,7 +94,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 220px;
+        width: 240px;
         cursor: pointer;
         text-decoration: none;
         @include global.breakpoint(desktop) {
@@ -131,7 +131,7 @@
   &__hover-skills,
   &__hover-projects,
   &__hover-contact {
-    font-family: 'RalewayR';
+    font-family: 'MontserratSB';
     display: flex;
     font-size: 30px;
     font-weight: bold;

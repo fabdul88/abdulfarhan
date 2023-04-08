@@ -30,6 +30,8 @@ const About = () => {
           data-aos="slide-down"
           data-aos-delay="50"
           data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+          data-aos-once
           className="about-container__hexagon-top"
           src={Hexagon}
           alt="Hexagon Top"
@@ -37,20 +39,30 @@ const About = () => {
         <img
           data-aos="slide-up"
           data-aos-duration="3000"
+          data-aos-once
           className="about-container__hexagon-bottom"
           src={Hexagon}
           alt="Hexagon Bottom"
         />
         <div className="about-container__title-container">
-          <h1 data-aos="fade-up" className="about-container__title">
+          <h1
+            data-aos="fade-up"
+            data-aos-once
+            className="about-container__title"
+          >
             <span className="about-container__title-letter">A</span>BOUT
           </h1>
-          <hr data-aos="fade-down" className="about-container__title-hr" />
+          <hr
+            data-aos="fade-down"
+            data-aos-once
+            className="about-container__title-hr"
+          />
         </div>
         <div className="about-container__column-container">
           <div className="about-container__profile-container">
             <img
               data-aos="flip-left"
+              data-aos-once
               className="about-container__profile-background"
               src={Hexagon}
               alt="Hexagon Background"

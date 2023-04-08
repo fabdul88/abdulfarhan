@@ -35,7 +35,6 @@ const BlogHome = () => {
     fetchPosts();
   }, [query]);
 
-  console.log(posts);
   return (
     <>
       {posts.length > 0 ? (

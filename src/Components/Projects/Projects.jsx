@@ -35,11 +35,19 @@ const Projects = () => {
         <div className="work-container__stars-two"></div>
         <div className="work-container__stars-three"></div>
         <div className="work-container__title-container">
-          <h1 data-aos="fade-up" className="work-container__title">
+          <h1
+            data-aos="fade-up"
+            data-aos-once
+            className="work-container__title"
+          >
             PRO
             <span className="work-container__title-letter">JECTS</span>
           </h1>
-          <hr data-aos="fade-down" className="work-container__title-hr" />
+          <hr
+            data-aos="fade-down"
+            data-aos-once
+            className="work-container__title-hr"
+          />
         </div>
         <FeaturedProj />
         <div className="work-container__work-labels-container">
