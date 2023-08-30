@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './burger.scss';
 
-const Burger = ({ sidebar, display }) => {
+const Burger = ({ sidebar, display, navbar }) => {
   const topVariants = {
     opened: {
       rotate: 45,
@@ -44,7 +44,11 @@ const Burger = ({ sidebar, display }) => {
           }}
         >
           <motion.div
-            className="burger-container__burger"
+            className={
+              navbar
+                ? 'burger-container__burger'
+                : 'burger-container__burger-navbar'
+            }
             initial={false}
             variants={topVariants}
             animate={sidebar ? 'opened' : 'closed'}
@@ -56,7 +60,11 @@ const Burger = ({ sidebar, display }) => {
             animate={sidebar ? 'opened' : 'closed'}
           ></motion.div>
           <motion.div
-            className="burger-container__burger"
+            className={
+              navbar
+                ? 'burger-container__burger'
+                : 'burger-container__burger-navbar'
+            }
             initial={false}
             variants={bottomVariants}
             animate={sidebar ? 'opened' : 'closed'}

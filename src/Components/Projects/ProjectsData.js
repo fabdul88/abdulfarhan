@@ -86,11 +86,11 @@ export const ProjectsData = [
     category: ['all', 'REACT-JS', 'FULL-STACK'],
     image: TraveLogTablet,
     description:
-      'A MERN stack travel log where the user can keep track of their travel locations. Using authorization and react hook form to log entries, mapbox and react map GL wrapper for mapbox. ',
+      'MERN stack app that enables users to keep track of their travel locations. Using authorization and react hook form with CRUD functionality, and Mapbox to display user entries as pins and information popups. ',
     icon: ['html', 'sass', 'javascript', 'react', 'mapbox', 'node', 'mongodb'],
     color: 'card-container__card-hr-travelog',
     github: 'https://github.com/fabdul88/TraveLog',
-    demo: 'https://travelog-live.herokuapp.com/',
+    demo: 'https://travel-log-mern.vercel.app/',
   },
   {
     id: uuidv4(),
@@ -99,11 +99,11 @@ export const ProjectsData = [
     category: ['all', 'REACT-JS', 'FULL-STACK'],
     image: FiTrackTablet,
     description:
-      'A MERN stack, CRUD operations, SPA, based on the ongoing pandemic, FiTrack is a fitness application that helps users spending most of their time at home keep up with their mental and physical health. Built in 10 days.',
+      'A personal workout routine planner, built as a RESTful API in Node.js using express and mongoose for the backend, and react.js and redux toolkit for the frontend. The personal workout routine planner has authentication implemented with JWT and cookies, and password hashing with bcrypt.js. The database of choice was Mongo DB Atlas cloud service.',
     icon: ['html', 'sass', 'javascript', 'react', 'node', 'express', 'mongodb'],
     color: 'card-container__card-hr-fitrack',
     github: 'https://github.com/fabdul88/FiTrack',
 
-    demo: 'https://fitrack-mern.herokuapp.com/',
+    demo: 'https://real-red-squid-tutu.cyclic.cloud/',
   },
 ];
