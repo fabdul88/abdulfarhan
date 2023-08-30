@@ -16,7 +16,7 @@ export const FooterInfo = [
     listItemLink:
       'footer-container__social-list-twitter-link footer-container__social-list-link',
     listItemHref: 'https://twitter.com/F__Abdul',
-    iconName: 'twitter',
+    iconName: 'twitterx',
     iconClassName: 'footer-container__social-list-twitter',
   },
   {
@@ -34,7 +34,7 @@ export const FooterInfo = [
     listItemLink:
       'footer-container__social-list-resume-link footer-container__social-list-link',
     listItemHref:
-      'https://drive.google.com/uc?id=1Ve2WgPuZEhdg_q6MCiureZsvr6Rsgixa&export=download',
+      'https://drive.google.com/uc?id=1rQxh4LdOqxDb8I-5t1eqM9AG3mdzGqXq&export=download',
     target: '_blank',
     rel: 'noopener noreferrer',
     iconName: 'download',

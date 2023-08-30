@@ -34,6 +34,7 @@ import { Management } from './Management';
 import { Design } from './Design';
 import { Code } from './Code';
 import { Twitter } from './Twitter';
+import { TwitterX } from './TwitterX';
 import { MySQL } from './MySQL';
 import { Docker } from './Docker';
 import { Forked } from './Forked';
@@ -68,6 +69,8 @@ const Icon = (props) => {
       return <LinkedIn {...props} />;
     case 'twitter':
       return <Twitter {...props} />;
+    case 'twitterx':
+      return <TwitterX {...props} />;
     case 'materialui':
       return <MaterialUI {...props} />;
     case 'bem':

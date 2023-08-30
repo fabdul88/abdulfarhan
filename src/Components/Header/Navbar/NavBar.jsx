@@ -10,6 +10,7 @@ const NavBar = () => {
   const history = useHistory();
   // setting the scroll Y on navigation to change background color at 95px
   const [navbar, setNavbar] = useState(false);
+  const [deskViewport, setDeskViewport] = useState(false);
 
   const navPosition = 95;
 
@@ -17,10 +18,19 @@ const NavBar = () => {
     window.scrollY >= navPosition ? setNavbar(true) : setNavbar(false);
   }, []);
 
+  const windowSize = useCallback(() => {
+    window.innerWidth >= 1280 ? setDeskViewport(true) : setDeskViewport(false);
+  }, []);
+
   useEffect(() => {
     window.addEventListener('scroll', changeBackground);
     return () => window.removeEventListener('scroll', changeBackground);
   }, [changeBackground]);
+
+  useEffect(() => {
+    window.addEventListener('resize', windowSize);
+    return () => window.removeEventListener('resize', windowSize);
+  }, [windowSize]);
 
   // Scroll to top for logo
   function scrollToTop() {
@@ -53,16 +63,17 @@ const NavBar = () => {
               switchToHome();
             }}
           >
-            {navbar ? (
+            {!deskViewport && (
+              <img
+                className="nav-container__logo"
+                src={navbar ? LogoDark : LogoLight}
+                alt="navigation home logo"
+              />
+            )}
+            {deskViewport && (
               <img
                 className="nav-container__logo"
                 src={LogoDark}
-                alt="navigation home logo"
-              />
-            ) : (
-              <img
-                className="nav-container__logo"
-                src={LogoLight}
                 alt="navigation home logo"
               />
             )}
