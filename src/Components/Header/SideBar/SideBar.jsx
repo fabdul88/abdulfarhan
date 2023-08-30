@@ -7,7 +7,7 @@ import { Link as Scroll } from 'react-scroll';
 import { SideBarData } from './SideBarData';
 import { Icon } from '../../Icon/Icon';
 
-const SideBar = () => {
+const SideBar = ({ navbar }) => {
   const location = useLocation();
 
   // Setting initial sidebar display state to be false
@@ -225,7 +225,7 @@ const SideBar = () => {
         }}
         className={sidebar ? 'sidebar__backdrop' : 'sidebar__backdrop-false'}
       />
-      <Burger sidebar={sidebar} display={showSidebar} />
+      <Burger sidebar={sidebar} display={showSidebar} navbar={navbar} />
     </aside>
   );
 };

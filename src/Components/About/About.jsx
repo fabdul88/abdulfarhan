@@ -27,6 +27,7 @@ const About = () => {
     <MotionConfig transition={{ duration: 0.35 }}>
       <div id="about" className="about-container">
         <img
+          loading="lazy"
           data-aos="slide-down"
           data-aos-delay="50"
           data-aos-easing="ease-in-out"
@@ -37,6 +38,7 @@ const About = () => {
           alt="Hexagon Top"
         />
         <img
+          loading="lazy"
           data-aos="slide-up"
           data-aos-duration="3000"
           data-aos-once
@@ -61,6 +63,7 @@ const About = () => {
         <div className="about-container__column-container">
           <div className="about-container__profile-container">
             <img
+              loading="lazy"
               data-aos="flip-left"
               data-aos-once
               className="about-container__profile-background"
@@ -68,6 +71,7 @@ const About = () => {
               alt="Hexagon Background"
             />
             <img
+              loading="lazy"
               className="about-container__profile"
               src={Profile}
               alt="Profile"

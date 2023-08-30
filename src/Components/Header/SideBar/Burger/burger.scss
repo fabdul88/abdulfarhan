@@ -26,6 +26,12 @@
     background-color: #444649;
     border-radius: 5px;
   }
+  &__burger-navbar {
+    width: 50px;
+    height: 6px;
+    background-color: global.$light-grey;
+    border-radius: 5px;
+  }
   &__burger-center {
     margin: 15px 0 15px 0;
     background-color: #e31b6d;

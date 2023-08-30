@@ -3,7 +3,8 @@ import { useHistory } from 'react-router-dom';
 
 import { SideBar } from '../SideBar/SideBar';
 import './navbar.scss';
-import Logo from '../../../assets/black_transparent.svg';
+import LogoLight from '../../../assets/white_transparent.svg';
+import LogoDark from '../../../assets/black_transparent_copy.svg';
 
 const NavBar = () => {
   const history = useHistory();
@@ -52,14 +53,22 @@ const NavBar = () => {
               switchToHome();
             }}
           >
-            <img
-              className="nav-container__logo"
-              src={Logo}
-              alt="navigation home logo"
-            />
+            {navbar ? (
+              <img
+                className="nav-container__logo"
+                src={LogoDark}
+                alt="navigation home logo"
+              />
+            ) : (
+              <img
+                className="nav-container__logo"
+                src={LogoLight}
+                alt="navigation home logo"
+              />
+            )}
           </div>
         </nav>
-        <SideBar />
+        <SideBar navbar={navbar} />
       </header>
     </>
   );

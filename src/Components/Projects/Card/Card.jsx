@@ -51,6 +51,7 @@ export default function Card({ projectCard, useMeasureRef, height }) {
                       className="card-container__image-front"
                       src={project.image}
                       alt="Card project screenshot"
+                      loading="lazy"
                     />
                     <p className="card-container__name">{project.name}</p>
                     <hr className={project.color} />

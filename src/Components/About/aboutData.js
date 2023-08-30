@@ -13,7 +13,7 @@ export const aboutData = [
       "When I'm not coding, you'll find me gaming, playing sports or experimenting with YouTube food recipes.",
     listItemLink: 'about-container__profile-resume-link',
     listItemHref:
-      'https://drive.google.com/uc?id=1Ve2WgPuZEhdg_q6MCiureZsvr6Rsgixa&export=download',
+      'https://drive.google.com/uc?id=1rQxh4LdOqxDb8I-5t1eqM9AG3mdzGqXq&export=download',
     target: '_blank',
     rel: 'noopener noreferrer',
   },
@@ -29,7 +29,7 @@ export const aboutData = [
       "I have a diploma in Information and Communication Technology Management, and a diploma in Web Development. Apart from working on personal projects, I always find time to contribute to Open Source projects to be more involved in the community. When I'm not coding, you'll find me gaming, playing sports or experimenting with YouTube food recipes.",
     listItemLink: 'about-container__profile-resume-link',
     listItemHref:
-      'https://drive.google.com/uc?id=1Ve2WgPuZEhdg_q6MCiureZsvr6Rsgixa&export=download',
+      'https://drive.google.com/uc?id=1rQxh4LdOqxDb8I-5t1eqM9AG3mdzGqXq&export=download',
     target: '_blank',
     rel: 'noopener noreferrer',
   },
@@ -45,7 +45,7 @@ export const aboutData = [
       "He has a diploma in Information and Communication Technology Management, and a diploma in Web Development. Apart from working on personal projects, Abdul always finds time to contribute to Open Source projects to be more involved in the community. When he's not coding, you'll find him gaming, playing sports or experimenting with YouTube food recipes.",
     listItemLink: 'about-container__profile-resume-link',
     listItemHref:
-      'https://drive.google.com/uc?id=1Ve2WgPuZEhdg_q6MCiureZsvr6Rsgixa&export=download',
+      'https://drive.google.com/uc?id=1rQxh4LdOqxDb8I-5t1eqM9AG3mdzGqXq&export=download',
     target: '_blank',
     rel: 'noopener noreferrer',
   },
