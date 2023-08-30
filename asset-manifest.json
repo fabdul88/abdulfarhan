@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d72221ce.css",
-    "main.js": "/static/js/main.3c5e9086.js",
+    "main.css": "/static/css/main.6a2cf243.css",
+    "main.js": "/static/js/main.cc587110.js",
     "static/js/377.7fbee4a3.chunk.js": "/static/js/377.7fbee4a3.chunk.js",
     "static/media/profile.webp": "/static/media/profile.868ce01ca052996133cc.webp",
     "static/media/tabletTraveLog.webp": "/static/media/tabletTraveLog.816b4ef3bf6116a46f16.webp",
@@ -32,15 +32,16 @@
     "static/media/casestudyproj.svg": "/static/media/casestudyproj.aebae98cccfa5c8c989c1ffb445986f1.svg",
     "static/media/tabletFitrack.webp": "/static/media/tabletFitrack.be006efd4621487ba33e.webp",
     "static/media/under_construction.svg": "/static/media/under_construction.a0775cb2abc6f8f855dfc2da4adcea4f.svg",
+    "static/media/black_transparent_copy.svg": "/static/media/black_transparent_copy.68a1b65b5abb90d610a97e65eaf85438.svg",
+    "static/media/white_transparent.svg": "/static/media/white_transparent.7750b116fd9757c75dbb7c9b47096e41.svg",
     "static/media/hexagon_monochrome.webp": "/static/media/hexagon_monochrome.0e65261d36f08d57c28c.webp",
-    "static/media/black_transparent.svg": "/static/media/black_transparent.dc528fee2b043bf5a4da1dc48578ebb3.svg",
     "index.html": "/index.html",
-    "main.d72221ce.css.map": "/static/css/main.d72221ce.css.map",
-    "main.3c5e9086.js.map": "/static/js/main.3c5e9086.js.map",
+    "main.6a2cf243.css.map": "/static/css/main.6a2cf243.css.map",
+    "main.cc587110.js.map": "/static/js/main.cc587110.js.map",
     "377.7fbee4a3.chunk.js.map": "/static/js/377.7fbee4a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d72221ce.css",
-    "static/js/main.3c5e9086.js"
+    "static/css/main.6a2cf243.css",
+    "static/js/main.cc587110.js"
   ]
 }
