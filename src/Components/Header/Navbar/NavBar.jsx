@@ -28,6 +28,7 @@ const NavBar = () => {
   }, [changeBackground]);
 
   useEffect(() => {
+    window.innerWidth >= 1280 && setDeskViewport(true);
     window.addEventListener('resize', windowSize);
     return () => window.removeEventListener('resize', windowSize);
   }, [windowSize]);
