@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  The first iteration of <a href="https://abdulfarhan.com" target="_blank">abdulfarhan.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> .
+  The first iteration of <a href="https://v1.abdulfarhan.com" target="_blank">abdulfarhan.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> .
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@
 
 ### Forking This Repo
 
-While keeping my site open source, feel free to fork this repo, remix and reuse to your heart’s content, as long as a good faith effort is made to **attribute the content** back to <a href="https://abdulfarhan.com" target="_blank">abdulfarhan.com</a> . Thank you!
+While keeping my site open source, feel free to fork this repo, remix and reuse to your heart’s content, as long as a good faith effort is made to **attribute the content** back to <a href="https://v1.abdulfarhan.com" target="_blank">abdulfarhan.com</a> . Thank you!
 
 ### How To Run The App
 
